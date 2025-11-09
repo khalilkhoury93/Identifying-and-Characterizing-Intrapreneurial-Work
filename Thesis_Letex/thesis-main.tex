@@ -1,0 +1,341 @@
+% !TeX program = xelatex
+% !TeX encoding = UTF-8
+% Master Thesis Document
+% Compile with: XeLaTeX -> Biber -> XeLaTeX -> XeLaTeX
+
+\documentclass[
+  12pt,
+  a4paper,
+  final,  % FINAL MODE: Loads all images. Use 'draft' for faster compilation during editing.
+]{article}
+
+% ============================================
+% PACKAGES
+% ============================================
+\usepackage{xcolor}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}       % For \includegraphics
+\graphicspath{{../../03_Figures/}{../../../PLAN_3_FILES/outputs/figures/}} % Set image search paths
+\usepackage{booktabs}      % For \toprule, \midrule, \bottomrule
+\usepackage{array}          % For advanced table features
+\usepackage{tabularx}       % For width-constrained, auto-wrapping tables
+\usepackage{calc}           % For arithmetic in length calculations
+\usepackage{xfp}            % For floating point calculations
+\usepackage{longtable}      % For long tables
+\usepackage{fancyvrb}       % For code blocks
+\usepackage{listings}       % For code highlighting
+\usepackage{tcolorbox}      % For callout boxes
+% Global listings configuration for wrapped code blocks
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  breakatwhitespace=false,
+  columns=fullflexible,
+  keepspaces=true
+}
+\usepackage{float}          % For [H] exact placement of floats
+% Enable automatic numbering through subsubsections
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2} % include sections and subsections in TOC
+
+% Font setup
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp}
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  \setmainfont[]{Times New Roman}
+\fi
+
+\usepackage{upquote}
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath}
+\usepackage{setspace}
+
+% Paragraph formatting
+\makeatletter
+\@ifundefined{KOMAClassName}{%
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% 
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+
+\setlength{\emergencystretch}{3em}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Code highlighting environment definitions
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newenvironment{Highlighting}{\ttfamily}{}
+\newcommand{\KeywordTok}[1]{\textbf{#1}}
+\newcommand{\DataTypeTok}[1]{\textit{#1}}
+\newcommand{\DecValTok}[1]{#1}
+\newcommand{\BaseNTok}[1]{#1}
+\newcommand{\FloatTok}[1]{#1}
+\newcommand{\ConstantTok}[1]{#1}
+\newcommand{\CharTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{#1}
+\newcommand{\StringTok}[1]{\textit{#1}}
+\newcommand{\VerbatimStringTok}[1]{#1}
+\newcommand{\SpecialStringTok}[1]{#1}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textit{#1}}
+\newcommand{\DocumentationTok}[1]{#1}
+\newcommand{\AnnotationTok}[1]{#1}
+\newcommand{\CommentVarTok}[1]{#1}
+\newcommand{\OtherTok}[1]{#1}
+\newcommand{\FunctionTok}[1]{\textbf{#1}}
+\newcommand{\VariableTok}[1]{#1}
+\newcommand{\ControlFlowTok}[1]{\textbf{#1}}
+\newcommand{\OperatorTok}[1]{#1}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{#1}
+\newcommand{\AttributeTok}[1]{#1}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{#1}
+\newcommand{\WarningTok}[1]{#1}
+\newcommand{\AlertTok}[1]{\textbf{#1}}
+\newcommand{\ErrorTok}[1]{\textbf{#1}}
+\newcommand{\NormalTok}[1]{#1}
+
+% Define snugshade environment for code blocks
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+% Note: snugshade is already defined by framed package
+
+% Define pandocbounded for images
+\providecommand{\pandocbounded}[1]{#1}
+
+% Note: grffile removed - it causes issues with missing images
+% The underscore warnings in image paths are non-fatal
+
+% Hyperlinks (ensure proper anchors for LOF/LOT links)
+\usepackage{hyperref}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{}
+\usepackage[all]{hypcap}
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Your Thesis Title},
+  pdfauthor={Your Name},
+  hidelinks,
+  pdfcreator={LaTeX via XeLaTeX}}
+% ============================================
+% NUMBERING SETUP (no extra packages)
+% ============================================
+% Chapter-aware numbering for tables and figures: <chapter>.<counter>
+\newcounter{chapternum}
+\renewcommand{\thetable}{\arabic{chapternum}.\arabic{table}}
+\renewcommand{\thefigure}{\arabic{chapternum}.\arabic{figure}}
+% Ensure hyperref anchors follow the same scheme to avoid LOF/LOT mislinks
+\makeatletter
+\renewcommand{\theHtable}{\arabic{chapternum}.\arabic{table}}
+\renewcommand{\theHfigure}{\arabic{chapternum}.\arabic{figure}}
+\makeatother
+
+% ============================================
+% GLOSSARY SETUP (automatic)
+% ============================================
+\usepackage[acronym,toc,nonumberlist]{glossaries}
+\makeglossaries
+
+% Define glossary entries
+\newglossaryentry{ai}{name=AI,description={Artificial Intelligence - Computer systems able to perform tasks that typically require human intelligence}}
+\newglossaryentry{bhfdr}{name=BH-FDR,description={Benjamini-Hochberg False Discovery Rate - Statistical method for controlling false positive rate when conducting multiple comparisons}}
+\newglossaryentry{ci}{name=CI,description={Confidence Interval - Range of values likely to contain the true population parameter, typically reported at 95\% level}}
+\newglossaryentry{has}{name=HAS,description={Human Agency Scale - Five-level framework (1-5) characterizing human involvement required when AI assistance is available}}
+\newglossaryentry{if}{name=IF,description={Importance-Frequency - Two-dimensional framework for categorizing tasks based on O*NET ratings}}
+\newglossaryentry{intrapreneurship}{name=Intrapreneurship,description={Entrepreneurial behavior within existing organizations that discovers, plans, advocates, and implements opportunities; shows initiative, innovation, and judicious risk-taking; and/or performs role-specific managerial or eco-innovation tasks that advance new business activities.}}
+\newglossaryentry{kappa}{name={$\kappa$},description={Cohen's kappa coefficient measuring inter-rater agreement corrected for chance agreement}}
+\newglossaryentry{llm}{name=LLM,description={Large Language Model - AI system trained on extensive text data capable of understanding and generating human-like text}}
+\newglossaryentry{onet}{name={O*NET},description={Occupational Information Network - U.S. Department of Labor database containing standardized occupational information}}
+\newglossaryentry{or}{name=OR,description={Odds Ratio - Measure of association between exposure and outcome, quantifying effect size in enrichment analyses}}
+\newglossaryentry{qvalue}{name=q-value,description={Adjusted p-value after false discovery rate correction for multiple testing}}
+\newglossaryentry{rho}{name={$\rho$},description={Spearman's rank correlation coefficient measuring monotonic association between variables}}
+\newglossaryentry{saltlab}{name={SALT Lab},description={Stanford Social and Language Technologies - Research group at Stanford University conducting the WORKBank project}}
+\newglossaryentry{soc}{name=SOC,description={Standard Occupational Classification - Federal statistical standard for classifying workers into occupational categories}}
+\newglossaryentry{stem}{name=STEM,description={Science, Technology, Engineering, and Mathematics - Academic and professional disciplines in technical fields}}
+\newglossaryentry{wa}{name=WA,description={Work Activities - O*NET descriptors aggregating related tasks into broader behavioral categories}}
+\newglossaryentry{wbu}{name=WBU,description={Willingness to Bear Uncertainty - Index capturing worker preference for human control when facing uncertain tasks}}
+\newglossaryentry{wc}{name=WC,description={Work Context - O*NET descriptors capturing environmental and organizational factors shaping task performance}}
+\newglossaryentry{workbank}{name=WORKBank,description={Database developed by Stanford SALT Lab containing worker and expert assessments of task automation potential}}
+\newglossaryentry{zscore}{name=z-score,description={Standardized score indicating how many standard deviations a value is from the mean}}
+
+% Quadrant definitions
+\newglossaryentry{core}{name={Core Quadrant},description={Tasks with both high importance ($\geq$4.0) and high frequency ($\geq$4.0) representing routine occupational center (IF-based; distinct from O*NET ``Core'' task flag)}}
+\newglossaryentry{critical}{name={Critical Quadrant},description={Tasks with high importance ($\geq$4.0) but low frequency (<4.0) representing episodic consequential work}} 
+\newglossaryentry{peripheral}{name={Peripheral Quadrant},description={Tasks with both low importance (<4.0) and low frequency (<4.0) at occupational margins}}
+\newglossaryentry{operational}{name={Operational Quadrant},description={Tasks with low importance (<4.0) but high frequency ($\geq$4.0) representing regular peripheral activities}}
+
+% Human Agency Scale levels
+\newglossaryentry{h1}{name=H1,description={Human Agency Scale level 1 - AI handles entirely}}
+\newglossaryentry{h2}{name=H2,description={Human Agency Scale level 2 - AI with minimal human oversight}}
+\newglossaryentry{h3}{name=H3,description={Human Agency Scale level 3 - Equal human–AI partnership}}
+\newglossaryentry{h4}{name=H4,description={Human Agency Scale level 4 - Human-driven with AI assistance}}
+\newglossaryentry{h5}{name=H5,description={Human Agency Scale level 5 - Exclusively human task}}
+
+% ============================================
+% BIBLIOGRAPHY SETUP (biblatex + biber)
+% ============================================
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{References_Thesis.bib}
+% Category to ensure AI tools acknowledgment appears first in References
+\DeclareBibliographyCategory{aitools}
+\addtocategory{aitools}{codex-droid-glm46}
+% Remove "visited on" (urldate) from all references while keeping URLs
+\AtEveryBibitem{\clearfield{urldate}}
+
+% ============================================
+% DOCUMENT METADATA
+% ============================================
+\title{Identifying and Characterizing Intrapreneurial Work: A Task-Level Analysis of Human–AI Collaboration Using O*NET and SALT Lab Data}
+\author{[Khalil Khoury]}
+\date{October 2025}
+
+% ============================================
+% BEGIN DOCUMENT
+% ============================================
+\begin{document}
+
+% ============================================
+% FRONT MATTER
+% ============================================
+\pagenumbering{roman} % Roman numerals for front matter
+
+% Title Page
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+
+{\LARGE\bfseries Identifying and Characterizing Intrapreneurial Work: A Task-Level Analysis of Human–AI Collaboration Using O*NET and SALT Lab Data\par}
+
+\vspace{2cm}
+
+{\Large Khalil Khoury\par}
+{\Large Neptun: FWH1ST\par}
+
+\vspace{1.5cm}
+
+{A thesis submitted in fulfillment of the requirements\\
+for the degree of MSc Business Development\par}
+
+\vspace{1cm}
+
+{Faculty of Business and Economics\\
+{}University of Pécs\par}
+
+\vfill
+
+{November 2025\par}
+
+\vspace{1cm}
+
+\textbf{Supervisor:} Dr. Erika Lázár
+
+\end{titlepage}
+
+% Abstract
+\newpage
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+
+\begin{spacing}{1.5}
+We examine where intrapreneurial work sits inside occupations and what this implies for human–AI collaboration and organizational design. Using 844 task statements from the US O*NET database, linked to WORKBank survey data and Human Agency Scale (HAS) ratings from Stanford University’s SALT Lab, we construct a task-level measure of intrapreneurship grounded in six theory-based criteria that span opportunity discovery, planning and advocacy, execution, innovation, enabling or managerial roles, and risk-bearing. A structured large language model (LLM) procedure applies these criteria to each task in three independent runs, producing rich metadata (justifications, matched criteria and categories, confidence) and a final label via majority vote. This yields 153 intrapreneurial and 690 non-intrapreneurial tasks (plus one ambiguous case) with high inter-run agreement, demonstrating that the criteria can be applied reliably this scale.
+
+We then embed all tasks in a 2×2 importance–frequency (IF) framework derived from O*NET ratings, distinguishing Core (high importance, high frequency), Critical (high importance, low frequency), Operational (low importance, high frequency), and Peripheral (low importance, low frequency) quadrants. Intrapreneurial tasks are strongly depleted in the Core quadrant and systematically enriched in Critical and Peripheral quadrants, and they exhibit much weaker coupling between importance and frequency than routine tasks, indicating that internal innovation is carried by episodic rather than rhythmic work. Integrating worker and expert HAS ratings from the SALT Lab dataset, we show that intrapreneurial tasks concentrate in intermediate HAS bands corresponding to human–AI partnership and human-led with AI assistance and are less often assigned HAS ratings corresponding to full automation, even within the same IF quadrants. Workers systematically report higher uncertainty than experts, particularly for intrapreneurial tasks in Critical and Peripheral regions, and a derived Willingness to Bear Uncertainty (WBU) index shows that many workers respond to higher uncertainty by maintaining or strengthening their preference for human control instead of ceding it to automation.
+
+A secondary categorization decomposes intrapreneurial tasks into theory-aligned categories and overlapping “phenotypes,” revealing that intrapreneurial work is dominated by opportunity discovery, problem framing, and planning or advocacy activities with strong managerial and enabling overlays, while pure execution phenotypes are relatively rare. Together, these results show that intrapreneurial work is structurally peripheral in occupational IF space, agency-intensive in its human–AI role profile, and compositionally skewed toward creative, strategic, and influence-oriented activities. Methodologically, we contribute a scalable, reproducible framework that combines O*NET task descriptions with SALT Lab survey data and theory-grounded LLM adjudication to operationalize intrapreneurship at the task level. Substantively, our findings argue for an augmentation-first approach to AI and organizational design in innovation contexts, prioritizing support for episodic, high-uncertainty, high-agency tasks rather than their full automation.
+
+\textbf{Keywords:} intrapreneurship; task-level analysis; O*NET; human agency; AI augmentation; innovation work; occupational structure; human–AI collaboration
+
+\end{spacing}
+
+% Acknowledgments
+\newpage
+\section*{Acknowledgments}
+\addcontentsline{toc}{section}{Acknowledgments}
+
+I would like to express my deepest gratitude to my supervisor, Dr. Erika Lázár, for her invaluable guidance, continuous support, and patience throughout this research journey. Their expertise and insights have been instrumental in shaping this work.
+
+I extend my sincere thanks to the Stanford SALT Lab team for providing open access to the WORKBank database, which formed the foundation of this study. Special appreciation goes to the researchers who contributed to the development of the Human Agency Scale framework.
+
+% AUTOMATIC Table of Contents, Figures, and Tables
+\newpage
+\tableofcontents
+
+\newpage
+\listoffigures
+
+\newpage
+\listoftables
+
+% ============================================
+% MAIN CONTENT
+% ============================================
+\newpage
+\pagenumbering{arabic} % Arabic numerals for main content
+\setstretch{1.5} % 1.5 line spacing for thesis
+
+% Chapter 1: Introduction
+\setcounter{chapternum}{1}\setcounter{table}{0}\setcounter{figure}{0}
+\input{01-introduction-content.tex}
+\newpage
+
+% Chapter 2: Literature Review
+\setcounter{chapternum}{2}\setcounter{table}{0}\setcounter{figure}{0}
+\input{02-literature-review-content.tex}
+\newpage
+
+% Chapter 3: Methods and Data
+\setcounter{chapternum}{3}\setcounter{table}{0}\setcounter{figure}{0}
+\input{03-methods-data.tex}
+\newpage
+
+% Chapter 4: Results and Analysis
+\setcounter{chapternum}{4}\setcounter{table}{0}\setcounter{figure}{0}
+\input{04-results-analysis.tex}
+\newpage
+
+% Chapter 5: Discussion
+\setcounter{chapternum}{5}\setcounter{table}{0}\setcounter{figure}{0}
+\input{05-discussion.tex}
+\newpage
+
+% Chapter 6: Conclusion
+\setcounter{chapternum}{6}\setcounter{table}{0}\setcounter{figure}{0}
+\input{06-conclusion.tex}
+\newpage
+
+% Chapter 90: Appendices
+\input{90-appendices.tex}
+\newpage
+
+% ============================================
+% GLOSSARY AND ABBREVIATIONS
+% ============================================
+% Use manual glossary file to ensure content appears regardless of makeglossaries setup
+\input{glossary.tex}
+\newpage
+
+% ============================================
+% BIBLIOGRAPHY
+% ============================================
+% Print AI tools reference first, then the rest (include in TOC)
+\nocite{*}
+\printbibliography[category=aitools, title={References}, heading=bibintoc]
+\printbibliography[notcategory=aitools, heading=none]
+
+\end{document}

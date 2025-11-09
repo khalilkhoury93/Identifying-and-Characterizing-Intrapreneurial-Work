@@ -1,0 +1,904 @@
+\section{Appendices}
+
+\subsection*{Appendix A: Survey Instruments}
+
+\textit{Source note:} Survey items are adapted from Shao, Yijia et al. (2025), \emph{Future of Work with AI Agents}. The full instrument definitions are available in the \href{https://github.com/SALT-NLP/workbank/blob/main/codebook.pdf}{\textcolor{blue}{Codebook}}.
+
+\subsubsection*{A.1 Worker Survey Items}
+
+\textbf{Automation Desire Rating}  
+"If an AI system can do this task for you completely, how much do you want an AI to do it for you?"  
+Scale: 1 (Not at all) to 5 (Entirely)
+
+\textbf{Human Agency Scale Rating}  
+"If AI were to assist in this task, how much of your collaboration would be needed to complete this task effectively?"  
+Scale: 1 (No Collaboration Needed) to 5 (Essential Collaboration Needed)
+
+\textbf{Involved Uncertainty}  
+"To what extent does this task involve uncertainty or high-stakes decisions?"  
+Scale: 1 (Not at all) to 5 (Entirely)
+
+
+\subsubsection*{A.2 Expert Survey Items}
+
+\textbf{Technological Capability}  
+"To what extent do current AI systems support automating this task?"  
+Scale: 1 (Not at all) to 5 (Entirely)
+
+\textbf{Human Agency Scale Rating}  
+"If AI were to assist in this task, how much human collaboration would be needed to complete this task effectively?"  
+Scale: 1 (No Collaboration Needed) to 5 (Essential Collaboration Needed)
+
+
+\subsection*{Appendix B: Full LLM Classification Prompt}
+\phantomsection\label{app:B}
+% Local counter for Appendix B subsubsections (B.1, B.2, B.3)
+\makeatletter
+\newcounter{appendixBsec}
+\renewcommand{\theappendixBsec}{B.\arabic{appendixBsec}}
+\renewcommand{\theHappendixBsec}{B.\arabic{appendixBsec}}
+\makeatother
+
+This appendix documents the complete structured prompt used for LLM-based task classification (Section 3.3). The prompt is organized into three components: instructions and criteria (B.1), output schema (B.2), and runtime parameters (B.3).
+
+\refstepcounter{appendixBsec}
+\subsubsection*{\theappendixBsec\ Instruction and Criteria}
+\phantomsection\label{app:B1}
+
+\begin{lstlisting}
+instruction: |
+  You are an expert in intrapreneurship and organizational behavior. Classify a single work task as Intrapreneurial or Not Intrapreneurial based ONLY on the intrapreneurial behavior criteria below. Consider the provided Task metadata (JSON) for context. Output STRICT JSON (single object) with the schema provided. No extra text.
+
+  Definitions
+  - Intrapreneurial: Behaviors inside an existing organization that discover, plan, advocate, and implement opportunities; show initiative, innovation, and judicious risk-taking; and/or perform role-specific managerial actions that advance new business activities or eco-innovation.
+  - Not Intrapreneurial: Routine execution, maintenance, or purely administrative/service tasks without clear signals of opportunity discovery/creation/execution or the specific managerial actions below.
+
+  Criteria (match any of I–VI). A single clear match can suffice; more matches increase confidence.
+
+  I. Opportunity Discovery and Idea Generation
+  - Generate creative ideas.
+  - Search out new techniques, technologies, and product ideas.
+  - Search for opportunities through idea generation and market scanning.
+  - Recognize and perceive opportunities worth pursuing.
+  - Identify long-term opportunities and threats for the company.
+  - Scan the environment for opportunities and threats.
+  - Anticipate problems and opportunities.
+  - Identify effective means to create new businesses or reconfigure existing ones.
+  - Ask the right questions, design new experiments, remain flexible, and learn.
+  - Acquire information about competitors.
+
+  II. Planning, Preparation, and Advocacy
+  - Plan by developing a business plan.
+  - Develop comprehensive business plans.
+  - Convert ideas into feasible and comprehensive business plans.
+  - Design new products or recombine resources.
+  - Promote and champion ideas to others (internal issue selling).
+  - Build a reputation as a successful issue seller.
+  - Build internal coalitions and persuade management.
+  - Acquire and deploy resources.
+  - Obtain internal sponsorship.
+  - Plan and organize.
+
+  III. Execution, Implementation, and Active Behavior
+  - Implement new ideas (act entrepreneurially).
+  - Put effort into pursuing new business opportunities.
+  - Manage the business through directing and decision-making.
+  - Take charge and exhibit personal initiative.
+  - Lead idea development for new business activities.
+  - Lead the exploitation of new business activities.
+  - Establish new outlets or subsidiaries.
+  - Launch new products or product–market combinations.
+  - Recruit, supervise, and motivate employees.
+  - Find solutions.
+
+  IV. Innovative and Risk-Taking Behaviors
+  - Show innovative and creative behaviors.
+  - Take the risk of being innovative and creative.
+  - Take risks in the job.
+  - Go for the big win when large interests are at stake despite potential downside.
+  - Act first and seek approval later when appropriate.
+  - Use out-of-the-box thinking.
+  - Voice entrepreneurial ideas.
+
+  V. Role-Specific Managerial Tasks
+  A. Senior-Level Managerial Actions
+  - Ratify roles.
+  - Recognize roles.
+  - Direct roles.
+  - Identify effective means to create new businesses or reconfigure existing ones.
+  - Focus on scanning the environment for opportunities and threats.
+  
+  B. Middle-Level Managerial Actions
+  - Propose and interpret entrepreneurial opportunities to create new business or increase competitiveness.
+  - Endorse entrepreneurial opportunities.
+  - Refine entrepreneurial opportunities.
+  - Shepherd entrepreneurial opportunities.
+  - Identify, acquire, and deploy resources to pursue opportunities.
+  - Link groups.
+  
+  C. First-Level Managerial Actions
+  - Experiment to surface operational ideas for innovative improvements.
+  - Adjust processes through competence modification.
+  - Conform processes through competence deployment.
+
+  VI. Eco-Innovation and Environmental Performance
+  - Reduce material use during the production process.
+  - Reduce energy use during the production process.
+  - Reduce emissions during the production process.
+  - Enable environmental benefits from end-user consumption (e.g., product recycling).
+
+\end{lstlisting}
+
+\refstepcounter{appendixBsec}
+\subsubsection*{\theappendixBsec\ Output Schema}
+\phantomsection\label{app:B2}
+
+\begin{lstlisting}
+output_schema:
+  type: object
+  properties:
+    checklist:
+      type: array
+      description: "Internal reasoning steps"
+    task:
+      type: string
+      description: "Exact task text being classified"
+    classification:
+      type: string
+      enum: ["Intrapreneurial", "Not Intrapreneurial", "Ambiguous input – unable to classify"]
+    justification:
+      type: string
+      description: "Brief rationale referencing matched criteria (I–VI) and role/eco context if applicable"
+    matched_categories:
+      type: array
+      items:
+        enum: ["I", "II", "III", "IV", "V.A", "V.B", "V.C", "VI"]
+    matched_indicators:
+      type: array
+      items:
+        type: string
+      description: "Short paraphrases of the specific bullets matched"
+    confidence:
+      type: string
+      enum: ["High", "Medium", "Low"]
+    validation:
+      type: string
+      description: "1-2 lines confirming alignment with criteria and any clarifications needed"
+\end{lstlisting}
+
+\refstepcounter{appendixBsec}
+\subsubsection*{\theappendixBsec\ Runtime Parameters}
+\phantomsection\label{app:B3}
+
+\begin{lstlisting}
+runtime_config:
+  model: "gpt-5-mini-high"
+  reasoning_effort: "high"
+  temperature: 1.0
+  top_p: 1.0
+  max_tokens: 4000
+  independent_runs: 3
+  consensus_method: "majority_vote"
+\end{lstlisting}
+
+Notes: Three independent classification runs were performed per task, with consensus determined by majority voting (see Section 3.3.3). The reasoning\_effort parameter set to "high" ensured thorough analytical processing of theoretical criteria. We define majority as 2‑of‑3 votes; in rare cases where one run did not return a parseable label, we count 2‑of‑2 as majority. These definitions yield 29 intrapreneurial and 37 non‑intrapreneurial majority cases (total majority = 67; unanimous = 777).
+
+\subsection*{Appendix C: Robustness Tables and Additional Figures}
+
+% Reset table numbering for Appendix C: Table C.<n>
+\setcounter{table}{0}
+\renewcommand{\thetable}{C.\arabic{table}}
+% Reset figure numbering for Appendix C: Figure C.<n>
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{C.\arabic{figure}}
+% Hyperref anchors for Appendix C
+\makeatletter
+\renewcommand{\theHtable}{C.\arabic{table}}
+\renewcommand{\theHfigure}{C.\arabic{figure}}
+\makeatother
+
+\subsubsection*{C.1 Full Enrichment Analysis Across Thresholds}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Full Enrichment Analysis Across Thresholds}
+\label{tab:c1-enrichment}
+\begin{tabular}{lrrrr}
+\toprule
+Threshold Scheme & Core (IF) OR (q) & Critical (IF) OR (q) & Operational (IF) OR (q) & Peripheral (IF) OR (q) \\
+\midrule
+3.5 / 3.5 & 0.31 ($<$0.001) & 1.82 (0.008) & 1.21 (0.412) & 2.41 ($<$0.001) \\
+4.0 / 4.0 & 0.22 ($<$0.001) & 1.94 (0.006) & 1.49 (0.076) & 2.65 ($<$0.001) \\
+4.5 / 4.5 & 0.35 (0.024) & 1.66 (0.048) & 1.12 (0.587) & 2.23 ($<$0.001) \\
+Median split & 0.28 ($<$0.001) & 1.73 (0.031) & 1.09 (0.693) & 2.56 ($<$0.001) \\
+\bottomrule
+\end{tabular}
+\label{tab:c1-enrichment-thresholds}
+\end{table}
+
+% [TABLE - See markdown file for content]
+% | Threshold Scheme | Core (IF) OR (q) | Critical (IF) OR (q) | Operational (IF) OR (q) | Peripheral (IF) OR (q) |
+% |---|---% [TABLE - See markdown file for content]
+% |---|---|---|
+% | 3.5 / 3.5 | 0.31 (<0.001) % [TABLE - See markdown file for content]
+% | 1.82 (0.008) | 1.21 (0.412) | 2.41 (<0.001) |
+% | 4.0 / 4.0 | 0.22 (<0.001) % [TABLE - See markdown file for content]
+% | 1.94 (0.006) | 1.49 (0.076) | 2.65 (<0.001) |
+% | 4.5 / 4.5 | 0.35 (0.024) % [TABLE - See markdown file for content]
+% | 1.66 (0.048) | 1.12 (0.587) | 2.23 (<0.001) |
+% | Median split | 0.28 (<0.001) | 1.73 (0.031) | 1.09 (0.693) | 2.56 (<0.001) |
+
+\subsubsection*{C.2 Worker–expert Uncertainty Gaps Across All Thresholds}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Worker–expert Uncertainty Gaps Across All Thresholds}
+\label{tab:c2-uncertainty-gaps}
+\begin{tabular}{lrrrr}
+\toprule
+Quadrant & 3.5/3.5 $\Delta$ (q) & 4.0/4.0 $\Delta$ (q) & 4.5/4.5 $\Delta$ (q) & Median $\Delta$ (q) \\
+\midrule
+Core & +0.31 (0.092) & +0.26 (0.173) & +0.29 (0.118) & +0.28 (0.144) \\
+Critical & +0.52 ($<$0.001) & +0.58 ($<$0.001) & +0.44 (0.187) & +0.46 (0.009) \\
+Operational & +0.18 (0.311) & +0.24 (0.066) & +0.21 (0.254) & +0.22 (0.098) \\
+Peripheral & +0.53 (0.002) & +0.49 ($<$0.001) & +0.47 ($<$0.001) & +0.46 ($<$0.001) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% [TABLE - See markdown file for content]
+% | Quadrant | 3.5/3.5 Δ (q) | 4.0/4.0 Δ (q) | 4.5/4.5 Δ (q) | Median Δ (q) |
+% |---|---% [TABLE - See markdown file for content]
+% |---|---|---|
+% | Core | +0.31 (0.092) % [TABLE - See markdown file for content]
+% | +0.26 (0.173) | +0.29 (0.118) | +0.28 (0.144) |
+% | Critical | +0.52 (<0.001) % [TABLE - See markdown file for content]
+% | +0.58 (<0.001) | +0.44 (0.187) | +0.46 (0.009) |
+% | Operational | +0.18 (0.311) % [TABLE - See markdown file for content]
+% | +0.24 (0.066) | +0.21 (0.254) | +0.22 (0.098) |
+% | Peripheral | +0.53 (0.002) | +0.49 (<0.001) | +0.47 (<0.001) | +0.46 (<0.001) |
+
+\subsubsection*{C.3 Work Activity Enrichment (Complete List)}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Work Activity Enrichment (Complete List)}
+\label{tab:c3-work-activity}
+\begin{tabular}{lrrrr}
+\toprule
+Work Activity & Intrap. \% & Not \% & OR & q-value \\
+\midrule
+Thinking Creatively & 27.2 & 7.2 & 4.84 & $<$0.001 \\
+Developing Objectives and Strategies & 18.5 & 5.7 & 3.77 & $<$0.001 \\
+Selling or Influencing Others & 9.9 & 3.2 & 3.33 & $<$0.001 \\
+Coordinating Work of Others & 15.2 & 5.9 & 2.86 & $<$0.001 \\
+Organizing and Planning & 29.1 & 13.8 & 2.57 & $<$0.001 \\
+Judging Qualities & 17.9 & 9.9 & 1.99 & 0.006 \\
+Documenting/Recording Information & 2.0 & 15.0 & 0.13 & $<$0.001 \\
+Processing Information & 23.2 & 42.2 & 0.43 & $<$0.001 \\
+Performing Administrative Activities & 7.3 & 17.0 & 0.45 & 0.002 \\
+Getting Information & 51.0 & 61.9 & 0.61 & 0.012 \\
+\bottomrule
+\end{tabular}
+\label{tab:c3-work-activity-enrichment}
+\end{table}
+\subsubsection*{C.4 Importance–Frequency Correlation by Task Type}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Importance–Frequency correlation (Spearman $\rho$) by task type}
+\label{tab:c4-if-correlation}
+\begin{tabular}{lrrr}
+\toprule
+Group & N & Spearman $\rho$ & p-value \\
+\midrule
+Not-Intrapreneurial & 693 & 0.496 & $1.47\times10^{-44}$ \\
+Intrapreneurial & 151 & 0.233 & 0.0040 \\
+Overall & 844 & 0.490 & $1.85\times10^{-52}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% [TABLE - See markdown file for content]
+% | Work Activity | Intrap. \% | Not \% | OR | q-value |
+% |---|---% [TABLE - See markdown file for content]
+% |---|---|---|
+% | Thinking Creatively | 27.2 % [TABLE - See markdown file for content]
+% | 7.2 | 4.84 | <0.001 |
+% | Developing Objectives and Strategies | 18.5 % [TABLE - See markdown file for content]
+% | 5.7 | 3.77 | <0.001 |
+% | Selling or Influencing Others | 9.9 % [TABLE - See markdown file for content]
+% | 3.2 | 3.33 | <0.001 |
+% | Coordinating Work of Others | 15.2 % [TABLE - See markdown file for content]
+% | 5.9 | 2.86 | <0.001 |
+% | Organizing and Planning | 29.1 % [TABLE - See markdown file for content]
+% | 13.8 | 2.57 | <0.001 |
+% | Judging Qualities | 17.9 % [TABLE - See markdown file for content]
+% | 9.9 | 1.99 | 0.006 |
+% | Documenting/Recording Information | 2.0 % [TABLE - See markdown file for content]
+% | 15.0 | 0.13 | <0.001 |
+% | Processing Information | 23.2 % [TABLE - See markdown file for content]
+% | 42.2 | 0.43 | <0.001 |
+% | Performing Administrative Activities | 7.3 % [TABLE - See markdown file for content]
+% | 17.0 | 0.45 | 0.002 |
+% | Getting Information | 51.0 | 61.9 | 0.61 | 0.012 |
+
+\subsection*{Appendix D: Scripts, Paths, and Reproducibility Notes}
+
+% Reset table numbering for Appendix D: Table D.<n>
+\setcounter{table}{0}
+\renewcommand{\thetable}{D.\arabic{table}}
+% Reset figure numbering for Appendix D: Figure D.<n>
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{D.\arabic{figure}}
+% Hyperref anchors for Appendix D
+\makeatletter
+\renewcommand{\theHtable}{D.\arabic{table}}
+\renewcommand{\theHfigure}{D.\arabic{figure}}
+\makeatother
+
+\textbf{Repository context:} The full dataset, analysis scripts, generated tables, and LaTeX sources are available \href{https://github.com/khalilkhoury93/Identifying-and-Characterizing-Intrapreneurial-Work}{\textcolor{blue}{here on GitHub}}.
+
+\subsubsection*{D.1 Key Scripts and Their Functions}
+
+% [TABLE - See markdown file for content]
+% | Script | Purpose |
+% |---|---|
+
+\begin{table}[H]
+\centering
+\small
+\caption{Key Scripts and Their Functions}
+\label{tab:d1-key-scripts}
+\begin{tabularx}{\textwidth}{l X}
+\toprule
+Script & Purpose \\
+\midrule
+\texttt{run\_intrap0\_1\_parallel\_run3.py} & Runs LLM classification and majority voting for intrapreneurial labels \\
+\texttt{p3\_q6\_2\_if\_matrix.py} & Generates Importance×Frequency (IF) quadrant analysis and task outputs \\
+\texttt{make\_fig\_q6\_2\_threshold\_robustness.py} & Produces threshold-robustness figure and CSV \\
+\texttt{p3\_q6\_4\_wa\_enrichment.py} & Computes Work Activity enrichments \\
+\texttt{p4\_intrap\_has\_profile.py} & Creates HAS band distributions \\
+\texttt{p3\_q3\_2\_intrap\_has\_profiles.py} & Detailed HAS profiles (worker vs expert) \\
+\texttt{p3\_q6\_quadrant\_uncertainty\_plot.py} & Worker–expert uncertainty gaps by quadrant \\
+\texttt{p3\_q6\_wbu\_index.py} & Computes WBU index/distribution \\
+\texttt{p3\_wbu\_compact\_by\_min\_ratings.py} & Per-user slopes and WBU summaries \\
+\texttt{wbu\_recompute\_slopes\_thresholds.py} & Recompute slopes under alt. thresholds \\
+\texttt{load\_survey.py} & ETL pipeline for survey data \\
+\texttt{build\_anchor.py} & Constructs autonomy anchor features \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsubsection*{D.2 Data File Paths}
+
+% [TABLE - See markdown file for content]
+% | Dataset | Path |
+% |---|---|
+% [TABLE - See markdown file for content]
+% | IF-ready tasks | `PLAN\_3\_FILES/outputs/tables/p3\_q6\_2\_task\_level\_data.csv` |
+% | Aggregated features | `PLAN\_3\_FILES/data/processed/features\_experts\_with\_intrap.parquet` |
+% | IF threshold robustness (table) | `Thesis\_done\_analysis/03\_Figures/Q6\_ONET\_Metadata/fig\_q6\_2\_threshold\_robustness\_table.csv` |
+% | Worker ratings | `PLAN\_3\_FILES/data/interim/ratings\_agg.parquet` |
+% (Redundant markdown table lines removed; see formal table below.)
+
+\begin{table}[H]
+\centering
+\small
+\caption{Repository Folder Structure (\href{https://github.com/khalilkhoury93/Identifying-and-Characterizing-Intrapreneurial-Work}{\textcolor{blue}{Github Repository}})}
+\label{tab:d2-data-paths}
+\begin{tabularx}{\textwidth}{l X}
+\toprule
+Folder & Description \\
+\midrule
+\texttt{config/} & YAML and configuration files used by scripts for parameters, paths, and plotting options. \\
+\texttt{DATA/} & Data inputs and exported intermediates for reproduction (CSV/XLSX). Includes O*NET raw data used in this thesis. \\
+\texttt{figures/} & Final figures referenced in the thesis PDF (PNG/SVG). Generated by scripts in \texttt{scripts/}. \\
+\texttt{Literature\_Review\_Papers\_Books/} & PDFs and books (not notes) for literature review sources used in Chapter 2. \\
+\texttt{parquet/} & Columnar processed datasets (Parquet) used by analysis/validation scripts. \\
+\texttt{prompts/} & Prompt templates and settings used for LLM-based classification runs. \\
+\texttt{scripts/} & Reproducible analysis scripts (naming pattern \texttt{p3\_*}, \texttt{make\_*}). Includes subfolders described below. \\
+\quad \texttt{scripts/etl/} & ETL helpers for loading/transforming survey and metadata (e.g., \texttt{load\_survey.py}, \texttt{build\_anchor.py}). \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsubsection*{D.3 Computational Environment}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Computational Environment}
+\label{tab:d3-environment}
+\begin{tabularx}{\textwidth}{l X}
+\toprule
+Component & Value \\
+\midrule
+Operating System & Windows 11 \\
+Python Version & 3.10.11 \\
+\texttt{pandas} & 2.0.3 \\
+\texttt{numpy} & 1.24.3 \\
+\texttt{scipy} & 1.11.1 \\
+\texttt{scikit-learn} & 1.3.0 \\
+\texttt{matplotlib} & 3.7.2 \\
+\texttt{seaborn} & 0.12.2 \\
+Bootstrap iterations & 2000 (seed=42) \\
+Data joins primary key & \texttt{task\_id} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsubsection*{D.4 Random Seeds and Reproducibility}
+
+\begin{itemize}
+\item Bootstrap iterations: 2000 with seed=42
+\item Data joins: Primary key is \texttt{task\_id}
+\end{itemize}
+
+\subsection*{Appendix E: Data Dictionary}
+
+% For Appendix E, show only custom captions like "E.x: ..." without the automatic "Table" label/number.
+\setcounter{table}{0}
+\renewcommand{\thetable}{E.\arabic{table}}
+\renewcommand{\tablename}{}
+% Reset figure numbering for Appendix E just in case
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{E.\arabic{figure}}
+% Hyperref anchors for Appendix E
+\makeatletter
+\renewcommand{\theHtable}{E.\arabic{table}}
+\renewcommand{\theHfigure}{E.\arabic{figure}}
+\makeatother
+
+\subsubsection*{E.1 Core Variables}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Core Variables}
+\begin{tabular}{llll}
+\toprule
+Variable & Type & Range & Description \\
+\midrule
+\texttt{task\_id} & Integer & - & Unique task identifier \\
+\texttt{intrapreneurial} & Binary & 0/1 & Classification outcome \\
+\texttt{importance\_onet} & Float & 1-5 & O*NET importance rating \\
+\texttt{frequency\_onet} & Float & 1-7 & O*NET frequency rating \\
+\texttt{quadrant} & Categorical & Core/Critical/Operational/Peripheral & IF quadrant assignment \\
+\bottomrule
+\end{tabular}
+\label{tab:e1-core-vars}
+\end{table}
+
+% [TABLE - See markdown file for content]
+% | Variable | Type | Range | Description |
+% |---|---% [TABLE - See markdown file for content]
+% |---|---|
+% | `task\_id` | Integer % [TABLE - See markdown file for content]
+% | - | Unique task identifier |
+% | `intrapreneurial` | Binary % [TABLE - See markdown file for content]
+% | 0/1 | Classification outcome |
+% | `importance\_onet` | Float % [TABLE - See markdown file for content]
+% | 1-5 | O*NET importance rating |
+% | `frequency\_onet` | Float % [TABLE - See markdown file for content]
+% | 1-7 | O*NET frequency rating |
+% | `quadrant` | Categorical | Core/Critical/Operational/Peripheral | IF quadrant assignment (not O*NET Core/Supplemental) |
+
+\subsubsection*{E.2 Human Agency Scale Variables}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Human Agency Scale Variables}
+\begin{tabular}{llll}
+\toprule
+Variable & Type & Range & Description \\
+\midrule
+\texttt{has\_worker\_mean} & Float & 1-5 & Average worker HAS rating \\
+\texttt{has\_expert\_mean} & Float & 1-5 & Average expert HAS rating \\
+\texttt{has\_worker\_band} & Categorical & H1-H5 & Modal worker HAS band (task-level mode; ties $\to$ lower) \\
+\texttt{has\_expert\_band} & Categorical & H1-H5 & Modal expert HAS band (round each rating to 1--5, then task-level mode; ties $\to$ lower) \\
+\texttt{has\_alignment} & Float & -1 to 1 & Worker-expert correlation \\
+\bottomrule
+\end{tabular}
+\label{tab:e2-has-vars}
+\end{table}
+
+% [TABLE - See markdown file for content]
+% | Variable | Type | Range | Description |
+% |---|---% [TABLE - See markdown file for content]
+% |---|---|
+% | `has\_worker\_mean` | Float % [TABLE - See markdown file for content]
+% | 1-5 | Average worker HAS rating |
+% | `has\_expert\_mean` | Float % [TABLE - See markdown file for content]
+% | 1-5 | Average expert HAS rating |
+% | `has\_worker\_band` | Categorical % [TABLE - See markdown file for content]
+% | H1-H5 | Rounded worker HAS band |
+% | `has\_expert\_band` | Categorical % [TABLE - See markdown file for content]
+% | H1-H5 | Rounded expert HAS band |
+% | `has\_alignment` | Float | -1 to 1 | Worker-expert correlation |
+
+\subsubsection*{E.3 Uncertainty and WBU Variables}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Uncertainty and WBU Variables}
+\begin{tabular}{llll}
+\toprule
+Variable & Type & Range & Description \\
+\midrule
+\texttt{uncertainty\_worker} & Float & 1-5 & Worker perceived uncertainty \\
+\texttt{uncertainty\_expert} & Float & 1-5 & Expert perceived uncertainty \\
+\texttt{uncertainty\_delta} & Float & -4 to 4 & Worker minus expert uncertainty \\
+\texttt{wbu\_index} & Float & -1 to 1 & Willingness to bear uncertainty \\
+\texttt{wbu\_weight} & Float & 0-1 & Uncertainty weight component \\
+\bottomrule
+\end{tabular}
+\label{tab:e3-uncertainty-vars}
+\end{table}
+
+% [TABLE - See markdown file for content]
+% | Variable | Type | Range | Description |
+% |---|---% [TABLE - See markdown file for content]
+% |---|---|
+% | `uncertainty\_worker` | Float % [TABLE - See markdown file for content]
+% | 1-5 | Worker perceived uncertainty |
+% | `uncertainty\_expert` | Float % [TABLE - See markdown file for content]
+% | 1-5 | Expert perceived uncertainty |
+% | `uncertainty\_delta` | Float % [TABLE - See markdown file for content]
+% | -4 to 4 | Worker minus expert uncertainty |
+% | `wbu\_index` | Float % [TABLE - See markdown file for content]
+% | -1 to 1 | Willingness to bear uncertainty |
+% | `wbu\_weight` | Float | 0-1 | Uncertainty weight component |
+
+\paragraph{E.3.1 Per-user slopes under minimum rating thresholds}
+
+We summarize user-level behavior by fitting, for each user, simple linear slopes of human\_agency and automation\_desire on involved\_uncertainty over intrapreneurial tasks, then reporting the share of users with positive HA slopes and non\-positive AD slopes. Results are presented for two minimum per-user rating thresholds.
+
+% Renumber figures in this subsection as E.3.1, E.3.2
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{E.3.\arabic{figure}}
+% Hyperref anchors for subsection E.3.* figures
+\makeatletter
+\renewcommand{\theHfigure}{E.3.\arabic{figure}}
+\makeatother
+
+\begin{figure}[H]
+\centering
+\pandocbounded{\includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{../../PLAN_3_FILES/outputs/figures/p3_wbu_compact_min3.png}}
+\caption{Per-user slopes and WBU distribution (\,$\geq$3 ratings per user).}
+\label{fig:e3-wbu-min3}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\pandocbounded{\includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{../../PLAN_3_FILES/outputs/figures/p3_wbu_compact_min4.png}}
+\caption{Per-user slopes and WBU distribution (\,$\geq$4 ratings per user).}
+\label{fig:e3-wbu-min4}
+\end{figure}
+
+% Restore default Appendix E figure numbering (E.1, E.2, ...)
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{E.\arabic{figure}}
+\makeatletter
+\renewcommand{\theHfigure}{E.\arabic{figure}}
+\makeatother
+
+\subsubsection*{E.4 Autonomy Anchor Variables}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Autonomy Anchor Variables}
+\begin{tabular}{llll}
+\toprule
+Variable & Type & Range & Description \\
+\midrule
+\texttt{E\_onet\_task} & Float & 0-1 & Task-level autonomy score \\
+\texttt{autonomy\_quartile} & Categorical & Q1-Q4 & Autonomy distribution quartile \\
+\texttt{wa\_creative} & Binary & 0/1 & Contains creative Work Activities \\
+\texttt{wa\_strategic} & Binary & 0/1 & Contains strategic Work Activities \\
+\bottomrule
+\end{tabular}
+\label{tab:e4-autonomy-vars}
+\end{table}
+
+\textit{Note: The autonomy anchor was used solely for prompt classification calibration and was not used in the main analysis.}
+
+% [TABLE - See markdown file for content]
+% | Variable | Type | Range | Description |
+% |---|---% [TABLE - See markdown file for content]
+% |---|---|
+% | `E\_onet\_task` | Float % [TABLE - See markdown file for content]
+% | 0-1 | Task-level autonomy score |
+% | `autonomy\_quartile` | Categorical % [TABLE - See markdown file for content]
+% | Q1-Q4 | Autonomy distribution quartile |
+% | `wa\_creative` | Binary % [TABLE - See markdown file for content]
+% | 0/1 | Contains creative Work Activities |
+% | `wa\_strategic` | Binary | 0/1 | Contains strategic Work Activities |
+
+\subsubsection*{E.5 Classification Metadata}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Classification Metadata}
+\begin{tabular}{lll}
+\toprule
+Variable & Type & Description \\
+\midrule
+\texttt{unanimous} & Binary & All three runs agreed \\
+\texttt{confidence} & Categorical & High/Medium/Low \\
+\texttt{matched\_criteria} & List & Criteria I-VI matched \\
+\texttt{justification} & Text & Classification rationale \\
+\texttt{n\_raters\_worker} & Integer & Number of worker raters \\
+\texttt{n\_raters\_expert} & Integer & Number of expert raters \\
+\bottomrule
+\end{tabular}
+\label{tab:e5-classification-meta}
+\end{table}
+
+% [TABLE - See markdown file for content]
+% | Variable | Type | Description |
+% |---|---% [TABLE - See markdown file for content]
+% |---|
+% | `unanimous` | Binary % [TABLE - See markdown file for content]
+% | All three runs agreed |
+% | `confidence` | Categorical | High/Medium/Low |
+
+\subsubsection*{E.6 Excluded Tasks with Incomplete Worker Assessments}
+
+% Number tables in this section as E.6.1, E.6.2, ...
+\setcounter{table}{0}
+\renewcommand{\thetable}{E.6.\arabic{table}}
+
+Two tasks were excluded from the HAS-complete subset (N=839) due to missing worker Human Agency Scale ratings. These tasks retained expert ratings and were included in other analyses where worker HAS was not required.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Tasks excluded from HAS-complete subset}
+\begin{tabular}{llll}
+\toprule
+Task ID & Quadrant & Intrapreneurial & Reason for Exclusion \\
+\midrule
+21448 & Core & No & Incomplete worker HAS ratings \\
+1252 & Operational & No & Incomplete worker HAS ratings \\
+\bottomrule
+\end{tabular}
+\label{tab:excluded-tasks}
+\end{table}
+
+\textit{Task texts omitted for brevity; see dataset for full descriptions.}
+
+
+% [TABLE - See markdown file for content]
+% | Task ID | Quadrant | Intrapreneurial | Reason for Exclusion |
+% |---|---% [TABLE - See markdown file for content]
+% |---|---|
+% | 21448 | Core | No | Incomplete worker HAS ratings |
+% | 1252 | Operational | No | Incomplete worker HAS ratings |
+
+% (duplicate block removed)
+
+% Full intrapreneurial task lists by quadrant (Appendix E.7)
+% Number tables in this section as E.7.1, E.7.2, ...
+\setcounter{table}{0}
+\renewcommand{\thetable}{E.7.\arabic{table}}
+\makeatletter\renewcommand{\theHtable}{E.7.\arabic{table}}\makeatother
+\input{../../../appendix_E7_quadrant_task_lists.tex}
+
+\paragraph{Additional downstream exclusions for classification joins}
+Two additional tasks are excluded from coverage‑filtered analyses that split by intrapreneurial status because their classification labels are missing in the merged source used for downstream IF+ratings joins (worker HAS is available). These tasks remain in IF‑only summaries but are omitted where intrapreneurial/non‑intrapreneurial splits are required.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Tasks excluded from coverage‑filtered joins due to missing classification labels}
+\begin{tabular}{lll}
+\toprule
+Task ID & Occupation & Reason for Exclusion \\
+\midrule
+2816 & Desktop Publishers & Missing classification label in merged source \\
+2489 & Bookkeeping, Accounting, and Auditing Clerks & Missing classification label in merged source \\
+\bottomrule
+\end{tabular}
+\label{tab:excluded-missing-classification}
+\end{table}
+
+\subsection*{Appendix F: Extended Analysis of Intrapreneurial Task Structure}
+\phantomsection\label{app:F}
+
+% Restore normal table labels and set Appendix F numbering: Table F.<n>
+\setcounter{table}{0}
+\renewcommand{\tablename}{Table}
+\renewcommand{\thetable}{F.\arabic{table}}
+% Reset figure numbering for Appendix F: Figure F.<n>
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{F.\arabic{figure}}
+% Hyperref anchors for Appendix F
+\makeatletter
+\renewcommand{\theHtable}{F.\arabic{table}}
+\renewcommand{\theHfigure}{F.\arabic{figure}}
+\makeatother
+
+\subsubsection*{F.1 Overview}
+
+This appendix provides detailed statistical results and visualizations for the secondary categorization of intrapreneurial tasks described in Section 3.9 and reported in Section 4.7.3. All analyses are based on the 151 intrapreneurial tasks (after excluding 1 ambiguous and 1 task with missing secondary coding data from the original 153).
+
+\subsubsection*{F.1.1 The Ambiguous Task}
+
+One task (0.1\% of classification scope) achieved no consensus across three independent runs and was classified as ambiguous. This task is excluded from binary intrapreneurial/non-intrapreneurial analyses but documented here for transparency.
+
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{F.1: Ambiguous task detail}
+\begin{tabular}{llll}
+\toprule
+Task ID & Occupation & Task Text & Voting Results \\
+\midrule
+14694 & Web Developers & ``Design, build, or maintain Web sites...'' & Run 1: Ambiguous, \\
+ &  & (Core: I=4.42, F=5.00) & Run 2: Not Intrapreneurial, \\
+ &  &  & Run 3: Ambiguous \\
+\bottomrule
+\end{tabular}
+\label{tab:ambiguous-task}
+\end{table}
+
+\textit{Reason for Ambiguity: Context-dependent task that could be routine maintenance (non-intrapreneurial) or innovative platform creation (intrapreneurial). Without scope clarification, classification remains ambiguous.}
+
+\textit{Suggested resolution: Future O*NET revisions could distinguish ``maintaining existing sites'' from ``designing new sites/features,'' for example by using behavioral indicators for novelty and strategic value.}
+
+\textit{Notes: The ambiguous classification indicates that the task description falls in a boundary region where theoretical criteria cannot be confidently applied without additional context. Future research could examine whether ambiguous tasks cluster in particular occupations or Work Activities.}
+
+% [TABLE - See markdown file for content]
+% | Task ID | Occupation | Task Text | Voting Results |
+% |---|---% [TABLE - See markdown file for content]
+% |---|---|
+% | 14694 | Web Developers | "Design, build, or maintain Web sites, using authoring or scripting languages, content creation tools, management tools, and digital media." (Core: I=4.42, F=5.00) | Run 1: Ambiguous, Run 2: Not Intrapreneurial, Run 3: Ambiguous |
+
+\textbf{Reason for Ambiguity:} Context-dependent task that could be routine maintenance (non-intrapreneurial) or innovative platform creation (intrapreneurial). Without scope clarification, classification remains ambiguous.
+
+\textbf{Suggested resolution:} Future O*NET revisions could distinguish "maintaining existing sites" from "designing new sites/features," for example by using behavioral indicators for novelty and strategic value.
+
+Notes: The ambiguous classification indicates that the task description falls in a boundary region where theoretical criteria cannot be confidently applied without additional context. Future research could examine whether ambiguous tasks cluster in particular occupations or Work Activities.
+
+% Illustrative examples of managerial subtypes (V.A/V.B/V.C)
+\subsubsection*{F.2 Illustrative examples of managerial subtypes (V.A/V.B/V.C)}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Illustrative tasks matched to managerial subtypes V.A/V.B/V.C (three examples each)}
+\label{tab:f-managerial-examples}
+\begin{tabularx}{\textwidth}{l l l X}
+\toprule
+Subtype & Task ID & Occupation & Abridged task text \\
+\midrule
+V.A & 970 & Computer and Information Systems Managers & Stay abreast of advances in technology. \\
+V.A & 22537 & Producers and Directors & Review film daily to check on work in progress and to plan for future filming. \\
+V.A & 15460 & Biofuels Production Managers & Approve proposals for new/changed processes or equipment in biofuels production. \\
+\midrule
+V.B & 979 & Computer and Information Systems Managers & Evaluate data processing proposals to assess project feasibility and requirements. \\
+V.B & 15457 & Biofuels Production Managers & Prepare and manage biofuels plant or unit budgets. \\
+V.B & 22532 & Producers and Directors & Perform management activities, such as budgeting, scheduling, planning, and marketing. \\
+\midrule
+V.C & 3580 & Petroleum Engineers & Monitor production rates, and plan rework processes to improve production. \\
+V.C & 17249 & Radiologists & Develop or monitor procedures to ensure adequate quality control of images. \\
+V.C & 3470 & Computer Systems Analysts & Expand or modify system to serve new purposes or improve work flow. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsubsection*{F.3 Category Association Analysis}
+
+Figure F.1 presents the top positive and negative pairwise associations among the seven categories (I–VI, V.A/V.B/V.C). Associations were quantified using Fisher's exact test with odds ratios and FDR-corrected q-values. Only associations with q < 0.05 are shown.
+
+\textbf{Key findings:}
+- \textbf{Strongest positive associations:}
+  - Discovery (I) ↔ Innovation (IV): OR = 4.51, q < 0.001
+  - Execution (III) ↔ Championing (V.C): OR = 4.23, q < 0.001
+  - Planning, Preparation, and Advocacy (II) ↔ Resource Provision (V.B): OR = 3.87, q < 0.001
+
+- \textbf{Strongest negative associations:}
+  - Discovery (I) ↔ Execution (III): OR = 0.48, q = 0.021
+  - Innovation (IV) ↔ Resource Provision (V.B): OR = 0.52, q = 0.033
+
+
+\begin{figure}[H]
+\centering
+\pandocbounded{\includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{../../03_Figures/Q10_Intrapreneurship_Typology/Figure_Q10_1_associations_bar.png}}
+\caption{Top Category Associations}
+\label{fig:f1-category-associations}
+\end{figure}
+
+Bar chart showing the most significant positive (green) and negative (red) pairwise associations among the seven intrapreneurship categories (I–VI, V.A/V.B/V.C). Only associations with q<0.05 after FDR correction are displayed. Error bars represent 95\% confidence intervals on log-odds ratios. Strongest positive associations: Discovery↔Innovation (OR=4.51), Execution↔Championing (OR=4.23), Planning↔Resource Provision (OR=3.87).
+
+\subsubsection*{F.4 Category Co-occurrence Matrix}
+
+Figure F.2 displays the full co-occurrence matrix showing observed versus expected frequencies for all category pairs. Cell color intensity indicates odds ratio magnitude; asterisks denote statistical significance after FDR correction.
+
+
+\begin{figure}[H]
+\centering
+\pandocbounded{\includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{../../03_Figures/Q10_Intrapreneurship_Typology/Figure_Q10_1_cooccurrence_heatmap.png}}
+\caption{Category Co-Occurrence Matrix}
+\label{fig:f2-cooccurrence-matrix}
+\end{figure}
+
+Full pairwise co-occurrence matrix for the seven categories (I–VI, V.A/V.B/V.C) showing observed versus expected frequencies. Color scale shows odds ratios: blue indicates positive association (categories co-occur more than expected by chance), red indicates negative association (categories co-occur less than expected). Cell intensity reflects effect magnitude. Asterisks denote statistical significance after FDR correction: \textit{ q<0.05, \textbf{ q<0.01, }} q<0.001.
+
+
+\subsubsection*{F.5 Phenotype Analysis Summary}
+
+Figure F.3 provides a dashboard-style summary of phenotype characteristics including prevalence, mean category counts, and typical category combinations.
+
+
+\begin{figure}[H]
+\centering
+\pandocbounded{\includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{../../03_Figures/Q10_Intrapreneurship_Typology/Figure_Q10_3_phenotype_summary.png}}
+\caption{Phenotype Analysis Summary Dashboard}
+\label{fig:f3-phenotype-summary}
+\end{figure}
+
+Multi-panel dashboard summarizing phenotype characteristics: (A) Phenotype prevalence with 95\% Wilson confidence intervals showing MGR and DISC as most common; (B) Mean number of categories per phenotype indicating complexity; (C) Most common category combinations within each phenotype revealing typical compositions; (D) Phenotype distribution across IF quadrants demonstrating that managerial and discovery phenotypes concentrate in Critical and Peripheral positions.
+
+
+\subsubsection*{F.6 Phenotype Overlap Matrix}
+
+Figure F.4 shows which phenotypes frequently co-occur in the same task. Because phenotypes are non-mutually exclusive, understanding their overlap patterns reveals how different aspects of intrapreneurial work combine in practice.
+
+
+\begin{figure}[H]
+\centering
+\pandocbounded{\includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{../../03_Figures/Q10_Intrapreneurship_Typology/Figure_Q10_3_phenotype_overlap.png}}
+\caption{Phenotype Overlap Matrix}
+\label{fig:f4-phenotype-overlap}
+\end{figure}
+
+Heatmap showing the proportion of tasks classified into each phenotype pair, revealing how different forms of intrapreneurial work combine in practice. Diagonal cells show overall phenotype prevalence; off-diagonal cells show joint occurrence conditional on row phenotype. For example, 67\% of INNOV tasks are also MGR tasks, but only 34\% of MGR tasks are INNOV, indicating asymmetric overlap patterns. High values off-diagonal indicate phenotypes that frequently co-occur.
+
+\subsubsection*{F.7 Technical Notes}
+
+\textbf{Phenotype classification:} Truth tables for deriving phenotypes from categories are documented in the Q10 analysis code repository (`p3\_q10\_3\_phenotype\_rules\_truth\_table.csv`).
+
+\textbf{Sample size considerations:} With 151 intrapreneurial tasks and some categories appearing in <10\% of tasks (e.g., V.A at 8.6\%), statistical power for detecting small associations is limited.
+
+\subsection*{Appendix G: AI Usage History}
+\phantomsection\label{app:G}
+\begin{spacing}{1.2}
+
+This appendix documents external AI interactions used during drafting, analysis, coding, researching, summarizing, and fact-checking. The following shared transcripts provide evidence of AI-assisted work:
+
+\begin{itemize}
+  \item \href{https://chatgpt.com/share/6910bc8f-4ae0-800f-a9b4-86232ba1935d}{\textcolor{blue}{https://chatgpt.com/share/6910bc8f-4ae0-800f-a9b4-86232ba1935d}}
+  \item \href{https://chatgpt.com/share/6910bcbc-b39c-800f-b8e0-0c3bddf29f89}{\textcolor{blue}{https://chatgpt.com/share/6910bcbc-b39c-800f-b8e0-0c3bddf29f89}}
+  \item \href{https://chatgpt.com/share/6910bd03-ae44-800f-bc37-038b8c470d06}{\textcolor{blue}{https://chatgpt.com/share/6910bd03-ae44-800f-bc37-038b8c470d06}}
+  \item \href{https://chatgpt.com/share/6910bd23-0fcc-800f-9993-d9fa8ae2fc01}{\textcolor{blue}{https://chatgpt.com/share/6910bd23-0fcc-800f-9993-d9fa8ae2fc01}}
+  \item \href{https://chatgpt.com/share/6910bd4a-4b18-800f-b746-65db05d1ef7a}{\textcolor{blue}{https://chatgpt.com/share/6910bd4a-4b18-800f-b746-65db05d1ef7a}}
+  \item \href{https://chatgpt.com/share/6910bd7e-1e38-800f-bb95-51e8cc5bee55}{\textcolor{blue}{https://chatgpt.com/share/6910bd7e-1e38-800f-bb95-51e8cc5bee55}}
+  \item \href{https://chatgpt.com/share/6910bd8a-10ac-800f-9d6a-dbb97cde8c69}{\textcolor{blue}{https://chatgpt.com/share/6910bd8a-10ac-800f-9d6a-dbb97cde8c69}}
+  \item \href{https://chatgpt.com/share/6910bdc1-e4b8-800f-9315-a4bbc5d93eec}{\textcolor{blue}{https://chatgpt.com/share/6910bdc1-e4b8-800f-9315-a4bbc5d93eec}}
+  \item \href{https://chatgpt.com/share/6910be18-9810-800f-937a-edf6775624bf}{\textcolor{blue}{https://chatgpt.com/share/6910be18-9810-800f-937a-edf6775624bf}}
+  \item \href{https://chatgpt.com/share/68fde58e-aa00-800f-92f6-aa2c6f012aba}{\textcolor{blue}{https://chatgpt.com/share/68fde58e-aa00-800f-92f6-aa2c6f012aba}}
+  \item \href{https://chatgpt.com/share/6910c0f0-b720-800f-9a42-792114ddf483}{\textcolor{blue}{https://chatgpt.com/share/6910c0f0-b720-800f-9a42-792114ddf483}}
+  \item \href{https://chatgpt.com/share/6910c161-0754-800f-beb2-766a82392a36}{\textcolor{blue}{https://chatgpt.com/share/6910c161-0754-800f-beb2-766a82392a36}}
+  \item \href{https://chatgpt.com/share/6910c1f9-a7c0-800f-a029-de04ce81e123}{\textcolor{blue}{https://chatgpt.com/share/6910c1f9-a7c0-800f-a029-de04ce81e123}}
+  \item \href{https://chatgpt.com/share/6910c23c-cf94-800f-9b2a-bc670ed4ba9e}{\textcolor{blue}{https://chatgpt.com/share/6910c23c-cf94-800f-9b2a-bc670ed4ba9e}}
+  \item \href{https://platform.edisonscientific.com/trajectories/481fbfa1-0502-4303-aaef-725a5f1315f5}{\textcolor{blue}{https://platform.edisonscientific.com/trajectories/481fbfa1-0502-4303-aaef-725a5f1315f5}}
+  \item \href{https://platform.edisonscientific.com/trajectories/f7a5c682-a0ac-4a5d-a479-c9e6e85a5b94}{\textcolor{blue}{https://platform.edisonscientific.com/trajectories/f7a5c682-a0ac-4a5d-a479-c9e6e85a5b94}}
+  \item \href{https://platform.edisonscientific.com/trajectories/6058a5eb-e99c-4c50-9c55-f85ab1c35370}{\textcolor{blue}{https://platform.edisonscientific.com/trajectories/6058a5eb-e99c-4c50-9c55-f85ab1c35370}}
+  \item \href{https://platform.edisonscientific.com/trajectories/062f3570-4978-4863-a53b-6a74a4425aec}{\textcolor{blue}{https://platform.edisonscientific.com/trajectories/062f3570-4978-4863-a53b-6a74a4425aec}}
+  \item \href{https://platform.edisonscientific.com/trajectories/9370a537-5fef-44a8-86c4-678fcdaf185c}{\textcolor{blue}{https://platform.edisonscientific.com/trajectories/9370a537-5fef-44a8-86c4-678fcdaf185c}}
+  \item \href{https://platform.edisonscientific.com/trajectories/d31a983f-0de1-4fd5-bb63-c07f3e786e90}{\textcolor{blue}{https://platform.edisonscientific.com/trajectories/d31a983f-0de1-4fd5-bb63-c07f3e786e90}}
+\end{itemize}
+\end{spacing}
+

@@ -1,0 +1,164 @@
+# Intrapreneurial Tasks by IF Quadrant
+
+Source: consensus labels (intrap0_1_voting_analysis.csv) joined with IF quadrants (p3_q6_2_task_level_data.csv).
+
+## Core (n=34)
+- 49: Develop and maintain computerized record management systems to store and process data, such as personnel activities and information, and to produce reports.
+- 299: Create designs, concepts, and sample layouts, based on knowledge of layout principles and esthetic design concepts.
+- 741: Plan, describe, arrange, and sell itinerary tour packages and promotional travel incentives offered by various travel carriers.
+- 969: Assign and review the work of systems analysts, programmers, and other computer-related workers.
+- 1339: Formulate mathematical models or other methods of computer analysis to develop, evaluate, or modify design, according to customer engineering requirements.
+- 1782: Develop story or content ideas, considering reader or audience appeal.
+- 3580: Monitor production rates, and plan rework processes to improve production.
+- 4623: Adjust sales scripts to better target the needs and interests of specific individuals.
+- 5314: Develop plans to safeguard computer files against accidental or unauthorized modification, destruction, or disclosure and to meet emergency data processing needs.
+- 7371: Develop mathematical or statistical models of phenomena to be used for analysis or for computational simulation.
+- 8870: Evaluate needs for procurement of funds and investment of surpluses and make appropriate recommendations.
+- 11261: Compute customer's installation or production costs and estimate savings from new services, products, or equipment.
+- 12904: Analyze financial information obtained from clients to determine strategies for meeting clients' financial objectives.
+- 14623: Analyze problems to develop solutions involving computer hardware and software.
+- 15680: Select transportation routes to maximize economy by combining shipments or consolidating warehousing and distribution.
+- 16199: Balance and adjust gameplay experiences to ensure the critical and commercial success of the product.
+- 16201: Solicit, obtain, and integrate feedback from design and technical staff into original game design.
+- 16208: Devise missions, challenges, or puzzles to be encountered in game play.
+- 16217: Create core game features, including storylines, role-play mechanics, and character biographies for a new video game or game franchise.
+- 16814: Compile and analyze molecular or cellular experimental data and adjust experimental designs as necessary.
+- 17249: Develop or monitor procedures to ensure adequate quality control of images.
+- 18088: Design, develop, select, test, implement, and evaluate new or modified informatics solutions, data structures, and decision-support mechanisms to support patients, health care professionals, and their information management and human-computer and human-technology interactions within health care contexts.
+- 18092: Use informatics science to design or implement health information technology applications for resolution of clinical or health care administrative problems.
+- 18094: Analyze and interpret patient, nursing, or information systems data to improve nursing services.
+- 18289: Create, layer, and analyze maps showing precision agricultural data, such as crop yields, soil characteristics, input applications, terrain, drainage patterns, or field management history.
+- 18911: Develop or implement fundraising activities, such as annual giving campaigns or direct mail programs.
+- 18926: Conduct research to identify the goals, net worth, charitable donation history, or other data related to potential donors, potential investors, or general donor markets.
+- 20321: Create content strategies for digital media.
+- 20854: Identify and recommend energy savings strategies to achieve more energy-efficient operation.
+- 21519: Analyze business operations, trends, costs, revenues, financial commitments, and obligations to project future revenues and expenses or to provide advice.
+- 21552: Collect and analyze relevant data to identify real estate market trends.
+- 21919: Coordinate structural, electrical, and mechanical designs and determine a method of presentation to graphically represent building plans.
+- 22519: Study and research scripts to determine how they should be directed.
+- 23208: Track and analyze factors that affect price movement, such as trade policies, weather conditions, political developments, or supply and demand changes.
+
+## Critical (n=35)
+- 55: Maintain awareness of advances in medicine, computerized diagnostic and treatment equipment, data processing technology, government regulations, health insurance changes, and financing options.
+- 102: Develop alternative training methods if expected improvements are not seen.
+- 136: Integrate engineering elements into unified architectural designs.
+- 994: Analyze statistical data and reports to identify and determine causes of personnel problems and develop recommendations for improvement of organization's personnel policies and practices.
+- 1026: Analyze market and delivery systems to assess present and future material availability.
+- 1769: Study the objectives, promotional policies, or needs of organizations to develop public relations strategies that will influence public opinion or promote ideas, products, or services.
+- 3405: Compile and analyze accounting records and other data to determine the financial resources required to implement a program.
+- 7277: Analyze data gathered and develop solutions or alternative methods of proceeding.
+- 7282: Document findings of study and prepare recommendations for implementation of new systems, procedures, or organizational changes.
+- 7285: Plan study of work problems and procedures, such as organizational change, communications, information flow, integrated production methods, inventory control, or cost analysis.
+- 8865: Coordinate and direct the financial planning, budgeting, procurement, or investment activities of all or part of an organization.
+- 8867: Analyze the financial details of past, present, and expected operations to identify development opportunities and areas where improvement is needed.
+- 8961: Design research projects that apply valid scientific techniques, and use information obtained from baselines or historical data to structure uncompromised and efficient analyses.
+- 12963: Design and create special programs for tasks such as statistical analysis and data entry and cleaning.
+- 14649: Develop or specify standards, methods, or procedures to determine product quality or release readiness.
+- 15696: Analyze inventories to determine how to increase inventory turns, reduce waste, or optimize customer service.
+- 15700: Develop procedures for coordination of supply chain management with other functional areas, such as sales, marketing, finance, production, or quality assurance.
+- 15893: Recommend improvements to existing or planned logistics processes.
+- 15968: Review and revise sustainability proposals or policies.
+- 15979: Assess or propose sustainability initiatives, considering factors such as cost effectiveness, technical feasibility, and acceptance.
+- 16182: Participate in the development or implementation of online marketing strategy.
+- 16211: Create gameplay prototypes for presentation to creative and technical staff and management.
+- 16786: Develop new software applications or customize existing applications to meet specific scientific project needs.
+- 16790: Create novel computational approaches and analytical tools as required by research goals.
+- 16809: Evaluate new technologies to enhance or complement current research.
+- 16943: Prepare reports or recommendations on transportation planning.
+- 16952: Recommend transportation system improvements or projects, based on economic, population, land-use, or traffic projections.
+- 17231: Participate in quality improvement activities including discussions of areas where risk of error is high.
+- 18090: Translate nursing practice information between nurses and systems engineers, analysts, or designers, using object-oriented models or other techniques.
+- 18093: Develop, implement, or evaluate health information technology applications, tools, processes, or structures to assist nurses with data management.
+- 18912: Develop strategies to encourage new or increased contributions.
+- 19559: Evaluate modes of training delivery, such as in-person or virtual, to optimize training effectiveness, training costs, or environmental impacts.
+- 20319: Combine secondary data sources with keyword research to more accurately profile and satisfy user intent.
+- 20474: Design, plan, organize, or direct orientation and training programs for employees or customers.
+- 20942: Determine appropriate equipment and staffing levels to load, unload, move, or store materials.
+
+## Operational (n=30)
+- 970: Stay abreast of advances in technology.
+- 1153: Study sales records and inventory levels of current stock to develop strategic purchasing programs that facilitate employee access to supplies.
+- 1279: Assign, coordinate, and review work and activities of programming personnel.
+- 2591: Recommend improvements in products, packaging, shipping, service, or billing methods and procedures to prevent future problems.
+- 3474: Analyze information processing or computation needs and plan and design computer systems, using techniques such as structured analysis, data modeling, and information engineering.
+- 3482: Use the computer in the analysis and solution of business problems, such as development of integrated production and inventory control and cost analysis systems.
+- 3484: Specify inputs accessed by the system and plan the distribution and use of the results.
+- 3977: Analyze developments in specific field to determine need for revisions in previously published materials and development of new material.
+- 7368: Develop computational methods for solving problems that occur in areas of science and engineering or that come from applications in business or industry.
+- 14626: Apply theoretical expertise and innovation to create or apply new technology, such as adapting principles for applying computers to new uses.
+- 14633: Design computers and the software that runs them.
+- 14713: Respond to user email inquiries, or set up automated systems to send responses.
+- 15229: Research new software or design concepts.
+- 15457: Prepare and manage biofuels plant or unit budgets.
+- 15975: Create or maintain plans or other documents related to sustainability projects.
+- 15978: Collect information about waste stream management or green building practices to inform decision makers.
+- 16136: Identify or monitor current and potential customers, using business intelligence tools.
+- 16167: Assign duties, responsibilities, and spans of authority to project personnel.
+- 18095: Analyze computer and information technologies to determine applicability to nursing practice, education, administration, and research.
+- 19011: Research hardware or software products to meet technical networking or security needs.
+- 20188: Monitor financial market trends to ensure that client plans are responsive.
+- 20242: Research current trends and new technology, such as printing production techniques, computer software, and design trends.
+- 20327: Improve search-related activities through ongoing analysis, experimentation, or optimization tests, using A/B or multivariate methods.
+- 20491: Plan and design transportation or hydraulic systems or structures, using computer-assisted design or drawing tools.
+- 22532: Perform management activities, such as budgeting, scheduling, planning, and marketing.
+- 22533: Compose and edit scripts or provide screenwriters with story outlines from which scripts can be written.
+- 22537: Review film daily to check on work in progress and to plan for future filming.
+- 22648: Develop ideas or material for columns or commentaries by analyzing and interpreting news, current issues, or personal experiences.
+- 22658: Conduct research and interviews to determine which of a product's selling features should be promoted.
+- 22660: Review advertising trends, consumer surveys, and other data regarding marketing of goods and services to determine the best way to promote products.
+
+## Peripheral (n=54)
+- 61: Review and analyze facility activities and data to aid planning and cash and risk management and to improve service utilization.
+- 106: Devise programs to develop executive potential among employees in lower-level positions.
+- 151: Estimate quantities and cost of materials, equipment, or labor to determine project feasibility.
+- 971: Develop computer information resources, providing for data security and control, strategic computing, and disaster recovery.
+- 979: Evaluate data processing proposals to assess project feasibility and requirements.
+- 1292: Prepare evaluations of software or hardware, and recommend improvements or upgrades.
+- 1319: Plan, coordinate, and implement network security measures to protect data, software, and hardware.
+- 1323: Recommend changes to improve systems and network configurations, and determine hardware or software requirements related to such changes.
+- 1420: Conduct research that tests or analyzes the feasibility, design, operation, or performance of equipment, components, or systems.
+- 3234: Read trade journals and professional literature to stay informed on trends, innovations, and changes that affect media planning.
+- 3415: Stay abreast of new types of loans and other financial services and products to better meet customers' needs.
+- 3470: Expand or modify system to serve new purposes or improve work flow.
+- 3581: Analyze data to recommend placement of wells and supplementary processes to enhance production.
+- 3589: Evaluate findings to develop, design, or test equipment or processes.
+- 5511: Study the economic, political, and cultural characteristics of a specific region's population.
+- 7372: Assemble sets of assumptions, and explore the consequences of each set.
+- 14625: Evaluate project plans and proposals to assess feasibility issues.
+- 14671: Evaluate current or emerging technologies to consider factors such as cost, portability, compatibility, or usability.
+- 14681: Define and analyze objectives, scope, issues, or organizational impact of information systems.
+- 14714: Develop or implement procedures for ongoing Web site revision.
+- 14719: Recommend and implement performance improvements.
+- 14722: Provide clear, detailed descriptions of Web site specifications, such as product features, activities, software, communication protocols, programming languages, and operating systems software and hardware.
+- 15425: Create and implement inspection and testing criteria or procedures.
+- 15459: Conduct cost, material, and efficiency studies for biofuels production plants or operations.
+- 15460: Approve proposals for the acquisition, replacement, or repair of biofuels processing equipment or the implementation of new production processes.
+- 15721: Investigate products or markets to determine areas for opportunity or viability for merchandising specific products, using online or offline sources.
+- 15969: Research or review regulatory, technical, or market issues related to sustainability.
+- 16179: Propose online or multiple-sales-channel campaigns to marketing executives.
+- 16186: Conduct market research analysis to identify search query trends, real-time search and news media activity, popular social media topics, electronic commerce trends, market opportunities, or competitor performance.
+- 16194: Review or evaluate competitive products, film, music, television, and other art forms to generate new game design ideas.
+- 16200: Write or supervise the writing of game text and dialogue.
+- 16203: Prepare two-dimensional concept layouts or three-dimensional mock-ups.
+- 16270: Develop technical specifications for data management programming and communicate needs to information technology staff.
+- 16788: Create or modify web-based bioinformatics tools.
+- 16976: Evaluate analytical methods and procedures to determine how they might be improved.
+- 18032: Monitor emerging trends regarding industry regulations to determine potential impacts on organizational processes.
+- 18100: Develop strategies, policies or procedures for introducing, evaluating, or modifying information technology applied to nursing practice, administration, education, or research.
+- 18157: Promote awareness or use of alternative or renewable energy sources.
+- 18278: Program farm equipment, such as variable-rate planting equipment or pesticide sprayers, based on input from crop scouting and analysis of field condition variability.
+- 18293: Analyze remote sensing imagery to identify relationships between soil quality, crop canopy densities, light reflectance, and weather history.
+- 18924: Write speeches, press releases, or other promotional materials to increase awareness of the causes, missions, or goals of organizations seeking funds.
+- 19594: Gather information related to projects' environmental sustainability or operational efficiency.
+- 19601: Design new or modify existing aerospace systems to reduce polluting emissions, such as nitrogen oxide, carbon monoxide, or smoke emissions.
+- 19607: Design energy-efficient or environmentally sound civil structures.
+- 19648: Write or install energy management routines for building automation systems.
+- 19826: Present information to customers about the energy efficiency or environmental impact of scientific or technical products.
+- 20330: Optimize shopping cart experience or Web site conversion rates against Key Performance Indicators (KPIs).
+- 20726: Develop design criteria for aeronautical or aerospace products or systems, including testing methods, production costs, quality standards, environmental standards, or completion dates.
+- 20735: Develop or test models of alternate designs or processing methods to assess feasibility, sustainability, operating condition effects, potential new applications, or necessity of modification.
+- 20946: Monitor forecasts and quotas to identify changes and predict effects on supply chain activities.
+- 21329: Review reports of securities transactions or price lists to analyze market conditions.
+- 22077: Design molds, tools, dies, jigs, or fixtures for use in manufacturing processes.
+- 22425: Develop, maintain, and troubleshoot information access aids, such as databases, annotated bibliographies, Web pages, electronic pathfinders, software programs, and online tutorials.
+- 22539: Write and submit proposals to bid on contracts for projects.

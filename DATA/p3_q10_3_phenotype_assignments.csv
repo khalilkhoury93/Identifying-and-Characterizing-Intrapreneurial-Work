@@ -1,0 +1,152 @@
+task_id,task_text,matched_categories,phenotype_DISC,phenotype_PLAN,phenotype_EXEC,phenotype_FULL,phenotype_INNOV,phenotype_MGR,n_phenotypes,dominant_phenotype
+970,Stay abreast of advances in technology.,I | V.A,1,0,0,0,0,1,2,DISC
+971,"Develop computer information resources, providing for data security and control, strategic computing, and disaster recovery.",II | III | V.A | V.B,0,0,0,0,0,1,1,MGR
+969,"Assign and review the work of systems analysts, programmers, and other computer-related workers.",V.A,0,0,0,0,0,1,1,MGR
+979,Evaluate data processing proposals to assess project feasibility and requirements.,II | V.B,0,1,0,0,0,1,2,PLAN
+16788,Create or modify web-based bioinformatics tools.,III | IV,0,0,1,0,1,0,2,EXEC
+16786,Develop new software applications or customize existing applications to meet specific scientific project needs.,I | II | III | IV,0,0,0,1,1,0,2,FULL
+16790,Create novel computational approaches and analytical tools as required by research goals.,I | II | III | IV,0,0,0,1,1,0,2,FULL
+3589,"Evaluate findings to develop, design, or test equipment or processes.",I | II | III | V.C,0,0,0,1,0,1,2,FULL
+3581,Analyze data to recommend placement of wells and supplementary processes to enhance production.,I | II | III,0,0,0,1,0,0,1,FULL
+3580,"Monitor production rates, and plan rework processes to improve production.",V.C | III,0,0,1,0,0,1,2,EXEC
+17231,Participate in quality improvement activities including discussions of areas where risk of error is high.,I | V.C,1,0,0,0,0,1,2,DISC
+17249,Develop or monitor procedures to ensure adequate quality control of images.,II | III | V.C,0,0,0,0,0,1,1,MGR
+15425,Create and implement inspection and testing criteria or procedures.,II | III | V.C,0,0,0,0,0,1,1,MGR
+14626,"Apply theoretical expertise and innovation to create or apply new technology, such as adapting principles for applying computers to new uses.",I | III | IV,0,0,0,0,1,0,1,INNOV
+14625,Evaluate project plans and proposals to assess feasibility issues.,I | II,1,0,0,0,0,0,1,DISC
+14623,Analyze problems to develop solutions involving computer hardware and software.,I | III | IV | V.C,0,0,0,0,1,1,2,INNOV
+14633,Design computers and the software that runs them.,I | II | III | IV,0,0,0,1,1,0,2,FULL
+19601,"Design new or modify existing aerospace systems to reduce polluting emissions, such as nitrogen oxide, carbon monoxide, or smoke emissions.",I | II | III | IV | VI,0,0,0,1,1,0,2,FULL
+20726,"Develop design criteria for aeronautical or aerospace products or systems, including testing methods, production costs, quality standards, environmental standards, or completion dates.",II | III | VI,0,0,0,0,0,0,0,NONE
+1339,"Formulate mathematical models or other methods of computer analysis to develop, evaluate, or modify design, according to customer engineering requirements.",I | III | IV,0,0,0,0,1,0,1,INNOV
+1313,"Write and code logical and physical database descriptions and specify identifiers of database to management system, or direct others in coding descriptions.",II | III | V.C,0,0,0,0,0,1,1,MGR
+15459,"Conduct cost, material, and efficiency studies for biofuels production plants or operations.",I | II | VI,1,0,0,0,0,0,1,DISC
+15457,Prepare and manage biofuels plant or unit budgets.,II | V.B | VI,0,1,0,0,0,1,2,PLAN
+15460,"Approve proposals for the acquisition, replacement, or repair of biofuels processing equipment or the implementation of new production processes.",III | V.A | VI,0,0,1,0,0,1,2,EXEC
+22532,"Perform management activities, such as budgeting, scheduling, planning, and marketing.",II | III | V.B,0,0,0,0,0,1,1,MGR
+22537,Review film daily to check on work in progress and to plan for future filming.,II | III | V.A,0,0,0,0,0,1,1,MGR
+22533,Compose and edit scripts or provide screenwriters with story outlines from which scripts can be written.,I | III | IV,0,0,0,0,1,0,1,INNOV
+22539,Write and submit proposals to bid on contracts for projects.,II | III,0,0,0,0,0,0,0,NONE
+22519,Study and research scripts to determine how they should be directed.,I | II,1,0,0,0,0,0,1,DISC
+20242,"Research current trends and new technology, such as printing production techniques, computer software, and design trends.",I,1,0,0,0,0,0,1,DISC
+21329,Review reports of securities transactions or price lists to analyze market conditions.,I,1,0,0,0,0,0,1,DISC
+21321,Develop or analyze information to assess the current or future financial status of firms.,I | II,1,0,0,0,0,0,1,DISC
+3234,"Read trade journals and professional literature to stay informed on trends, innovations, and changes that affect media planning.",I,1,0,0,0,0,0,1,DISC
+15721,"Investigate products or markets to determine areas for opportunity or viability for merchandising specific products, using online or offline sources.",I | II,1,0,0,0,0,0,1,DISC
+3405,Compile and analyze accounting records and other data to determine the financial resources required to implement a program.,II,0,1,0,0,0,0,1,PLAN
+3395,Direct the preparation of regular and special budget reports.,V.A,0,0,0,0,0,1,1,MGR
+3415,Stay abreast of new types of loans and other financial services and products to better meet customers' needs.,I,1,0,0,0,0,0,1,DISC
+3482,"Use the computer in the analysis and solution of business problems, such as development of integrated production and inventory control and cost analysis systems.",I | II | III | V.B,0,0,0,1,0,1,2,FULL
+3474,"Analyze information processing or computation needs and plan and design computer systems, using techniques such as structured analysis, data modeling, and information engineering.",I | II | V.B,1,0,0,0,0,1,2,DISC
+3484,Specify inputs accessed by the system and plan the distribution and use of the results.,II | III,0,0,0,0,0,0,0,NONE
+3470,Expand or modify system to serve new purposes or improve work flow.,I | III | IV | V.C,0,0,0,0,1,1,2,INNOV
+5314,"Develop plans to safeguard computer files against accidental or unauthorized modification, destruction, or disclosure and to meet emergency data processing needs.",II,0,1,0,0,0,0,1,PLAN
+19011,Research hardware or software products to meet technical networking or security needs.,I | II,1,0,0,0,0,0,1,DISC
+1292,"Prepare evaluations of software or hardware, and recommend improvements or upgrades.",I | II,1,0,0,0,0,0,1,DISC
+1323,"Recommend changes to improve systems and network configurations, and determine hardware or software requirements related to such changes.",II | V.B,0,1,0,0,0,1,2,PLAN
+1279,"Assign, coordinate, and review work and activities of programming personnel.",V.B | V.C,0,0,0,0,0,1,1,MGR
+20735,"Develop or test models of alternate designs or processing methods to assess feasibility, sustainability, operating condition effects, potential new applications, or necessity of modification.",I | III | V.C | VI,0,0,0,0,0,1,1,MGR
+22077,"Design molds, tools, dies, jigs, or fixtures for use in manufacturing processes.",II | III,0,0,0,0,0,0,0,NONE
+1477,"Review project instructions and specifications to identify, modify and plan requirements fabrication, assembly and testing.",II | V.C,0,1,0,0,0,1,2,PLAN
+12963,Design and create special programs for tasks such as statistical analysis and data entry and cleaning.,I | II | III | IV,0,0,0,1,1,0,2,FULL
+1782,"Develop story or content ideas, considering reader or audience appeal.",I | IV,0,0,0,0,1,0,1,INNOV
+3977,Analyze developments in specific field to determine need for revisions in previously published materials and development of new material.,I | II,1,0,0,0,0,0,1,DISC
+23208,"Track and analyze factors that affect price movement, such as trade policies, weather conditions, political developments, or supply and demand changes.",I,1,0,0,0,0,0,1,DISC
+741,"Plan, describe, arrange, and sell itinerary tour packages and promotional travel incentives offered by various travel carriers.",I | II | III,0,0,0,1,0,0,1,FULL
+11261,"Compute customer's installation or production costs and estimate savings from new services, products, or equipment.",II | I,1,0,0,0,0,0,1,DISC
+11246,Prepare sales presentations or proposals to explain product specifications or applications.,II | I,1,0,0,0,0,0,1,DISC
+19826,Present information to customers about the energy efficiency or environmental impact of scientific or technical products.,VI,0,0,0,0,0,0,0,NONE
+4623,Adjust sales scripts to better target the needs and interests of specific individuals.,I | III | V.C,0,0,0,0,0,1,1,MGR
+2591,"Recommend improvements in products, packaging, shipping, service, or billing methods and procedures to prevent future problems.",I | II | V.C,1,0,0,0,0,1,2,DISC
+11376,"Establish and prepare product construction directions and locations and information on required tools, materials, equipment, numbers of workers needed, and cost projections.",II | V.C,0,1,0,0,0,1,2,PLAN
+16976,Evaluate analytical methods and procedures to determine how they might be improved.,I | V.C,1,0,0,0,0,1,2,DISC
+2809,Establish work procedures or schedules and keep track of the daily work of clerical staff.,II | III | V.C,0,0,0,0,0,1,1,MGR
+8870,Evaluate needs for procurement of funds and investment of surpluses and make appropriate recommendations.,II | V.B,0,1,0,0,0,1,2,PLAN
+8865,"Coordinate and direct the financial planning, budgeting, procurement, or investment activities of all or part of an organization.",V.A | II | III,0,0,0,0,0,1,1,MGR
+8867,"Analyze the financial details of past, present, and expected operations to identify development opportunities and areas where improvement is needed.",I | II,1,0,0,0,0,0,1,DISC
+1026,Analyze market and delivery systems to assess present and future material availability.,I,1,0,0,0,0,0,1,DISC
+20942,"Determine appropriate equipment and staffing levels to load, unload, move, or store materials.",II | V.B,0,1,0,0,0,1,2,PLAN
+15680,Select transportation routes to maximize economy by combining shipments or consolidating warehousing and distribution.,III | V.C | VI,0,0,1,0,0,1,2,EXEC
+15700,"Develop procedures for coordination of supply chain management with other functional areas, such as sales, marketing, finance, production, or quality assurance.",II | V.B,0,1,0,0,0,1,2,PLAN
+15696,"Analyze inventories to determine how to increase inventory turns, reduce waste, or optimize customer service.",I | II | III | V.C,0,0,0,1,0,1,2,FULL
+20946,Monitor forecasts and quotas to identify changes and predict effects on supply chain activities.,I,1,0,0,0,0,0,1,DISC
+994,Analyze statistical data and reports to identify and determine causes of personnel problems and develop recommendations for improvement of organization's personnel policies and practices.,I | II | V.B,1,0,0,0,0,1,2,DISC
+49,"Develop and maintain computerized record management systems to store and process data, such as personnel activities and information, and to produce reports.",II | III | V.C,0,0,0,0,0,1,1,MGR
+55,"Maintain awareness of advances in medicine, computerized diagnostic and treatment equipment, data processing technology, government regulations, health insurance changes, and financing options.",I,1,0,0,0,0,0,1,DISC
+61,Review and analyze facility activities and data to aid planning and cash and risk management and to improve service utilization.,II | V.A | V.B,0,1,0,0,0,1,2,PLAN
+18032,Monitor emerging trends regarding industry regulations to determine potential impacts on organizational processes.,I | V.A,1,0,0,0,0,1,2,DISC
+1153,Study sales records and inventory levels of current stock to develop strategic purchasing programs that facilitate employee access to supplies.,II | III | V.C,0,0,0,0,0,1,1,MGR
+15893,Recommend improvements to existing or planned logistics processes.,I | II | V.C,1,0,0,0,0,1,2,DISC
+7277,Analyze data gathered and develop solutions or alternative methods of proceeding.,I | II | III,0,0,0,1,0,0,1,FULL
+7282,"Document findings of study and prepare recommendations for implementation of new systems, procedures, or organizational changes.",II | III | V.B,0,0,0,0,0,1,1,MGR
+7285,"Plan study of work problems and procedures, such as organizational change, communications, information flow, integrated production methods, inventory control, or cost analysis.",I | II | V.B,1,0,0,0,0,1,2,DISC
+18912,Develop strategies to encourage new or increased contributions.,I | II | III,0,0,0,1,0,0,1,FULL
+18911,"Develop or implement fundraising activities, such as annual giving campaigns or direct mail programs.",II | III,0,0,0,0,0,0,0,NONE
+18926,"Conduct research to identify the goals, net worth, charitable donation history, or other data related to potential donors, potential investors, or general donor markets.",I,1,0,0,0,0,0,1,DISC
+18924,"Write speeches, press releases, or other promotional materials to increase awareness of the causes, missions, or goals of organizations seeking funds.",II | IV,0,1,0,0,1,0,2,INNOV
+19559,"Evaluate modes of training delivery, such as in-person or virtual, to optimize training effectiveness, training costs, or environmental impacts.",I | II | VI,1,0,0,0,0,0,1,DISC
+20474,"Design, plan, organize, or direct orientation and training programs for employees or customers.",II | III | V.C,0,0,0,0,0,1,1,MGR
+102,Develop alternative training methods if expected improvements are not seen.,III | V.C | IV,0,0,1,0,1,1,3,EXEC
+106,Devise programs to develop executive potential among employees in lower-level positions.,II | V.B,0,1,0,0,0,1,2,PLAN
+16182,Participate in the development or implementation of online marketing strategy.,II | III,0,0,0,0,0,0,0,NONE
+20321,Create content strategies for digital media.,I | II,1,0,0,0,0,0,1,DISC
+20319,Combine secondary data sources with keyword research to more accurately profile and satisfy user intent.,I,1,0,0,0,0,0,1,DISC
+20330,Optimize shopping cart experience or Web site conversion rates against Key Performance Indicators (KPIs).,III | I | V.C,0,0,0,0,0,1,1,MGR
+20327,"Improve search-related activities through ongoing analysis, experimentation, or optimization tests, using A/B or multivariate methods.",I | III | V.C,0,0,0,0,0,1,1,MGR
+16186,"Conduct market research analysis to identify search query trends, real-time search and news media activity, popular social media topics, electronic commerce trends, market opportunities, or competitor performance.",I,1,0,0,0,0,0,1,DISC
+16179,Propose online or multiple-sales-channel campaigns to marketing executives.,I | II,1,0,0,0,0,0,1,DISC
+15979,"Assess or propose sustainability initiatives, considering factors such as cost effectiveness, technical feasibility, and acceptance.",VI | II | I | IV,0,0,0,0,1,0,1,INNOV
+15968,Review and revise sustainability proposals or policies.,II | VI,0,1,0,0,0,0,1,PLAN
+15975,Create or maintain plans or other documents related to sustainability projects.,II | VI,0,1,0,0,0,0,1,PLAN
+15978,Collect information about waste stream management or green building practices to inform decision makers.,I | VI,1,0,0,0,0,0,1,DISC
+15969,"Research or review regulatory, technical, or market issues related to sustainability.",I | VI,1,0,0,0,0,0,1,DISC
+21552,Collect and analyze relevant data to identify real estate market trends.,I,1,0,0,0,0,0,1,DISC
+12904,Analyze financial information obtained from clients to determine strategies for meeting clients' financial objectives.,I | II,1,0,0,0,0,0,1,DISC
+18090,"Translate nursing practice information between nurses and systems engineers, analysts, or designers, using object-oriented models or other techniques.",II | III | V.B,0,0,0,0,0,1,1,MGR
+18092,Use informatics science to design or implement health information technology applications for resolution of clinical or health care administrative problems.,I | II | III,0,0,0,1,0,0,1,FULL
+18093,"Develop, implement, or evaluate health information technology applications, tools, processes, or structures to assist nurses with data management.",I | II | III | IV | V.C,0,0,0,1,1,1,3,FULL
+18088,"Design, develop, select, test, implement, and evaluate new or modified informatics solutions, data structures, and decision-support mechanisms to support patients, health care professionals, and their information management and human-computer and human-technology interactions within health care contexts.",I | II | III | IV | V.C,0,0,0,1,1,1,3,FULL
+18095,"Analyze computer and information technologies to determine applicability to nursing practice, education, administration, and research.",I | II,1,0,0,0,0,0,1,DISC
+18100,"Develop strategies, policies or procedures for introducing, evaluating, or modifying information technology applied to nursing practice, administration, education, or research.",II | V.A | V.B,0,1,0,0,0,1,2,PLAN
+14649,"Develop or specify standards, methods, or procedures to determine product quality or release readiness.",II | V.C,0,1,0,0,0,1,2,PLAN
+14713,"Respond to user email inquiries, or set up automated systems to send responses.",III | V.C,0,0,1,0,0,1,2,EXEC
+14719,Recommend and implement performance improvements.,II | III | V.C,0,0,0,0,0,1,1,MGR
+14714,Develop or implement procedures for ongoing Web site revision.,II | V.C,0,1,0,0,0,1,2,PLAN
+16199,Balance and adjust gameplay experiences to ensure the critical and commercial success of the product.,I | II | III | IV,0,0,0,1,1,0,2,FULL
+16208,"Devise missions, challenges, or puzzles to be encountered in game play.",I | IV,0,0,0,0,1,0,1,INNOV
+16217,"Create core game features, including storylines, role-play mechanics, and character biographies for a new video game or game franchise.",I | II | IV,0,0,0,0,1,0,1,INNOV
+16201,"Solicit, obtain, and integrate feedback from design and technical staff into original game design.",I | II | III,0,0,0,1,0,0,1,FULL
+16211,Create gameplay prototypes for presentation to creative and technical staff and management.,I | II | III | IV,0,0,0,1,1,0,2,FULL
+16203,Prepare two-dimensional concept layouts or three-dimensional mock-ups.,I | II | IV,0,0,0,0,1,0,1,INNOV
+16194,"Review or evaluate competitive products, film, music, television, and other art forms to generate new game design ideas.",I | IV,0,0,0,0,1,0,1,INNOV
+14673,"Identify system data, hardware, or software components required to meet user needs.",II | V.B,0,1,0,0,0,1,2,PLAN
+14681,"Define and analyze objectives, scope, issues, or organizational impact of information systems.",I | II | V.A,1,0,0,0,0,1,2,DISC
+14671,"Evaluate current or emerging technologies to consider factors such as cost, portability, compatibility, or usability.",I | V.A,1,0,0,0,0,1,2,DISC
+16167,"Assign duties, responsibilities, and spans of authority to project personnel.",III | V.A,0,0,1,0,0,1,2,EXEC
+7371,Develop mathematical or statistical models of phenomena to be used for analysis or for computational simulation.,I | II | III | IV,0,0,0,1,1,0,2,FULL
+7372,"Assemble sets of assumptions, and explore the consequences of each set.",I | II,1,0,0,0,0,0,1,DISC
+7368,Develop computational methods for solving problems that occur in areas of science and engineering or that come from applications in business or industry.,I | III | IV,0,0,0,0,1,0,1,INNOV
+8961,"Design research projects that apply valid scientific techniques, and use information obtained from baselines or historical data to structure uncompromised and efficient analyses.",I,1,0,0,0,0,0,1,DISC
+16136,"Identify or monitor current and potential customers, using business intelligence tools.",I,1,0,0,0,0,0,1,DISC
+16270,Develop technical specifications for data management programming and communicate needs to information technology staff.,II | V.B,0,1,0,0,0,1,2,PLAN
+136,Integrate engineering elements into unified architectural designs.,I | II | III | IV,0,0,0,1,1,0,2,FULL
+19594,Gather information related to projects' environmental sustainability or operational efficiency.,I | VI,1,0,0,0,0,0,1,DISC
+20491,"Plan and design transportation or hydraulic systems or structures, using computer-assisted design or drawing tools.",II | III,0,0,0,0,0,0,0,NONE
+19607,Design energy-efficient or environmentally sound civil structures.,VI | I | IV,0,0,0,0,1,0,1,INNOV
+20854,Identify and recommend energy savings strategies to achieve more energy-efficient operation.,I | II | VI,1,0,0,0,0,0,1,DISC
+18157,Promote awareness or use of alternative or renewable energy sources.,II | VI,0,1,0,0,0,0,1,PLAN
+19648,Write or install energy management routines for building automation systems.,III | VI,0,0,1,0,0,0,1,EXEC
+21919,"Coordinate structural, electrical, and mechanical designs and determine a method of presentation to graphically represent building plans.",II | III | V.B,0,0,0,0,0,1,1,MGR
+16809,Evaluate new technologies to enhance or complement current research.,I | II,1,0,0,0,0,0,1,DISC
+5511,"Study the economic, political, and cultural characteristics of a specific region's population.",I,1,0,0,0,0,0,1,DISC
+5505,"Develop, operate, and maintain geographical information computer systems, including hardware, software, plotters, digitizers, printers, and video cameras.",I | III | IV | V.C,0,0,0,0,1,1,2,INNOV
+16943,Prepare reports or recommendations on transportation planning.,I | II | V.B,1,0,0,0,0,1,2,DISC
+16952,"Recommend transportation system improvements or projects, based on economic, population, land-use, or traffic projections.",I | II | V.B,1,0,0,0,0,1,2,DISC
+18278,"Program farm equipment, such as variable-rate planting equipment or pesticide sprayers, based on input from crop scouting and analysis of field condition variability.",III | VI,0,0,1,0,0,0,1,EXEC
+18293,"Analyze remote sensing imagery to identify relationships between soil quality, crop canopy densities, light reflectance, and weather history.",I,1,0,0,0,0,0,1,DISC
+299,"Create designs, concepts, and sample layouts, based on knowledge of layout principles and esthetic design concepts.",I | IV,0,0,0,0,1,0,1,INNOV
+15229,Research new software or design concepts.,I,1,0,0,0,0,0,1,DISC
+22648,"Develop ideas or material for columns or commentaries by analyzing and interpreting news, current issues, or personal experiences.",I | IV,0,0,0,0,1,0,1,INNOV
+1769,"Study the objectives, promotional policies, or needs of organizations to develop public relations strategies that will influence public opinion or promote ideas, products, or services.",I | II | IV,0,0,0,0,1,0,1,INNOV
+22660,"Review advertising trends, consumer surveys, and other data regarding marketing of goods and services to determine the best way to promote products.",I | II,1,0,0,0,0,0,1,DISC
+22658,Conduct research and interviews to determine which of a product's selling features should be promoted.,I | II,1,0,0,0,0,0,1,DISC

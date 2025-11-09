@@ -1,0 +1,66 @@
+category,indicator,n_tasks_in_category,pct_of_category,rank_within_category
+I,Scan the environment for opportunities and threats,14,9.271523178807946,1
+I,Recognize and perceive opportunities worth pursuing,13,8.609271523178808,2
+I,Anticipate problems and opportunities,5,3.3112582781456954,3
+I,Search for opportunities through market scanning,3,1.9867549668874174,4
+I,"Identify, acquire, and deploy resources to pursue opportunities",2,1.3245033112582782,5
+I,Identify long-term opportunities and threats for the company,2,1.3245033112582782,6
+I,Search for opportunities through idea generation and market scanning,2,1.3245033112582782,7
+I,Propose and interpret opportunities to create new services or increase competitiveness,1,0.6622516556291391,8
+I,Search/scan environment for opportunities and threats,1,0.6622516556291391,9
+I,"Evaluate findings to recognize opportunities and inform design (I: recognize/perceive opportunities, acquire information)",1,0.6622516556291391,10
+II,Develop comprehensive plans / convert ideas into feasible plans,2,1.3245033112582782,1
+II,Design or develop new equipment/processes (II: design new products or recombine resources; develop plans),1,0.6622516556291391,2
+II,Recommend supplementary processes (convert ideas into feasible plans / design new processes),1,0.6622516556291391,3
+II,Design new processes / develop procedures (plan and organize),1,0.6622516556291391,4
+II,Design new procedures / convert ideas into feasible plans,1,0.6622516556291391,5
+II,Plan by evaluating and preparing projects (informing resource deployment and project selection),1,0.6622516556291391,6
+II,Design new products or recombine resources; develop plans to implement changes,1,0.6622516556291391,7
+II,"Plan by developing comprehensive plans (testing methods, costs, schedules)",1,0.6622516556291391,8
+II,Plan and organize / convert ideas into feasible plans → specify identifiers to DBMS,1,0.6622516556291391,9
+II,Plan by developing a business case/feasibility analysis (cost and material studies inform planning),1,0.6622516556291391,10
+III,Experiment to surface operational ideas for innovative improvements,3,1.9867549668874174,1
+III,Experiment to surface operational ideas and adjust processes,3,1.9867549668874174,2
+III,Experiment/adjust processes to surface operational improvements,2,1.3245033112582782,3
+III,Implement new ideas/put effort into pursuing new operational practices,1,0.6622516556291391,4
+III,Lead implementation by programming equipment based on analysis,1,0.6622516556291391,5
+III,Implement new ideas and take initiative to build/deploy applications,1,0.6622516556291391,6
+III,Implement and develop new analytical solutions,1,0.6622516556291391,7
+III,Test and implement equipment/process changes (III: implement new ideas; act entrepreneurially; lead idea development),1,0.6622516556291391,8
+III,Experiment to surface operational ideas for innovative improvements (V.C: experiment and adjust processes),1,0.6622516556291391,9
+III,Make implementation-focused recommendations and inform operational decisions (lead exploitation / take initiative),1,0.6622516556291391,10
+IV,Show innovative and creative behaviors,2,1.3245033112582782,1
+IV,Generate creative ideas and concepts,1,0.6622516556291391,2
+IV,Design new layouts and visual solutions (out-of-the-box/innovative behavior),1,0.6622516556291391,3
+IV,Apply aesthetic principles to create novel designs,1,0.6622516556291391,4
+IV,Show innovative/creative behaviors and use out-of-the-box technical approaches,1,0.6622516556291391,5
+IV,Generate creative ideas and novel approaches,1,0.6622516556291391,6
+IV,"Exhibit innovative, out-of-the-box technical problem solving",1,0.6622516556291391,7
+IV,Generate creative ideas and adapt principles to new uses,1,0.6622516556291391,8
+IV,Show innovative behavior and apply novel approaches (risk-taking/creativity),1,0.6622516556291391,9
+IV,Apply innovative/creative approaches and risk-taking in solution design,1,0.6622516556291391,10
+V.A,Manage/direct roles and make resource deployment decisions,1,0.6622516556291391,1
+V.A,Promote and champion recommendations (internal advocacy) for fund/investment decisions,1,0.6622516556291391,2
+V.A,Acquire information relevant to strategic decisions,1,0.6622516556291391,3
+V.A,Acquire and deploy resources or inform cash and risk management decisions,1,0.6622516556291391,4
+V.B,Design new projects or recombine resources,1,0.6622516556291391,5
+V.B,Design new products or recombine resources (convert scientific needs into software),1,0.6622516556291391,6
+V.B,Design new products and recombine resources (system design),1,0.6622516556291391,7
+V.B,Design new products or recombine resources (develop design criteria/specifications),1,0.6622516556291391,8
+V.B,Design new products or recombine resources → develop logical/physical DB designs,1,0.6622516556291391,9
+V.B,Promote and champion ideas to obtain contracts/resources,1,0.6622516556291391,10
+V.B,Design how system accesses inputs (design new products/recombine resources),1,0.6622516556291391,1
+V.B,Design new products or recombine resources (develop tooling solutions),1,0.6622516556291391,2
+V.B,Design new products or recombine resources (create itinerary packages),1,0.6622516556291391,3
+V.B,Design new products or recombine resources (repackage specifications into applications),1,0.6622516556291391,4
+V.C,Promote and champion ideas to others / advise stakeholders,1,0.6622516556291391,5
+V.C,Promote and champion ideas / sell products or services,1,0.6622516556291391,6
+V.C,Promote and champion ideas to others (internal/external issue selling),1,0.6622516556291391,7
+V.C,Promote and champion ideas internally (advocacy for campaigns),1,0.6622516556291391,8
+V.C,Promote and champion ideas to others (issue selling),1,0.6622516556291391,9
+V.C,Promote and champion proposed campaigns to executives (internal issue selling),1,0.6622516556291391,10
+V.C,Promote and champion improved sustainability proposals (internal advocacy),1,0.6622516556291391,1
+V.C,Promote/obtain internal sponsorship and coordinate stakeholders,1,0.6622516556291391,2
+V.C,Promote and champion ideas to others (recommend changes),1,0.6622516556291391,3
+V.C,Convert ideas into presentable prototypes and advocate to stakeholders,1,0.6622516556291391,4
+VI,Take technical risks and use out-of-the-box solutions,1,0.6622516556291391,5

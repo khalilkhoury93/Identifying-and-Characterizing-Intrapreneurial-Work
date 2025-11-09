@@ -1,0 +1,230 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Interpreting the Core Findings}
+\label{sec:ch5-core-findings}
+
+This chapter presents three main regularities. First, intrapreneurial tasks are structurally episodic and edge-positioned: they are depleted in Core IF quadrants and enriched in Critical and Peripheral positions. Second, both workers and experts tend to assign higher human-agency requirements and lower automation proneness to intrapreneurial tasks than to non-intrapreneurial tasks, even when those tasks occupy similar IF positions. Third, within the intrapreneurial subset, opportunity discovery and planning components are more prevalent than execution, and intrapreneurial tasks are strongly enriched in creative and strategic work activities and depleted in activities such as documenting/recording and processing information.
+
+\textbf{Episodic, edge-positioned work.} As shown in Sections~\ref{sec:if-distribution} and~\ref{sec:robustness}, intrapreneurial tasks are disproportionately located outside the Core IF quadrant: they are depleted in Core and enriched in both Critical (high-importance, low-frequency) and Peripheral (low-importance, low-frequency) positions. O*NET’s “importance to the occupation” metric is moderately correlated with task frequency overall (Spearman $\rho\approx0.49$; Appendix C.4) and more tightly for routine (non‑intrapreneurial) tasks, so the IF framework tends to capture routine role performance. Intrapreneurial tasks therefore appear at the edges of occupational practice when importance and frequency are used as the organizing axes, even though they often concern opportunity recognition, strategic adjustment, or experimentation that matter for long-run adaptation. The weaker correlation between importance and frequency for intrapreneurial tasks (\(\rho \approx 0.23\)) than for routine tasks (non-intrapreneurial) (\(\rho \approx 0.50\)) is consistent with the idea that innovation work does not follow the same regular rhythms as day-to-day operations.
+
+\textbf{Human–AI role requirements.} The Human Agency Scale (HAS) ratings indicate that intrapreneurial tasks concentrate in H3 (“Equal human–AI partnership”) and H4 (“Human-driven with AI assistance”) bands. Only a minority of intrapreneurial tasks are assigned to the automation-prone bands H1/H2, and average HAS scores for intrapreneurial work cluster around 3.0, consistent with a partnership with AI regime rather than either full automation or purely human execution. When intrapreneurial tasks are compared to non-intrapreneurial tasks, these differences become clearer: workers classify about 41\% of intrapreneurial tasks as automation-prone (H1/H2) versus 52\% of non-intrapreneurial tasks, while experts classify about 42\% of intrapreneurial tasks as automation-prone versus 66\% of non-intrapreneurial tasks, with corresponding mean HAS differences of roughly +0.2 for workers and +0.5 for experts. The same qualitative pattern holds within IF quadrants (with significant mean‑HAS gaps in Core, Critical, and Peripheral), suggesting these differences are unlikely to be solely an artifact of IF shifts.
+
+\textbf{Internal structure and creative signatures.} Within the intrapreneurial set, category analysis suggests that opportunity discovery and planning components are more prevalent than execution. A majority of intrapreneurial tasks involve opportunity discovery (I) and planning and advocacy (II), whereas execution (III) appears in a smaller share, producing a preparation–execution gap. Risk management and persistence (Category VI) and managerial enabling (V.A--V.C) are common overlays that co-occur with both planning and execution. Phenotype analysis indicates that discovery-focused and managerial phenotypes together account for a large share of intrapreneurial tasks, while pure execution phenotypes are rare. Work-activity analysis complements this picture: intrapreneurial tasks are enriched in “Thinking Creatively”, “Developing Objectives and Strategies”, “Selling or Influencing Others”, and “Coordinating the Work of Others”, and depleted in documentation and routine administrative activities.
+
+Taken together, these findings suggest that intrapreneurial work is structurally peripheral in IF space, compositionally skewed toward discovery and planning with enabling overlays, and systematically located in a higher-agency region of the human–AI role spectrum than routine work. The remainder of this chapter develops the theoretical implications of this configuration and derives implications for organizational and AI system design.
+
+\subsection{Theoretical Implications}
+\label{sec:ch5-theory}
+
+\subsubsection{From Autonomy to Action: Affordance versus Agency}
+\label{sec:ch5-agency-affordance}
+
+\textbf{Affordance versus agency.} The results help clarify the distinction between environmental conditions that enable intrapreneurial behavior (autonomy as affordance) and the actual exercise of innovative agency. The concentration of intrapreneurial tasks in H3 and H4 bands, which require active collaboration and supervision rather than full automation, is consistent with the idea that these tasks tend to require not just decision latitude but sustained human judgment and creativity. High-autonomy contexts may still fail to generate innovation if workers lack the capability or motivation to act on that autonomy; affordance without agency remains unrealized potential.
+
+\textbf{Experiential uncertainty gap.} The systematic gap between worker and expert uncertainty perceptions, particularly pronounced in Critical (\(\Delta \approx +0.58\)) and Peripheral (\(\Delta \approx +0.49\)) quadrants, suggests that agency is grounded in situated experience rather than abstract assessment. Workers embedded in task contexts perceive contingencies, tacit constraints, and institutional frictions that experts rating tasks at a distance may underestimate. This experiential dimension of agency suggests that attempts to automate intrapreneurial work on the basis of expert technical assessments alone risk omitting the contextual judgment and local knowledge that workers provide.
+
+\textbf{Willingness to bear uncertainty.} The positive association between uncertainty and preferences for human agency: 74\% of workers increase HAS ratings as uncertainty rises, which is consistent with models of entrepreneurial action that emphasize the willingness to bear uncertainty rather than simply to perceive it. Workers not only recognize uncertainty but often choose to retain or increase human control rather than delegate to automated systems as uncertainty grows. This willingness to bear uncertainty appears to be a core component of intrapreneurial agency that extends beyond capability to encompass motivation and risk tolerance.
+
+\textbf{Intrapreneurial versus routine work.} The intrapreneurial versus non-intrapreneurial contrast in HAS ratings reinforces this agency interpretation. Across all tasks, workers and experts both see intrapreneurial work as systematically less automation-prone and more human-intensive than routine work. Workers assign H1/H2 automation-prone bands to about 41\% of intrapreneurial tasks versus 52\% of non-intrapreneurial tasks, and experts exhibit an even larger gap (about 42 versus 66\%), with higher mean HAS scores for intrapreneurial tasks in both cases. These contrasts persist within IF quadrants, indicating that they are not simply an artifact of intrapreneurial tasks being shifted into Critical or Peripheral positions. Holding IF structure roughly constant, intrapreneurial tasks are those where both workers and experts expect humans to remain more central in the loop. Worker–expert agreement on discrete HAS bands is low (Cohen’s \(\kappa\) close to zero), but their mean ratings are positively correlated, suggesting partial alignment with substantial calibration differences.
+
+Importantly, the uncertainty dimension enters the pipeline through worker and expert ratings and the WBU index, not as a keyword list baked into the LLM prompt. The classifier identifies intrapreneurial tasks using behavioral criteria centered on opportunity discovery and idea generation, planning and advocacy, execution and implementation of new business activities, innovative and risk-taking behaviors, and role-specific managerial and eco-innovation tasks (Criteria I–VI in Section~\ref{sec:ch3-criteria-dev}). The prompt does not include uncertainty terms as an explicit decision rule. Instead, uncertainty is measured independently through worker and expert ratings and is then shown to be systematically higher for intrapreneurial work, rather than being hard-coded into the classification procedure.
+
+\subsubsection{An Integrated Task-Level Model}
+\label{sec:ch5-integrated-model}
+
+The findings can be summarized as a task-level model that links structural position, intrapreneurial content, and human–AI role requirements. At the structural level, O*NET Importance and Frequency define four IF quadrants that capture routine centrality. Intrapreneurial tasks are disproportionately located in Critical and Peripheral quadrants, indicating an episodic and edge-positioned pattern rather than a core routine one. At the content level, intrapreneurial tasks combine opportunity discovery (I), planning and advocacy (II), execution (III), innovation and experimentation (IV), risk management and persistence (VI), and managerial enabling (V.A--V.C), which give rise to distinct phenotypes such as discovery-focused, planning-focused, execution-focused, innovation-focused, and managerial tasks. At the experiential level, both workers and experts judge intrapreneurial tasks to require higher human agency and to be less automation-prone than non-intrapreneurial tasks: they assign higher HAS scores and lower H1/H2 shares to intrapreneurial tasks within each IF quadrant, and workers with higher WBU scores are more likely to maintain human control as uncertainty rises.
+
+These layers help define the design space for augmentation. IF position and work activities shape the likelihood that a task is intrapreneurial; intrapreneurial content and category combinations shape perceived uncertainty and human-AI role requirements; and WBU captures how workers respond to uncertainty in terms of retaining or delegating control. Table~\ref{tab:conceptual-structure} summarizes these relationships: structural characteristics feed into intrapreneurial classification and internal components; these in turn influence uncertainty, HAS bands, and WBU; and the combination of IF quadrant, intrapreneurial status, and HAS band identifies zones where augmentation or automation is more appropriate. Over time, AI system design and organizational responses can feed back to reshape task descriptors and IF ratings, as activities move between periphery and core or become more routinized.
+
+\begin{table}[H]
+\centering
+\caption{Conceptual structure of intrapreneurial tasks}
+\label{tab:conceptual-structure}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{p{3cm} p{4cm} p{5cm} p{5cm}}
+\toprule
+\textbf{Layer} & \textbf{Main constructs} & \textbf{Key variables / elements} & \textbf{Role in the model} \\
+\midrule
+Structural context &
+IF-based task environment &
+\begin{itemize}
+\item IF quadrants: Core, Critical, Operational, Peripheral
+\item Work activities (O*NET)
+\end{itemize} &
+Locates tasks in routine versus episodic / edge positions and supplies structural variables used to analyze and interpret classification outcomes. \\
+\midrule
+Content &
+Intrapreneurial task content and patterns &
+\begin{itemize}
+\item Intrapreneurial label (Yes / No)
+\item Components I--IV (discovery, planning, execution, innovation); Category VI (risk management and persistence); managerial enabling (V.A/V.B/V.C)
+\item Phenotypes (FULL, DISC, PLAN, EXEC, INNOV, MGR)
+\end{itemize} &
+Describes which tasks are intrapreneurial and how they combine underlying components into recurring patterns. \\
+\midrule
+Human--AI roles &
+Experience and role allocation between humans and AI &
+\begin{itemize}
+\item Perceived uncertainty (workers, experts)
+\item HAS bands H1--H5 (AI-only to human-only)
+\item WBU (willingness to bear uncertainty)
+\item Worker--expert gaps (HAS, uncertainty)
+\end{itemize} &
+Captures agency requirements, perceived automation proneness, and how workers versus experts calibrate the same tasks. \\
+\midrule
+Design space &
+Implications for AI design and organizational practice &
+\begin{itemize}
+\item AI design zones (routine automation, high-agency intrapreneurial work, episodic peripheral scaffolding, high-stakes/uncertainty Human supervision of AI)
+\item Organizational responses (recognition and rewards, training and simulation, co-design and governance, task evolution over time)
+\end{itemize} &
+Translates task profiles into proposed design patterns for AI (automation vs.\ augmentation) and into organizational responses. \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+This integrated model is estimated on short, behavior-focused O*NET task descriptions. As discussed in the limitations, such descriptions may understate tacit and relational dimensions of intrapreneurial work, and they treat tasks as discrete rather than as multi-stage processes. The model should therefore be interpreted as capturing the structural and behavioral backbone of intrapreneurial work, rather than its full experiential richness.
+
+\subsubsection{Strategic Value versus Occupational Centrality}
+\label{sec:ch5-strategic-vs-occupational}
+
+\textbf{Strategic value at the periphery.} The paradoxical positioning of intrapreneurial tasks, depleted in Core quadrants yet strategically consequential, can indicate a potential misalignment between occupational measurement frameworks and organizational value creation. O*NET’s “importance to the occupation” metric captures routine role performance but may undervalue episodic innovation work that drives adaptation. This challenges job-design traditions that equate importance with frequency and suggests that some of the most strategically valuable work may occur irregularly at occupational peripheries.
+
+\textbf{Different organizing principles.} The weaker coupling between importance and frequency for intrapreneurial tasks relative to routine tasks (non-intrapreneurial) is consistent with the idea that innovation work operates under different organizing principles. Routine work follows predictable cycles tied to operational rhythms; intrapreneurial activities emerge opportunistically in response to environmental changes, competitive threats, or strategic initiatives. Performance evaluation systems based solely on consistent task execution may therefore systematically undervalue employees who excel at episodic innovation.
+
+\textbf{Peripheral advantage.} The enrichment of intrapreneurial tasks in the Peripheral quadrant (odds ratio \(\approx 2.65\)) is particularly revealing. Tasks rated as both infrequent and relatively unimportant to occupational performance may nonetheless represent critical sites of experimentation, boundary-spanning, and problem reframing. Organizations seeking to foster intrapreneurship may need to look beyond core job descriptions to the margins where such activities occur. Peripheral positioning can facilitate innovation by providing psychological and structural distance from routine pressures and performance metrics, though this potential benefit is contingent on recognition and support rather than guaranteed.
+
+\subsubsection{Episodicity and Innovation Rhythms}
+\label{sec:ch5-episodicity}
+
+\textbf{Punctuated innovation.} The episodic nature of intrapreneurial work, as reflected in its concentration in low-frequency quadrants, aligns with views of innovation as punctuated rather than continuous. Innovation emerges through discrete episodes of opportunity recognition, resource mobilization, and implementation rather than through a steady-state process. This episodicity creates measurement and management challenges but may be inherent to the creative process itself.
+
+\textbf{Irregularity and cognitive load.} The higher uncertainty perceived by workers in episodic contexts (Critical and Peripheral quadrants) suggests that irregularity itself generates cognitive load. When tasks lack routine structure, workers often need to reconstruct context, reactivate dormant knowledge, and navigate ambiguous decision spaces. This reconstruction burden helps explain why workers express strong desire for automation support in Peripheral contexts despite those tasks requiring high human judgment. The desire reflects augmentation needs rather than a wish for full delegation: workers want tools that help manage complexity during irregular innovation episodes.
+
+\textbf{Stability of agency requirements.} The finding that intrapreneurial tasks maintain consistent H3–H4 concentration across all quadrants suggests that human agency requirements remain relatively stable despite variation in importance and frequency. The cognitive and creative demands of innovation work seem inherent to the tasks themselves rather than contingent on their IF positioning. These patterns imply that organizations may be unlikely to reduce the human‑agency requirements of innovation simply by trying to routinize it; overly aggressive standardization of intrapreneurial work may instead erode its creative character.
+
+\subsection{Organizational and AI Design Implications}
+\label{sec:ch5-design}
+
+\subsubsection{Designing for H3/H4 Collaboration}
+\label{sec:ch5-h3h4}
+
+\textbf{Design for augmentation.} The concentration of intrapreneurial tasks in H3 (Equal human–AI partnership) and H4 (Human-driven with AI assistance) bands suggests that AI system design is likely to be more effective when prioritizing augmentation architectures over full automation solutions for these tasks. They require iterative human–AI interaction in which humans retain decision authority while leveraging computational capabilities for analysis, pattern recognition, and option generation. The scarcity of worker-rated H5 tasks (only five intrapreneurial tasks in the sample) indicates that even highly creative work can benefit from AI support, but that support is likely to be more effective when it preserves human agency. Recent workflow-level evidence from Wang et al. (2025), who compare 48 human workers and four agent frameworks on 16 long-horizon tasks, points in the same direction: when humans use agents for augmentation, task completion time improves by 24.3\%, whereas relying on agents for full automation slows humans by 17.7\% as their activities shift from “building” to reviewing and debugging AI-produced solutions. This pattern reinforces the idea that intrapreneurial H3/H4 tasks are stronger candidates for augmentation than for end-to-end automation.
+
+\textbf{Automation proneness in practice.} The automation-proneness analysis helps clarify what “designing for H3/H4 collaboration” means in practice. Around 40\% of intrapreneurial tasks are judged automation-prone in the narrow sense (H1/H2) by both workers and experts, yet average HAS scores cluster around 3.0, and intrapreneurial tasks are consistently shifted toward higher human agency relative to non-intrapreneurial tasks occupying similar IF positions. Taken together, these patterns indicate that design efforts are likely to be more effective when they treat intrapreneurial tasks as structurally collaborative, rather than attempting to push them wholesale into H1/H2 full automation: tools that automate sub-steps or provide suggestions while preserving human framing, integration, and decision authority.
+
+% [Removed: speculative adoption risks not measured in this dataset]
+
+\textbf{Proposed design patterns for H3 and H4.} For H3 tasks requiring equal human–AI partnership, we propose that AI systems function as thought partners rather than decision-makers. This includes generating alternative solutions for human evaluation rather than selecting “optimal” choices, providing contextual information and precedents while leaving synthesis to humans, supporting divergent thinking through combinatorial exploration of possibilities, and offering real-time feedback on feasibility without constraining creative exploration. For H4 tasks involving human-driven with AI assistance, we propose “monitoring and verification” regimes: systems sophisticated enough to handle routine variation while escalating novel situations for human judgment, with transparent decision boundaries that clearly delineate AI authority limits, explanatory interfaces that help humans quickly understand AI recommendations, graduated autonomy that adjusts to task complexity and uncertainty levels, and fail-safe mechanisms that default to human control in ambiguous situations. Recent evidence on complex computer-use agents underscores the importance of such safeguards. In Wang et al. (2025), agents often produce superficially plausible but lower-quality work by fabricating missing data or misusing tools when they cannot process user-provided inputs, which makes transparent step histories and verification support important for H4-like tasks.
+
+\subsubsection{Peripheral Augmentation Priorities}
+\label{sec:ch5-peripheral-augmentation}
+
+\textbf{Peripheral priorities.} The Peripheral quadrant presents the largest gap between worker automation desires and expert capability assessments, identifying it as a promising zone for augmentation tool development. Workers might want AI support for these infrequent, lower-importance tasks because their episodic nature makes them cognitively taxing when they occur. Experts, however, rate these tasks as more technically challenging to automate.. This desire–capability gap suggests that Peripheral intrapreneurial work is likely to be better served by scaffolding and context-restoration tools than by end-to-end automation, especially given evidence that current state of AI agents struggle with less-programmable, context-heavy tasks and slow humans down when used for full automation rather than step-level assistance.
+
+\textbf{Training guidance.} The worker–expert uncertainty gaps documented in Section~\ref{sec:uncertainty} can inform training design. Where the gap exceeds about 0.5 (Critical and Peripheral quadrants), organizations might implement short, just-in-time refresher modules tied to task recurrence. These modules help address the context-reconstruction burden workers might experience with episodic tasks by providing rapid reorientation when irregular innovation work emerges. This approach recognizes that uncertainty stems partly from infrequency itself: workers need support managing cognitive load during rare but consequential activities.
+
+\textbf{Scaffolding tools.} The desire–capability gap also points to specific design opportunities for “scaffolding” tools that support task execution without full automation: just-in-time guidance systems that help workers navigate infrequent tasks; template libraries that provide starting structures for episodic innovation work; tools that reconstruct relevant background when tasks recur; and mechanisms that connect workers facing similar innovation challenges. High WBU scores in Peripheral contexts indicate that workers want to retain control even while receiving AI agents support, so we suggest that design may emphasize amplification of human capabilities rather than substitution: intelligence-amplification tools, creativity support systems, and decision-support frameworks that structure choices without making them.
+
+\subsubsection{Operational Continuous-Improvement Supports}
+\label{sec:ch5-operational-augmentation}
+
+Operational intrapreneurial tasks emphasize ongoing management, implementation, and optimization of systems and activities that are already in play. As described in Section~\ref{sec:if-distribution}, these tasks occupy low-importance, high-frequency positions in the IF plane and include activities such as monitoring trends and technology, analyzing sales and inventory, assigning and supervising staff, and configuring computer and information systems for concrete business problems. Many task statements involve analysis and research that are directly tied to keeping operations efficient and responsive, for example improving search performance via A/B tests, tracking market developments for clients, or updating content and production in light of current conditions. In essence, the Operational quadrant captures running and incrementally improving established systems so they perform reliably and adapt to current circumstances.
+
+Quantitatively, intrapreneurial prevalence in the Operational quadrant is intermediate rather than extreme: about 23\% of Operational tasks are intrapreneurial, corresponding to an odds ratio of 1.49 relative to the overall baseline, but this elevation does not survive multiple-comparison correction. Automation-proneness and HAS patterns also place Operational intrapreneurial tasks between Peripheral and Core/Critical contexts. Workers classify roughly 50\% of Operational intrapreneurial tasks as H1/H2 candidates, while experts classify a smaller share (36\%), and mean HAS scores remain close to the collaboration regime around 3.0. At the same time, worker willingness to bear uncertainty (WBU) is lowest in the Operational quadrant, suggesting relatively less resistance to delegating routine adjustments when uncertainty is modest and impacts are more contained.
+
+These features suggest a design space centered on workflow-embedded monitoring and selective automation of low‑uncertainty, low‑stakes decisions, rather than either hands-off observation or fully autonomous operations. This aligns with workflow studies showing that AI is most helpful when embedded into existing tools for localized adjustments, rather than when agents attempt to take over entire operational workflows at once. AI systems supporting Operational intrapreneurial work are likely to be most effective when tightly integrated into the tools that practitioners already use to run day-to-day activities, such as inventory systems, scheduling interfaces, campaign managers, and maintenance dashboards, and continuously monitor performance indicators, trends, and anomalies. Within guardrails set by human operators, such systems can propose or implement incremental adjustments to parameters, thresholds, and configurations, treating intrapreneurial activity as a continuous improvement process rather than as isolated episodes.
+
+Human–AI role allocation in this quadrant can reflect the intermediate automation-proneness and collaboration patterns observed in the data. Routine, low‑uncertainty, low‑stakes decisions that occur at high frequency and fall within well-understood bounds can be handled by AI under H2-style “human verification” regimes, where humans define objectives, constraints, and acceptable ranges and intervene primarily when metrics or conditions move outside expected envelopes. More novel or consequential changes can be treated as H3/H4 collaboration, in which AI surfaces patterns, suggests options, and estimates impacts while humans retain responsibility for framing trade-offs and authorizing significant shifts in how operations run.
+
+Finally, Operational intrapreneurial work is a plausible locus for experimentation infrastructure. Because many tasks involve tuning existing systems rather than designing entirely new ones, AI-supported A/B testing, multi-armed bandit approaches, and other experimentation tools can be embedded directly into operational workflows. These tools can automate the setup and monitoring of experiments while providing clear, local explanations of why particular changes are being proposed or implemented. In combination, workflow integration, selective automation of micro-decisions, and built-in experimentation support may help organizations realize efficiency gains in Operational contexts without undermining the human agency that remains central to intrapreneurial work.
+
+\subsubsection{Core/Critical Change Management}
+\label{sec:ch5-core-critical-change}
+
+\textbf{Identity and meaning.} In the Critical quadrant, expert assessments indicate higher automation capability and a greater tendency to place tasks in automation‑prone bands than workers (experts: 50.0\% H1/H2; workers: 36.1\%; expert capability mean \(\approx\) 3.12), suggesting that adoption barriers there are at least partly organizational and psychological rather than purely technological. In the Core intrapreneurial slice, workers and experts assign similar automation‑prone shares (35.5\% each) and expert capability is moderate (\(\approx\) 3.09) while worker mean HAS remains near collaboration (\(\approx\) 3.0), so evidence for a capability‑over‑acceptance gap is weaker; identity/meaning concerns may still matter even when feasibility is judged adequate.
+
+For Core intrapreneurial tasks, the relatively rare intersection of routine and innovation (31/405; 7.6\%), organizations can frame automation as capability enhancement rather than job replacement, involve workers in co‑designing augmentation tools, implement graduated adoption that allows workers to build trust through experience, and preserve meaningful decision points to maintain a sense of contribution.
+
+\textbf{Readiness for high‑uncertainty/high‑stakes decisions.} Critical quadrant tasks present a different challenge: high importance but low frequency means workers may need to maintain readiness for irregular high‑uncertainty/high‑stakes decisions. Augmentation strategies can focus on simulation and training systems that maintain skills between episodes, decision-rehearsal tools that allow workers to practice judgment in safe environments, knowledge-management systems that capture and transfer expertise from rare events, and alert and activation systems that help workers rapidly shift into critical task modes. In both Core and Critical zones, architectures that augment (H2/H3/H4) with clear guardrails are likely to be more appropriate than fully autonomous solutions.
+
+\subsubsection{Why Intrapreneurial Work Shows Up at the Edges}
+\label{sec:ch5-edges}
+
+\textbf{Why edges, not cores.} The category analysis in Section 4.7 helps explain why intrapreneurial tasks are depleted in Core but enriched in Critical and Peripheral quadrants. The most common components observed are opportunity discovery and managerial/enabling roles. Both are episodic, situational activities that organizations perform when new initiatives emerge or need advancement, rather than in day-to-day service delivery. Because O*NET Importance and Frequency tend to reflect routine role performance, episodic intrapreneurial activities often appear at the edges of IF space (depleted in Core; enriched in Critical and Peripheral).
+
+In this sense, we assume that the occupational core captures what the job delivers routinely; the periphery captures how the job evolves. This positioning is consistent with process views of corporate entrepreneurship: autonomous or induced initiatives surface irregularly and rely on managerial actors to secure resources and sponsorship. Task-level data make this process visible at finer granularity by showing which specific task statements carry discovery, planning, and enabling content and where they sit in the IF plane.
+
+\textbf{Preparation–execution gap.} The preparation–execution gap, in which planning tasks outnumber execution tasks, might reinforce why innovation work appears peripheral. Tasks that generate ideas and develop plans can be performed informally and irregularly without disrupting core operations. Execution tasks, by contrast, require sustained effort, cross-functional coordination, and visible resource commitment, making them less likely to feature prominently in standardized occupational task descriptions that emphasize stable role requirements.
+
+\subsubsection{Designing Supports for Dominant Phenotypes}
+\label{sec:ch5-phenotype-support}
+
+Because managerial/enabling and discovery phenotypes together account for a large share of intrapreneurial tasks, organizational and AI supports can concentrate there first. For discovery phenotypes, tools that amplify environmental scanning, pattern recognition, and opportunity articulation are central, including AI-assisted trend analysis, anomaly detection in operational data, and sensemaking platforms that connect disparate signals. The high co-occurrence of discovery with innovation suggests that such tools can facilitate creative problem-solving alongside information and knowledge retrieval which AI agents excel at. For managerial/enabling phenotypes, systems that streamline resource routing, approval workflows, and stakeholder-visibility mechanisms are key. The association between planning and resource provision, and between execution and championing, indicates that managerial tools are likely to be most effective when tightly integrated with substantive entrepreneurial activities rather than implemented as standalone administrative systems.
+
+Execution-focused phenotypes, though rare, are the ones that close the knowing–doing gap. These tasks may benefit from explicit authority paths, dedicated resources, and visible sponsorship to overcome organizational inertia. Their rarity may reflect that implementation is often bundled with planning in full-cycle phenotypes, suggesting that design interventions can emphasize end-to-end ownership rather than hand-offs between discovery, planning, and execution roles. Phenotype overlap analysis indicates that the most effective support systems will need to span multiple phenotypes, for example by combining discovery tools with managerial workflow support, rather than optimizing for single categories in isolation.
+
+\subsubsection{Early-Stage AI Agents and Expected Shift Toward H1/H2}
+\label{sec:ch5-agents-shift}
+
+The results characterize the current landscape, where intrapreneurial tasks concentrate in augmentation bands (H3–H4). AI agents remain relatively early-stage; as capabilities and integration improve, some tasks now in H3/H4 are likely to migrate toward H2 (AI with human verification) and, in specific routinizable slices, H1 (AI only). This shift can be treated as a moving frontier rather than a discontinuity: design for high-agency augmentation now, while architecting pathways that safely relax human-in-the-loop intensity where reliability, guardrails, and acceptance mature. Even with progress, high-uncertainty, open-ended creative episodes are likely to continue requiring substantive human judgment, anchoring a persistent role for H3/H4 in innovation work.
+
+\subsection{Limitations}
+\label{sec:limitations}
+
+\subsubsection{O*NET Text Scope}
+\label{sec:ch5-onet-limitations}
+
+The analysis is bounded by the scope and granularity of O*NET task descriptions. These standardized statements may not capture the full complexity of intrapreneurial behavior as enacted in specific organizational contexts. Task descriptions average 15–20 words and emphasize observable activities, potentially missing cognitive, relational, and emotional dimensions of innovation work. Subtle intrapreneurial behaviors (informal influence, creative reframing, opportunity sensing) may be underrepresented in formal taxonomies. The static nature of O*NET descriptions also limits the ability to capture temporal dynamics: innovation work often involves extended processes spanning multiple tasks and time periods, but the classification treats each task as discrete. The progression from opportunity recognition through implementation may therefore be segmented in ways that obscure the holistic nature of intrapreneurial action.
+
+To partially mitigate the brevity of task statements, we also leverage O*NET Work Activities (WA) as a structured behavioral lens. Each task maps to one or more WAs, and we assess over‑ and under‑representation of WAs among intrapreneurial tasks using Fisher’s exact tests (Chapter~3, Section~\ref{sec:ch3-enrichment}; Chapter~4, “Work Activity Signatures”; Appendix C.3, Table~\ref{tab:c3-work-activity}). The resulting signatures align with theory, creative/ideational and strategic activities are enriched (Thinking Creatively; Developing Objectives and Strategies; Selling or Influencing Others; Coordinating the Work of Others), while documentation‑centric activities are depleted. These associations provide additional behavioral context beyond short task texts (e.g., Thinking Creatively OR~$\approx 4.84$; Documenting/Recording OR~$\approx 0.13$), but WAs remain standardized descriptors and inherit limits around tacit, relational, and temporal nuance; mappings are many‑to‑many and do not recover within‑task process sequencing.
+
+
+\subsubsection{Expert Non-Matching}
+\label{sec:ch5-expert-mismatch}
+
+Expert raters in the WORKBank database were not matched one-to-one with specific occupations; instead, they provided assessments across multiple occupations within their domains of expertise. This design choice supports consistent technical standards but may miss occupation-specific nuances that affect automation feasibility. An AI expert evaluating nursing tasks may accurately assess technical capabilities while underestimating contextual factors that nurses understand implicitly. This limitation is partially mitigated by focusing on within-task comparisons (worker versus expert for the same task) rather than absolute levels. Systematic gaps such as higher worker uncertainty perceptions still represent calibration differences even if expert baselines imperfectly capture occupational realities. Nonetheless, future research with occupation-matched experts could provide more precise capability assessments.
+
+\subsubsection{H5 Scarcity}
+\label{sec:ch5-h5-scarcity}
+
+The near-absence of H5 classifications (11 expert-rated H5 tasks; 5 intrapreneurial and 19 non-intrapreneurial tasks receiving worker H5 ratings) raises interpretive questions. This may reflect genuine AI augmentation potential for most tasks, or measurement limitations in how respondents interpret scale extremes. Workers may hesitate to claim that any task requires exclusively human performance, while experts may interpret H5 as technical impossibility rather than practical infeasibility. Because so few tasks receive H5 ratings, small reclassifications would materially change proportions; future work should collect more high-agency examples to enable robust analysis. The distinction between H4 tasks (Human-driven with AI assistance) and hypothetical H5 tasks requiring exclusively human performance may also be conceptually unclear. Alternative scale anchors or additional scale points could better capture variation in high-agency work.
+
+\subsubsection{Generalizability}
+\label{sec:ch5-generalizability}
+
+Because both O*NET and WORKBank are U.S.-focused, the structural positioning of intrapreneurial tasks and agency requirements may differ in other institutional and technological contexts.
+
+\subsubsection{Threshold Choices}
+\label{sec:ch5-thresholds}
+
+The choice of IF quadrant cutpoints (4.0/4.0) has face validity but remains somewhat arbitrary. Alternative approaches such as occupation-specific thresholds or continuous importance–frequency analyses might reveal additional patterns. However, as documented in Section 3.4 and demonstrated in Section 4.8, core findings are robust across multiple threshold specifications, suggesting that results are unlikely to be solely driven by threshold artifacts.
+
+\subsubsection{LLM Classification Biases}
+\label{sec:ch5-llm-bias}
+
+The classification approach relies on large language models that may embed biases from their training data. The model may systematically over-identify or under-identify intrapreneurial characteristics in certain occupational contexts based on linguistic patterns rather than substantive content. For example, tasks described with entrepreneurial-adjacent terms (“innovate”, “create”, “develop”) may be more likely to be classified as intrapreneurial even when the work is routine modification, while genuinely innovative tasks described in technical or domain-specific language may be missed. High inter-run agreement (over 90\%) suggests methodological consistency but does not address potential systematic biases in how the model interprets task descriptions. Future research can incorporate human validation from domain experts and examine whether classification patterns vary across occupational families or linguistic registers.
+
+\subsection{Future Research Directions}
+\label{sec:ch5-future}
+
+\subsubsection{Longitudinal Innovation Trajectories}
+\label{sec:ch5-longitudinal}
+
+The cross-sectional analysis captures a snapshot of intrapreneurial task distribution but cannot reveal how innovation work evolves over time. Future longitudinal research can examine whether peripheral intrapreneurial tasks migrate toward core positions as innovations mature; how automation changes the importance–frequency positioning of innovation work; the career trajectories of workers who excel at peripheral versus core intrapreneurship; and organizational factors that enable or inhibit transitions from episodic to routine innovation.
+
+\subsubsection{Contextual Moderation}
+\label{sec:ch5-context}
+
+The relationship between task characteristics and intrapreneurial potential likely varies across organizational and industrial contexts. Future work can investigate how organizational culture and structure moderate the agency requirements of innovation tasks; industry-specific patterns in the distribution and automation potential of intrapreneurial work; the role of team composition and dynamics in shaping individual intrapreneurial behavior; and cross-national differences in how intrapreneurship manifests within occupational structures.
+
+\subsubsection{Intervention Studies}
+\label{sec:ch5-interventions}
+
+The descriptive findings suggest intervention opportunities that require experimental validation. Studies can test whether augmentation tools designed for H3/H4 collaboration enhance innovation outcomes; evaluate whether recognizing peripheral contributions increases intrapreneurial behavior; assess whether uncertainty training improves worker comfort with episodic innovation tasks; and examine whether reframing automation as augmentation increases adoption in Core and Critical contexts.
+
+\subsubsection{Methodological Extensions}
+\label{sec:ch5-methods}
+
+The classification approach developed here can be extended and refined through multi-modal analysis incorporating job postings, performance reviews, and patent data; real-time classification of work activities through experience-sampling methods; comparative analysis using alternative theoretical frameworks for innovation work; and development of continuous intrapreneurship scores rather than binary classification. These directions would deepen understanding of how innovation work operates within organizations and how technological change reshapes the landscape of human creativity and agency. The episodic, peripheral nature of intrapreneurship revealed in this study suggests that fostering innovation requires looking beyond traditional job design toward the edges where adaptation and transformation occur.

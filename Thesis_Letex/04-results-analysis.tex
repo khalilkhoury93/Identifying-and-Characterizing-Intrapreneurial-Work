@@ -1,0 +1,478 @@
+\section{Results and Analysis}
+\label{sec:results}
+
+\subsection{Overview}
+
+This chapter presents findings from the theory-grounded classification of 844 O*NET tasks, their distribution across Importance × Frequency (IF) quadrants, and their human agency requirements based on paired worker-expert assessments from the WORKBank database (Shao et al., 2025). We classified 153 tasks as intrapreneurial (18.1\%), 690 as non-intrapreneurial (81.8\%), and 1 as ambiguous (0.1\%), with 92.1\% unanimous agreement across three independent runs. Intrapreneurial tasks are depleted in Core (7.6\%, OR=0.22) and enriched in Critical (27.1\%, OR=1.94) and Peripheral (31.4\%, OR=2.65) quadrants. They concentrate in H3–H4 bands (H3: Equal human–AI partnership; H4: Human-driven with AI assistance), with workers perceiving systematically higher uncertainty than experts, particularly in Critical (Δ=+0.58) and Peripheral (Δ=+0.49) quadrants.
+
+\textbf{Quadrant Definitions:}\label{def:if-quadrants} Throughout this chapter, we use four IF-based quadrants: \textit{Core} (high importance ≥4.0, high frequency ≥4.0), \textit{Critical} (high importance ≥4.0, low frequency <4.0), \textit{Operational} (low importance <4.0, high frequency ≥4.0), and \textit{Peripheral} (low importance <4.0, low frequency <4.0). These are distinct from O*NET's "Core/Supplemental" task flags which use relevance and mean importance but not frequency.
+
+\subsection{Classification Results}
+
+Our theory-grounded classification of 844 O*NET tasks yielded 153 intrapreneurial tasks (18.1\%), 690 non-intrapreneurial tasks (81.8\%), and 1 ambiguous task (0.1\%). The high agreement across independent classification runs is consistent with stability under the structured criteria approach. A total of 777 tasks (92.1\%) achieved unanimous classification. Every single task achieved at least majority consensus, with no ties requiring arbitrary resolution.
+
+
+
+
+\begin{table}[H]
+\centering
+\small
+\caption{Classification outcomes and voting consistency}
+\begin{tabular}{lrrrr}
+\toprule
+Classification & N & Percentage & Unanimous & Majority \\
+\midrule
+Intrapreneurial & 153 & 18.1\% & 124 & 29 \\
+Not intrapreneurial & 690 & 81.8\% & 653 & 37 \\
+Ambiguous & 1 & 0.1\% & 0 & 1 \\
+\textbf{Total} & \textbf{844} & \textbf{100.0\%} & \textbf{777 (92.1\%)} & \textbf{67 (7.9\%)} \\
+\bottomrule
+\end{tabular}
+\label{tab:classification-results}
+\end{table}
+
+
+\textit{Note:} HAS-based figures/tables use the HAS‑complete frame (N=839; intrapreneurial N=151); see Section 3.2 for reconciliation.
+
+
+Of all tasks, 7.9\% (67/844) received 2–1 majorities (including rare 2‑of‑2 cases). Among the intrapreneurial majority cases (29 tasks), items were not concentrated in routine managerial oversight; they span Core, Peripheral, Operational, and Critical quadrants and are often phrased with generic planning, design, analysis, or implementation verbs rather than explicit “new opportunity” language. These borderline cases illustrate ambiguity between continuous improvement or solution development and explicit opportunity creation.
+
+\subsection{Importance × Frequency (IF) Distribution}
+\label{sec:if-distribution}
+
+\subsubsection{Quadrant Prevalence}
+
+The distribution of intrapreneurial tasks across the IF quadrants shows a clear pattern (see Figure~\ref{fig:4.1}). Using baseline thresholds of 4.0 for both Importance and Frequency, intrapreneurial tasks show significant depletion in the Core quadrant and enrichment in both Critical and Peripheral quadrants. See Tables~\ref{tab:e7-core-tasks},~\ref{tab:e7-critical-tasks},~\ref{tab:e7-operational-tasks}, and~\ref{tab:e7-peripheral-tasks} (Appendix E.7) for the complete task lists by quadrant.
+
+
+
+\begin{table}[H]
+\centering
+\small
+\caption{Intrapreneurial task prevalence by IF quadrant (thresholds 4.0/4.0)}
+\begin{tabular}{lrrrr}
+\toprule
+Quadrant & Intrap. n / N & Prevalence, \% (95\% CI) & OR & q-value \\
+\midrule
+Core & 31 / 405 & 7.6 (5.4--10.6) & 0.22 & < 0.001 \\
+Critical & 36 / 133 & 27.1 (20.2--35.2) & 1.94 & 0.006 \\
+Peripheral & 50 / 159 & 31.4 (24.6--38.8) & 2.65 & < 0.001 \\
+Operational & 34 / 147 & 23.1 (16.9--30.4) & 1.49 & 0.076 \\
+\bottomrule
+\end{tabular}
+\label{tab:quadrant-prevalence}
+\end{table}
+
+\vspace{-0.5em}
+\noindent\textit{Note:} Denominators use the IF‑ready frame (N=844). Intrapreneurial counts across quadrants (31+36+50+34=151) reflect the classification‑labeled subset used for the IF outputs (two tasks have missing labels in the merged source; the single ambiguous task is not counted as intrapreneurial here). The baseline prevalence in this frame is approximately 17.9\%.
+
+
+\begin{figure}[H]
+\centering
+\pandocbounded{\includegraphics[width=0.80\textwidth,height=0.60\textheight,keepaspectratio]{../../03_Figures/Q6_ONET_Metadata/fig_q6_2_quadrant_heatmap.png}}
+\caption{Distribution of Intrapreneurial Tasks Across IF Quadrants}
+\label{fig:4.1}
+\end{figure}
+
+In Figure \ref{fig:4.1}, intrapreneurial task enrichment (red) and depletion (green) are shown across the four IF quadrants. Cell shading encodes odds ratios relative to the baseline prevalence in this frame (\(\approx\)18\%), and asterisks indicate FDR‑significant cells (\textit{q<0.05}, \textbf{q<0.01}, q<0.001).
+
+
+\begin{figure}[H]
+\centering
+\pandocbounded{\includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{../../03_Figures/Q6_ONET_Metadata/fig_q6_2_threshold_robustness.png}}
+\caption{Robustness of IF Quadrant Prevalence Across Thresholds}
+\label{fig:4.2}
+\end{figure}
+
+Across thresholds (3.5/3.5, 4.0/4.0, 4.5/4.5, median), intrapreneurial prevalence remains lowest in Core and highest in Critical/Peripheral, with Operational intermediate. Bar labels show percentage values by quadrant, confirming the stability of intrapreneurial positioning across threshold specifications.
+
+The Core quadrant, representing tasks both highly important and frequently performed, contains only 7.6\% intrapreneurial tasks. This reflects a 78\% reduction in odds compared to baseline (OR = 0.22, q < 0.001). Conversely, the Peripheral quadrant shows the highest concentration at 31.4\% (OR = 2.65, q < 0.001), while the Critical quadrant contains 27.1\% intrapreneurial tasks (OR = 1.94, q = 0.006).
+
+\noindent\textbf{Core quadrant.} Core intrapreneurial tasks center on building and refining the main engines of value creation within occupations. They involve designing and maintaining information systems, mathematical and statistical models, financial and business analyses, and creative products such as games, scripts, and media content. Many task statements describe turning raw data or loosely specified requirements into concrete solutions: informatics tools for clinicians, precision agriculture maps, computer security plans, structural and mechanical coordination for buildings, or core game mechanics and storylines. The verbs are consistently “develop, design, formulate, compile, analyze,” with outputs tied directly to operational decisions about money, logistics, energy efficiency, or customer experience. Overall, Core intrapreneurial work creates and maintains analytical, technical, and creative frameworks that others rely on to run the organization and deliver its offerings.
+
+\noindent\textbf{Critical quadrant.} Critical intrapreneurial tasks focus on high-leverage analysis, coordination, and standard-setting that shape how systems and organizations evolve. The descriptions emphasize studying markets, personnel data, supply chains, technologies, and sustainability issues, then translating those insights into strategies, policies, quality standards, and process designs. Many tasks explicitly bridge domains: linking nursing practice to IT design, connecting scientific research needs to custom software, aligning transportation planning with land use and economics, or integrating engineering elements into architectural designs. These activities often involve choosing among alternatives, recommending improvements, and orchestrating change in areas such as financial planning, logistics, training, public relations, and online marketing. In this sense, the Critical quadrant is about deciding what to change and how to change it, and setting guidelines and structures that make those changes stick.
+
+\noindent\textbf{Operational quadrant.} Operational intrapreneurial tasks emphasize ongoing management, implementation, and optimization of systems and activities that are already in play. The statements describe monitoring trends and technology, analyzing sales and inventory, assigning and supervising staff, and configuring computer and information systems for concrete business problems. There is frequent attention to budgeting, scheduling, and day-to-day decision-making in areas such as biofuels plants, transportation systems, marketing campaigns, and financial plans. Many tasks involve analysis and research, but in a way directly tied to keeping operations efficient and responsive, for example improving search performance via A/B tests, tracking market trends for clients, or updating content and production based on current developments. In essence, the Operational quadrant captures running and incrementally improving established systems so they perform reliably and adapt to current conditions.
+
+\noindent\textbf{Peripheral quadrant.} Peripheral intrapreneurial tasks revolve around specialized support, evaluation, and environmental scanning that inform and enhance the core and critical activities. They include feasibility studies, technology evaluations, inspection and testing criteria, regulatory and market research, and the design of supporting tools such as security measures, data management specifications, and information access aids. Many tasks look outward to understand contexts and constraints: regional economic and cultural characteristics, regulatory trends, energy and sustainability requirements, financial markets, or competitive products and media. Others refine or extend existing systems and products by modifying designs, improving analytical methods, optimizing user conversion, or configuring energy-efficient structures and aerospace systems. This quadrant also contains communication-heavy work, including speeches, press releases, promotional materials, and contract bids. Overall, Peripheral intrapreneurial work supplies the analyses, tools, and signals that help the organization adjust to its environment and fine-tune its technical and commercial solutions.
+
+\paragraph{Why peripheral tasks appear rare and less important}\mbox{}\\
+
+O*NET respondents may tend to rate these “peripheral” tasks as low frequency and low importance because they sit at the edges of everyday occupational practice. Many of them occur only at specific moments: when a new project is initiated, a bid is prepared, a design needs to be reworked, or a regulation changes. They are not part of the daily rhythm of most jobs, so respondents accurately report that they perform them rarely. In addition, these activities often belong more clearly to specialized roles elsewhere in the organization, such as legal, sustainability, central IT, or market research. For many workers, the realistic answer is therefore: “I seldom perform this, and it is not central to what my occupation is about.”
+
+The effects of these tasks are also indirect and slow to materialize, which makes respondents mark them as less important for their own role. Reading trade journals, scanning regulations, tweaking methods, optimizing conversion, or writing proposals typically supports other activities rather than producing the main output of the job. Workers tend to assign higher “importance” scores to tasks that clearly drive their primary performance goals: serving clients, running operations, making key decisions, or producing the core product. Scanning, evaluating, and fine-tuning sit one step behind those visible outcomes. Taken together, these features make peripheral items appear as useful but occasional complements rather than the core of the job, which might explains why they cluster in the low-frequency, low-importance quadrant.
+
+\subsubsection{Threshold Robustness}
+
+The quadrant patterns appear stable across alternative threshold specifications (see Figure~\ref{fig:4.2} and Table~\ref{tab:threshold-robustness}). Whether using lenient (3.5/3.5), baseline (4.0/4.0), strict (4.5/4.5), or data-driven median split thresholds, Core depletion and Critical/Peripheral enrichment persist. Across these settings, intrapreneurial prevalence remains lowest in Core (≈5–11\%), elevated in Critical (≈11–27\%) and highest in Peripheral (≈28–48\%), with Operational varying between ≈10–33\% depending on how “High Frequency” is defined. This consistency suggests that the episodic, edge‑positioning of innovation is unlikely to be solely an artifact of where cutoffs are drawn.
+
+
+
+
+\begin{table}[H]
+\centering
+\small
+\caption{Directional consistency across threshold schemes}
+\begin{tabular}{lcccc}
+\toprule
+Thresholds & Core & Critical & Operational & Peripheral \\
+\midrule
+3.5 / 3.5 & $\downarrow$** & $\uparrow$** & $\rightarrow$ & $\uparrow$** \\
+4.0 / 4.0 & $\downarrow$*** & $\uparrow$** & $\rightarrow$ & $\uparrow$*** \\
+4.5 / 4.5 & $\downarrow$* & $\uparrow$* & $\rightarrow$ & $\uparrow$** \\
+Median split & $\downarrow$** & $\uparrow$* & $\rightarrow$ & $\uparrow$*** \\
+\bottomrule
+\end{tabular}
+\label{tab:threshold-robustness}
+\end{table}
+
+
+\textit{Notes: $\downarrow$ = depletion, $\uparrow$ = enrichment, $\rightarrow$ = no significant difference. * q < 0.05, ** q < 0.01, *** q < 0.001 (Benjamini-Hochberg FDR-adjusted). FDR applied within the family of four quadrant comparisons per threshold specification.}
+
+\subsubsection{Importance–Frequency Coupling by Task Type}
+\label{sec:if-coupling}
+
+We quantified the coupling between Importance and Frequency using Spearman's rank correlation (\(\rho\)) on the IF‑only frame (total $N=844$), separating labeled intrapreneurial tasks from their complement. Non‑intrapreneurial (complement) tasks show stronger coupling (\(\rho = 0.496\), $p < 1 \times 10^{-43}$; $N=693$) than intrapreneurial tasks (\(\rho = 0.233\), $p = 0.004$; $N=151$). A Fisher \(r\)-to‑\(z\) test indicates the difference between correlations is statistically significant ($z = 3.39$, $p = 0.001$). These results align with the quadrant analysis: innovation work departs from the tight Importance–Frequency linkage that characterizes routine work. See Table~\ref{tab:c4-if-correlation} (Appendix C.4) for the correlation table.
+
+\subsection{Human Agency Requirements}
+\label{sec:human-agency}
+
+
+\subsubsection{HAS Band Distribution}
+
+Intrapreneurial tasks show distinctive human agency patterns compared to non-intrapreneurial tasks (see Figure~\ref{fig:4.3}, worker-HAS-complete N=839; see Table~\ref{tab:excluded-tasks} (Appendix E.6)). The concentration in H3 (Equal human–AI partnership) and H4 (Human-driven with AI assistance) bands is significantly higher for intrapreneurial work, while H1 and H2 bands are underrepresented.
+
+
+
+\begin{table}[H]
+\centering
+\small
+\caption{HAS band distribution: intrapreneurial vs non-intrapreneurial tasks}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+ & \multicolumn{2}{c}{Intrapreneurial} & \multicolumn{2}{c}{Non-intrapreneurial} \\
+ \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+HAS Level & n & \% & n & \% \\
+\midrule
+H1 (AI Only) & 12 & 7.9 & 91 & 13.2 \\
+H2 (Human Verification) & 50 & 33.1 & 266 & 38.7 \\
+H3 (Equal human–AI partnership) & 50 & 33.1 & 235 & 34.2 \\
+H4 (Human-driven with AI assistance) & 34 & 22.5 & 77 & 11.2 \\
+H5 (Human Only) & 5 & 3.3 & 19 & 2.8 \\
+\textbf{Total} & \textbf{151} & \textbf{100.0} & \textbf{688} & \textbf{100.0} \\
+\bottomrule
+\end{tabular}}
+\label{tab:has-distribution}
+\end{table}
+\textit{Notes: $\chi^2(4) = 16.00$, $p = 0.003$, Cram\'{e}r's V = 0.14.}
+ 
+
+\begin{figure}[H]
+\centering
+\pandocbounded{\includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{../../03_Figures/Module36_Intrap_HAS_Profile/Module36_overall_has_comparison.png}}
+\caption[Human Agency Scale Band Distribution for Intrapreneurial vs Non-Intrapreneurial Tasks]{\centering Human Agency Scale Band Distribution for Intrapreneurial vs Non-Intrapreneurial Tasks. Bands use per-task modal worker ratings.}
+\label{fig:4.3}
+\end{figure}
+
+Figure \ref{fig:4.3} compares worker‑rated HAS band distributions for intrapreneurial (N=151) versus non‑intrapreneurial (N=688) tasks. Bands are labeled H1 = AI Only, H2 = Human Verification, H3 = Equal human–AI partnership, H4 = Human-driven with AI assistance, H5 = Human Only. Intrapreneurial tasks concentrate in H3–H4.
+
+
+Notably, only 5 intrapreneurial tasks (3.3\%) received H5 ratings from workers when averaged at the task level, compared to 19 non-intrapreneurial tasks (2.7\%). Experts assigned H5 to 7 intrapreneurial tasks out of 11 H5 tasks total. This scarcity of H5 classifications suggests that even highly creative intrapreneurial work is seen as amenable to some form of AI augmentation.
+
+
+
+\subsubsection{Automation proneness of intrapreneurial tasks by IF quadrant}
+
+To summarize automation proneness within intrapreneurial work, we treat tasks as “automation‑prone” when their modal Human Agency Scale (HAS) band falls in H1 (AI‑only) or H2 (AI does the task, human verifies). Table~\ref{tab:intrap_quadrant_worker_expert} reports the resulting shares by IF quadrant, together with mean HAS values and expert automation capability ratings. Across all intrapreneurial tasks (N=151), workers classify 41.1\% of tasks as automation‑prone, while experts classify 41.7\%, and both groups place the average intrapreneurial task near HAS \(\approx\) 3.0, consistent with an active human–AI partnership regime rather than fully automated or human‑only work. Within IF quadrants, worker automation‑prone shares range from about 36\% in Core and Critical tasks to 50\% in Operational tasks, while experts show a mirror pattern of somewhat more automation in Critical and less in Operational tasks; however, chi‑square tests do not detect statistically significant variation in automation‑prone shares across quadrants for either group. Experts’ separate “automation capability” scores average around 3.0 in every quadrant, indicating a broadly similar technical feasibility assessment across the intrapreneurial task spectrum. Thus, conditional on being intrapreneurial, IF position does not generate strong differences in automation proneness; instead, intrapreneurial tasks as a class are typically seen as candidates for human–AI collaboration rather than full automation.
+
+Formal tests confirm this impression: for intrapreneurial tasks, automation shares do not differ significantly across quadrants (workers: $\chi^2(3) = 1.90$, $p = 0.593$; experts: $\chi^2(3) = 1.68$, $p = 0.641$).
+
+\begin{table}[H]
+\centering
+\small
+\caption{Automation proneness and mean HAS for intrapreneurial tasks by IF quadrant, workers and experts}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Quadrant & n & Worker H1/H2, \% & 95\% CI (W) & Worker mean HAS & Expert H1/H2, \% & 95\% CI (E) & Expert mean HAS & Expert capability mean \\
+\midrule
+Core & 31 & 35.5 & 21.1--53.1 & 2.99 & 35.5 & 21.1--53.1 & 3.07 & 3.09 \\
+Critical & 36 & 36.1 & 22.5--52.4 & 3.21 & 50.0 & 34.5--65.5 & 2.95 & 3.12 \\
+Operational & 34 & 50.0 & 34.1--65.9 & 2.84 & 38.2 & 23.9--55.0 & 3.06 & 3.01 \\
+Peripheral & 50 & 42.0 & 29.4--55.8 & 3.04 & 42.0 & 29.4--55.8 & 3.09 & 2.97 \\
+Overall & 151 & 41.1 & 33.5--49.0 & 3.03 & 41.7 & 34.2--49.7 & 3.05 & 3.04 \\
+\bottomrule
+\end{tabular}}
+\label{tab:intrap_quadrant_worker_expert}
+\end{table}
+
+\subsubsection{Intrapreneurial versus non-intrapreneurial tasks: human–AI role contrast}
+
+Tables~\ref{tab:intrap_vs_non_worker} and~\ref{tab:intrap_vs_non_expert} extend the analysis to compare intrapreneurial and non‑intrapreneurial tasks. Workers judge intrapreneurial tasks as systematically less automation‑prone and more human‑intensive than non‑intrapreneurial tasks. Overall, 41.1\% of intrapreneurial tasks fall into the automation‑prone bands H1/H2, compared with 51.9\% of non‑intrapreneurial tasks ($\chi^2 = 5.38$, $p = 0.020$), and the mean worker HAS is higher for intrapreneurial tasks (3.03 vs 2.83, $p < 0.001$). Within IF quadrants, the same qualitative pattern holds: intrapreneurial tasks have lower automation‑prone shares and higher mean HAS than non‑intrapreneurial tasks, with particularly pronounced mean‑HAS gaps in Critical and Peripheral quadrants; binary share differences are weaker at quadrant level for workers, but mean HAS is significantly higher for intrapreneurial tasks in Core, Critical, and Peripheral slices.
+
+Experts draw an even sharper distinction between intrapreneurial and non‑intrapreneurial work (Table~\ref{tab:intrap_vs_non_expert}). Overall, 41.7\% of intrapreneurial tasks are classified as automation‑prone versus 66.1\% of non‑intrapreneurial tasks ($\chi^2 = 30.21$, $p < 0.001$), and expert mean HAS is substantially higher for intrapreneurial tasks (3.05 vs 2.52, $p < 0.001$). In every IF quadrant, intrapreneurial tasks are less likely to be placed in H1/H2 and receive higher HAS scores than non‑intrapreneurial tasks, with several quadrant‑specific contrasts statistically significant for both automation shares and mean HAS. Taken together, these results show that, from both worker and expert perspectives, intrapreneurial tasks sit in a systematically more human‑centric region of the human–AI role spectrum than routine tasks (non-intrapreneurial), even when they occupy similar IF positions.
+
+Worker–expert agreement on discrete HAS bands remains low in both groups (Cohen’s \(\kappa=-0.014\) for intrapreneurial and \(\kappa=0.009\) for non‑intrapreneurial tasks), but the underlying mean ratings are positively associated (Spearman \(\rho=0.194\) and \(\rho=0.237\) respectively). This suggests that, despite categorical disagreement, workers and experts share a common ordering in which intrapreneurial tasks require more human agency than non‑intrapreneurial tasks.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Worker automation proneness and mean HAS for intrapreneurial versus non‑intrapreneurial tasks, overall and by IF quadrant}
+\begin{tabular}{llrrrrr}
+\toprule
+Slice & Group & n & H1/H2, \% & 95\% CI & mean HAS \\
+\midrule
+Overall & Intrap & 151 & 41.1 & 33.5--49.0 & 3.03 \\
+Overall & Non & 688 & 51.9 & 48.2--55.6 & 2.83 \\
+Core & Intrap & 31 & 35.5 & 21.1--53.1 & 2.99 \\
+Core & Non & 370 & 51.9 & 46.8--56.9 & 2.85 \\
+Critical & Intrap & 36 & 36.1 & 22.5--52.4 & 3.21 \\
+Critical & Non & 97 & 46.4 & 36.8--56.3 & 2.84 \\
+Operational & Intrap & 34 & 50.0 & 34.1--65.9 & 2.84 \\
+Operational & Non & 112 & 57.1 & 47.9--65.9 & 2.80 \\
+Peripheral & Intrap & 50 & 42.0 & 29.4--55.8 & 3.04 \\
+Peripheral & Non & 109 & 51.4 & 42.1--60.6 & 2.84 \\
+\bottomrule
+\end{tabular}
+\label{tab:intrap_vs_non_worker}
+\end{table}
+
+\noindent\textit{Notes:} Worker rows use the HAS‑complete frame (N=839): Overall counts are 151 intrapreneurial and 688 non‑intrapreneurial tasks. Per‑quadrant counts reflect tasks with available worker HAS within each IF quadrant and may differ slightly from IF totals due to minimal missingness.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Expert automation proneness and mean HAS for intrapreneurial versus non‑intrapreneurial tasks, overall and by IF quadrant}
+\begin{tabular}{llrrrrr}
+\toprule
+Slice & Group & n & H1/H2, \% & 95\% CI & mean HAS \\
+\midrule
+Overall & Intrap & 151 & 41.7 & 34.2--49.7 & 3.05 \\
+Overall & Non & 693 & 66.1 & 62.5--69.5 & 2.52 \\
+Core & Intrap & 31 & 35.5 & 21.1--53.1 & 3.07 \\
+Core & Non & 374 & 66.9 & 62.0--71.5 & 2.50 \\
+Critical & Intrap & 36 & 50.0 & 34.5--65.5 & 2.95 \\
+Critical & Non & 97 & 67.0 & 57.2--75.6 & 2.47 \\
+Operational & Intrap & 34 & 38.2 & 23.9--55.0 & 3.06 \\
+Operational & Non & 113 & 64.9 & 55.8--73.1 & 2.50 \\
+Peripheral & Intrap & 50 & 42.0 & 29.4--55.8 & 3.09 \\
+Peripheral & Non & 109 & 63.6 & 54.3--72.0 & 2.63 \\
+\bottomrule
+\end{tabular}
+\label{tab:intrap_vs_non_expert}
+\end{table}
+
+\noindent\textit{Notes:} Expert rows use the IF‑ready frame (N=844) with expert HAS available: Overall counts are 151 intrapreneurial and 693 non‑intrapreneurial (including the single ambiguous task treated as non‑intrapreneurial for IF‑only summaries). Per‑quadrant counts sum to IF totals.
+
+\subsubsection{Worker-Expert Alignment}
+
+Worker and expert assessments show modest categorical agreement (Cohen's κ=0.088, 95\% CI: 0.049–0.129) but meaningful continuous correlation (Spearman ρ=0.247, 95\% CI: 0.184–0.312). Figure~\ref{fig:4.4} illustrates this relationship, revealing systematic differences in how workers and experts perceive human agency requirements.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\pandocbounded{\includegraphics[width=\textwidth]{../../03_Figures/Module36_Intrap_HAS_Profile/Module36_intrap_worker_vs_expert_scatter.png}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\centering
+\pandocbounded{\includegraphics[width=\textwidth]{../../03_Figures/Module36_Intrap_HAS_Profile/Module36_intrap_modal_heatmap.png}}
+\end{minipage}
+\caption[Worker–Expert HAS alignment (intrapreneurial tasks only)]{\centering Worker–Expert HAS alignment (intrapreneurial tasks only). Left: scatter of task‑level means. Right: modal‑band heatmap}
+\label{fig:4.4}
+\end{figure}
+
+The scatter (left panel) shows a positive but modest association between worker and expert mean HAS at the task level for intrapreneurial work (Spearman $\rho\approx0.194$). Points above the diagonal indicate tasks where workers rate agency higher than experts; these are slightly more common than the reverse, but the difference is small.
+
+The heatmap (right panel) summarizes categorical agreement on modal bands. Exact matches are limited (diagonal share $\approx27.2\%$; $\kappa\approx-0.014$), with a slight tilt toward workers selecting higher bands (lower triangle $\approx37.7\%$ vs upper $\approx35.1\%$). Despite low per‑task band agreement, the overall worker and expert band distributions are close (JSD $\approx0.07$).
+
+
+\subsection{Perceived Uncertainty Analysis}
+\label{sec:uncertainty}
+
+\subsubsection{Worker-Expert Gaps by Quadrant}
+
+Workers consistently perceive higher task uncertainty than experts, with the largest gaps occurring in Critical and Peripheral quadrants (see Figure~\ref{fig:4.5}). This pattern holds specifically for intrapreneurial tasks, suggesting that episodic innovation work carries greater subjective uncertainty for those performing it.
+
+
+
+\begin{table}[H]
+\centering
+\small
+\caption{Worker vs expert perceived uncertainty for intrapreneurial tasks}
+\begin{tabular}{lrrrrrr}
+\toprule
+Quadrant & n & Worker Mean & Expert Mean & $\Delta$ (W--E) & p-value & q-value \\
+\midrule
+Core & 31 & 2.95 & 2.70 & +0.26 & 0.173 & 0.173 \\
+Critical & 36 & 3.12 & 2.55 & +0.58 & < 0.001 & < 0.001 \\
+Operational & 34 & 2.83 & 2.59 & +0.24 & 0.049 & 0.066 \\
+Peripheral & 50 & 2.97 & 2.48 & +0.49 & < 0.001 & < 0.001 \\
+\bottomrule
+\end{tabular}
+\label{tab:uncertainty-gaps}
+\end{table}
+
+
+\textit{Notes: Scale 1--5 (higher = more uncertainty); p-values from Wilcoxon signed-rank test; q-values are Benjamini-Hochberg FDR-adjusted.}
+
+\begin{figure}[H]
+\centering
+\pandocbounded{\includegraphics[width=0.70\textwidth,height=0.50\textheight,keepaspectratio]{../../PLAN_3_FILES/outputs/figures/p3_q6_quadrant_uncertainty_worker_vs_expert.png}}
+\caption{Worker-Expert Uncertainty Gaps by IF Quadrant for Intrapreneurial Tasks}
+\label{fig:4.5}
+\end{figure}
+
+Figure \ref{fig:4.5} reports worker and expert perceived task uncertainty (1–5) by IF quadrant. $\Delta$ denotes the worker–expert mean difference; workers systematically report higher uncertainty, especially in Critical ($\Delta=+0.58$, q<0.001) and Peripheral ($\Delta=+0.49$, q<0.001).
+
+
+\subsubsection{Willingness to Bear Uncertainty}
+
+The WBU index reveals that workers prefer retaining human control as uncertainty increases. Across workers (with $\geq$3 intrapreneurial ratings), 74\% increase human agency preferences with rising uncertainty, while 52\% decrease or maintain automation desires (see Figure~\ref{fig:4.6}).
+
+\begin{figure}[H]
+\centering
+\pandocbounded{\includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{../../PLAN_3_FILES/outputs/figures/p3_wbu_distribution_only.png}}
+\caption{Willingness to Bear Uncertainty (WBU) Distribution}
+\label{fig:4.6}
+\end{figure}
+
+Quadrant note: Using per-rating WBU values restricted to intrapreneurial tasks, the average willingness to retain human control under uncertainty differs by IF quadrant. Critical shows the strongest human-control preference (mean WBU ≈ 0.316; 95\% CI ≈ 0.198–0.433; n ratings = 227). Core is next (mean ≈ 0.200; 95\% CI ≈ 0.095–0.306; n = 211), followed by Peripheral (mean ≈ 0.143; 95\% CI ≈ 0.053–0.236; n = 290). Operational is lowest (mean ≈ 0.071; 95\% CI ≈ −0.021–0.166; n = 225). Medians are near zero across quadrants because ratings with minimal uncertainty contribute weights near zero by construction of WBU; the positive means reflect a right tail where uncertain tasks are associated with higher human-agency preferences. This pattern complements the uncertainty-gap analysis (Figure~\ref{fig:4.5}): workers’ willingness to bear uncertainty (WBU) is most pronounced where tasks are consequential but episodic (Critical), and least pronounced in the Operational quadrant.
+
+
+\begin{table}[H]
+\centering
+\small
+\caption{Mean WBU by IF quadrant for intrapreneurial tasks}
+\begin{tabular}{lrrr}
+\toprule
+Quadrant & n (ratings) & Mean WBU & 95\% CI \\
+\midrule
+Core & 211 & 0.20 & 0.10--0.31 \\
+Critical & 227 & 0.32 & 0.20--0.43 \\
+Operational & 225 & 0.07 & $-$0.02--0.17 \\
+Peripheral & 290 & 0.14 & 0.05--0.24 \\
+\bottomrule
+\end{tabular}
+\label{tab:wbu-quadrant}
+\end{table}
+
+
+\subsection{Work Activity Signatures}
+\label{sec:work-activities}
+
+Intrapreneurial tasks show distinctive behavioral signatures in their associated Work Activities.
+
+
+
+\begin{table}[H]
+\centering
+\small
+\caption{Top Work Activities enrichments for intrapreneurial tasks}
+\begin{tabular}{lrrrr}
+\toprule
+Work Activity & Intrap. \% & Not \% & OR & q-value \\
+\midrule
+\textbf{Enriched:} & & & & \\
+Thinking Creatively & 27.2 & 7.2 & 4.84 & < 0.001 \\
+Developing Objectives and Strategies & 18.5 & 5.7 & 3.77 & < 0.001 \\
+Selling or Influencing Others & 9.9 & 3.2 & 3.33 & < 0.001 \\
+Coordinating Work of Others & 15.2 & 5.9 & 2.86 & < 0.001 \\
+Organizing and Planning & 29.1 & 13.8 & 2.57 & < 0.001 \\
+\textbf{Depleted:} & & & & \\
+Documenting/Recording Information & 2.0 & 15.0 & 0.13 & < 0.001 \\
+Processing Information & 23.2 & 42.2 & 0.43 & < 0.001 \\
+Performing Administrative Activities & 7.3 & 17.0 & 0.45 & 0.002 \\
+\bottomrule
+\end{tabular}
+\label{tab:work-activities}
+\end{table}
+\textit{Notes: Only Work Activities with q< 0.01 shown; full table (Appendix C.3, Table~\ref{tab:c3-work-activity}).}
+
+
+Thinking Creatively shows the strongest enrichment (27.2\% vs 7.2\%, OR=4.84, q$<0.001$), followed by Developing Objectives and Strategies (18.5\% vs 5.7\%, OR=3.77), Selling or Influencing Others (9.9\% vs 3.2\%, OR=3.33), Coordinating Work of Others (15.2\% vs 5.9\%, OR=2.86), and Organizing and Planning (29.1\% vs 13.8\%, OR=2.57). Conversely, Documenting/Recording Information is most depleted (2.0\% vs 15.0\%, OR=0.13, q$<0.001$), alongside Processing Information (OR=0.43) and Performing Administrative Activities (OR=0.45). These signatures indicate intrapreneurial work is more ideational/strategic and less documentation‑centric.
+
+
+\subsection{Internal Structure of Intrapreneurial Tasks}
+\label{sec:internal-structure}
+
+\subsubsection{Category Prevalence and the Preparation-Execution Gap}
+
+Within the 151 intrapreneurial tasks available for secondary analysis, opportunity discovery (I) and planning, preparation, and advocacy (II) appear most frequently, each present in roughly two-thirds of tasks (63.6\% and 62.9\% respectively). Action and execution (III) appears in only 41.1\% of tasks, creating a substantial preparation-execution gap (Figure~\ref{fig:4.7}).
+
+\begin{figure}[H]
+\centering
+\pandocbounded{\includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{../../03_Figures/Q10_Intrapreneurship_Typology/Figure_Q10_1_category_prevalence.png}}
+\caption{Category Prevalence Within Intrapreneurial Tasks}
+\label{fig:4.7}
+\end{figure}
+
+Figure \ref{fig:4.7} shows the share of 151 intrapreneurial tasks containing each non‑mutually exclusive category: I (Opportunity Discovery), II (Planning, Preparation, and Advocacy), III (Action \& Execution), IV (Innovation \& Experimentation), V.A (Managerial: Autonomy), V.B (Managerial: Resources), V.C (Managerial: Championing), VI (Risk \& Persistence), with 95\% Wilson confidence intervals. Discovery and planning each occur in roughly two‑thirds of tasks, while execution appears in 41\%, highlighting a preparation–execution gap.
+
+
+This distribution reveals that intrapreneurial work, as expressed in O*NET tasks, emphasizes identifying and structuring initiatives over implementing them. The 22-percentage-point gap between planning (63.6\%) and execution (41.1\%) provides task-level evidence for the "knowing-doing gap" observed in organizational practice (Pfeffer \& Sutton, 2000). Organizations appear better at recognizing opportunities and developing plans than at converting those plans into action.
+
+Innovation and experimentation (IV) appears in 41.7\% of tasks, typically bundled with other categories rather than standalone. Risk management and persistence (VI) shows up in 31.1\% of tasks. Among managerial categories, championing/influence (V.C) is most common (21.2\%), followed by resource provision (V.B, 15.2\%) and autonomy/protection (V.A, 8.6\%).
+
+\subsubsection{Category Co-occurrence Patterns}
+
+Pairwise association analysis reveals theoretically coherent coupling patterns. Planning, preparation, and advocacy (II) co-occurs strongly with resource provision (V.B), reflecting the need to resource strategic initiatives (OR = 3.87, q < 0.001). Execution (III) pairs with championing (V.C), consistent with process accounts emphasizing advocacy to drive implementation (OR = 4.23, q < 0.001). Discovery (I) shows strong positive association with innovation (IV), as exploration naturally involves creative problem-solving (OR = 4.51, q < 0.001).
+
+Conversely, some categories show negative associations: execution (III) is less likely to appear with discovery (I) alone (OR = 0.48, q = 0.021), suggesting task specialization where some roles focus on front-end opportunity work while others handle back-end implementation. The complete co-occurrence matrix and top associations are provided in Appendix F (Figures~\ref{fig:f1-category-associations} and~\ref{fig:f2-cooccurrence-matrix}).
+
+\subsubsection{Phenotype Distribution}
+
+Collapsing categories into task-level phenotypes yields a highly skewed distribution (Figure~\ref{fig:4.8}). Managerial phenotypes account for 42.4\% of intrapreneurial tasks, discovery-focused phenotypes for 35.8\%, innovation-focused for 20.5\%, planning-focused for 13.9\%, full-cycle tasks for 13.2\%, and execution-focused for only 6.0\% (N≈9 tasks).
+
+\begin{figure}[H]
+\centering
+\pandocbounded{\includegraphics[width=\textwidth,height=0.75\textheight,keepaspectratio]{../../03_Figures/Q10_Intrapreneurship_Typology/Figure_Q10_3_phenotype_prevalence.png}}
+\caption{Intrapreneurship Phenotypes and Their Prevalence}
+\label{fig:4.8}
+\end{figure}
+
+Figure \ref{fig:4.8} summarizes prevalence (95\% Wilson confidence intervals) for six non‑mutually exclusive phenotypes: FULL (I+II+III), DISC (Discovery‑focused), PLAN (Planning‑focused), EXEC (Execution‑focused), INNOV (Innovation‑focused), and MGR (Managerial). Managerial (42.4\%) and discovery (35.8\%) dominate, while execution‑only tasks are rare (6.0\%).
+
+
+The dominance of managerial (42.4\%) and discovery (35.8\%) phenotypes suggests that the typical intrapreneurial task in O*NET is not an end-to-end venture but either an early-stage opportunity recognition activity or a managerial enabling move. Full-cycle tasks that span discovery through execution represent only 13.2\%, and pure execution tasks are rare (6.0\%), reinforcing the preparation–execution imbalance observed in category prevalence.
+
+Because these phenotypes are non-mutually exclusive, we also examined overlap patterns (Appendix F, Figures~\ref{fig:f3-phenotype-summary} and~\ref{fig:f4-phenotype-overlap}). Managerial phenotypes frequently co-occur with discovery and innovation phenotypes, confirming that managerial work augments rather than replaces substantive entrepreneurial activities.
+
+\subsubsection{Synthesis}
+
+The internal structure analysis reveals three key patterns:
+
+\begin{enumerate}
+\item \textbf{Preparation dominates execution:} Discovery and planning are twice as common as implementation, providing task-level evidence of the knowing–doing gap.
+\item \textbf{Managerial work is pervasive:} Over 40\% of intrapreneurial tasks involve autonomy, resourcing, or championing, confirming that innovation requires organizational enabling.
+\item \textbf{Category coupling follows theory:} Associations mirror process accounts (planning ↔ resources; execution ↔ championing; discovery ↔ innovation).
+\end{enumerate}
+
+These findings deepen our understanding of intrapreneurial positioning (Section~\ref{sec:if-distribution}) by showing not only WHERE innovation work sits within occupations (periphery, episodic) but also WHAT it consists of (mostly discovery and planning, with managerial overlay).
+
+\subsection{Robustness Across Threshold Specifications}
+\label{sec:robustness}
+
+Findings prove stable under multiple threshold schemes (3.5/3.5, 4.0/4.0, 4.5/4.5, median split): Core depletion and Critical/Peripheral enrichment persist regardless of specification (see Table~\ref{tab:threshold-robustness}).
+
+Worker–expert uncertainty gaps remain strongest in Critical and Peripheral quadrants across all threshold variations (detailed in Section~\ref{sec:uncertainty}). This stability is consistent with the idea that the episodic, peripheral positioning of intrapreneurial work reflects task characteristics rather than being solely due to threshold selection.
+
+\subsection{Summary and Implications}
+
+\begin{itemize}
+\item \textbf{Classification and reliability:} Of 844 O*NET tasks, 153 (18.1\%) are intrapreneurial, 690 (81.8\%) are not, and 1 (0.1\%) is ambiguous. Agreement is high: 777 tasks (92.1\%) are unanimous and 67 (7.9\%) are majority (2–1, including rare 2‑of‑2). The 29 intrapreneurial majority cases span quadrants and occupations; ambiguity typically stems from generic planning/design/implementation phrasing rather than purely managerial oversight.
+\item \textbf{Occupational positioning (IF quadrants):} Intrapreneurial work is depleted in Core (OR=0.22) and enriched in Critical (OR=1.94) and Peripheral (OR=2.65). These patterns appear stable across threshold choices (3.5/3.5, 4.0/4.0, 4.5/4.5, median split), suggesting that the episodic, edge‑positioning of innovation is not solely an artifact of cutoffs.
+\item \textbf{Human agency patterns:} Intrapreneurial tasks concentrate in H3–H4 bands (H3: Equal human–AI partnership; H4: Human-driven with AI assistance). Worker–expert comparison shows modest categorical agreement but meaningful continuous correlation, consistent with calibration differences rather than fundamental disagreement.
+\item \textbf{Uncertainty and control:} Workers report higher uncertainty than experts, especially in Critical and Peripheral quadrants (Figure~\ref{fig:4.5}). The WBU distribution (Figure~\ref{fig:4.6}) shows a central mass at ~0 (low‑uncertainty ratings weigh near zero) with a positive tail; quadrant means confirm the strongest willingness to retain human control in Critical, lowest in Operational.
+\item \textbf{Importance–Frequency coupling:} On the IF‑only frame ($N=844$), the IF linkage is weaker for intrapreneurial tasks (Spearman $\rho=0.233$, $N=151$, $p = 0.004$) than for the non‑intrapreneurial complement ($\rho=0.496$, $N=693$, $p < 10^{-43}$); the difference is significant (Fisher $r$‑to‑$z$ $z=3.39$, $p = 0.00069$), indicating innovation departs from routine IF coupling.
+\item \textbf{Behavioral signatures:} Work Activity enrichments align with theory: creative/ideational and strategic activities are enriched, documentation/recording is depleted (Table~\ref{tab:work-activities}). Notably: Thinking Creatively (27.2\% vs 7.2\%, OR=4.84), Developing Objectives and Strategies (18.5\% vs 5.7\%, OR=3.77), Selling or Influencing Others (9.9\% vs 3.2\%, OR=3.33), and Organizing and Planning (29.1\% vs 13.8\%, OR=2.57).
+\item \textbf{Internal structure of intrapreneurship:} Category prevalence (Figure~\ref{fig:4.7}) reveals a preparation–execution gap (discovery/planning ~63\% each vs execution ~41\%). Phenotypes are skewed toward managerial (42.4\%) and discovery (35.8\%), with execution‑only tasks rare (6.0\%) and full‑cycle tasks limited (13.2\%) (Figure~\ref{fig:4.8}). Co‑occurrence patterns (e.g., planning with resourcing; execution with championing) mirror process theories.
+\item \textbf{Robustness:} Core findings persist across IF thresholds and remain consistent when restricting to coverage‑complete subsets (e.g., IF/HAS), though those analyses operate on n=151 intrapreneurial tasks due to metadata coverage.
+\end{itemize}
+
+\paragraph{Implications}
+\begin{itemize}
+\item \textbf{Organizational design:} Prioritize supports for discovery/planning and managerial enabling (resourcing, championing) to close the preparation–execution gap. Structure roles and governance so Critical, episodic work can secure timely decisions and resources.
+\item \textbf{AI augmentation:} Target discovery and planning with scanning/synthesis tools; assist execution with copilots that integrate championing/coordination. In high‑uncertainty contexts (Critical), preserve human control consistent with observed WBU preferences.
+\end{itemize}

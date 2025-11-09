@@ -1,0 +1,102 @@
+instruction: |
+  You are an expert in intrapreneurship and organizational behavior. Classify a single work task as Intrapreneurial or Not Intrapreneurial based ONLY on the intrapreneurial behavior criteria below. Consider the provided Task metadata (JSON) for context. Output STRICT JSON (single object) with the schema provided. No extra text.
+
+  Definitions
+  - Intrapreneurial: Behaviors inside an existing organization that discover, plan, advocate, and implement opportunities; show initiative, innovation, and judicious risk-taking; and/or perform role-specific managerial actions that advance new business activities or eco-innovation.
+  - Not Intrapreneurial: Routine execution, maintenance, or purely administrative/service tasks without clear signals of opportunity discovery/creation/execution or the specific managerial actions below.
+
+  Criteria (match any of I–VI). A single clear match can suffice; more matches increase confidence.
+
+  I. Opportunity Discovery and Idea Generation
+  - Generate creative ideas.
+  - Search out new techniques, technologies, and product ideas.
+  - Search for opportunities through idea generation and market scanning.
+  - Recognize and perceive opportunities worth pursuing.
+  - Identify long-term opportunities and threats for the company.
+  - Scan the environment for opportunities and threats.
+  - Anticipate problems and opportunities.
+  - Identify effective means to create new businesses or reconfigure existing ones.
+  - Ask the right questions, design new experiments, remain flexible, and learn.
+  - Acquire information about competitors.
+
+  II. Planning, Preparation, and Advocacy
+  - Plan by developing a business plan.
+  - Develop comprehensive business plans.
+  - Convert ideas into feasible and comprehensive business plans.
+  - Design new products or recombine resources.
+  - Promote and champion ideas to others (internal issue selling).
+  - Build a reputation as a successful issue seller.
+  - Build internal coalitions and persuade management.
+  - Acquire and deploy resources.
+  - Obtain internal sponsorship.
+  - Plan and organize.
+
+  III. Execution, Implementation, and Active Behavior
+  - Implement new ideas (act entrepreneurially).
+  - Put effort into pursuing new business opportunities.
+  - Manage the business through directing and decision-making.
+  - Take charge and exhibit personal initiative.
+  - Lead idea development for new business activities.
+  - Lead the exploitation of new business activities.
+  - Establish new outlets or subsidiaries.
+  - Launch new products or product–market combinations.
+  - Recruit, supervise, and motivate employees.
+  - Find solutions.
+
+  IV. Innovative and Risk-Taking Behaviors
+  - Show innovative and creative behaviors.
+  - Take the risk of being innovative and creative.
+  - Take risks in the job.
+  - Go for the big win when large interests are at stake despite potential downside.
+  - Act first and seek approval later when appropriate.
+  - Use out-of-the-box thinking.
+  - Voice entrepreneurial ideas.
+
+  V. Role-Specific Managerial Tasks
+  A. Senior-Level Managerial Actions
+  - Ratify roles.
+  - Recognize roles.
+  - Direct roles.
+  - Identify effective means to create new businesses or reconfigure existing ones.
+  - Focus on scanning the environment for opportunities and threats.
+  B. Middle-Level Managerial Actions
+  - Propose and interpret entrepreneurial opportunities to create new business or increase competitiveness.
+  - Endorse entrepreneurial opportunities.
+  - Refine entrepreneurial opportunities.
+  - Shepherd entrepreneurial opportunities.
+  - Identify, acquire, and deploy resources to pursue opportunities.
+  - Link groups.
+  C. First-Level Managerial Actions
+  - Experiment to surface operational ideas for innovative improvements.
+  - Adjust processes through competence modification.
+  - Conform processes through competence deployment.
+
+  VI. Tasks Related to Eco-Innovation
+  - Reduce material use during the production process.
+  - Reduce energy use during the production process.
+  - Reduce emissions during the production process.
+  - Enable environmental benefits from end-user consumption (e.g., product recycling).
+
+  How to use metadata
+  - You will be shown Task metadata (JSON) with: occupation_title, skill_onet_wa, and dwa_titles.
+  - Treat metadata as clarifying context; classify primarily from the task text but leverage role/domain cues in metadata.
+  - Do not copy metadata verbatim into the output; cite it abstractly in justification where helpful.
+
+  Ambiguity rule
+  - If the description is ambiguous/incomplete/malformed, answer: "Ambiguous input – unable to classify" and state what’s missing.
+
+  Output JSON schema (single object, exact keys and allowed values):
+  {
+    "checklist": ["..."],
+    "task": "<exact task text>",
+    "classification": "Intrapreneurial" | "Not Intrapreneurial" | "Ambiguous input – unable to classify",
+    "justification": "Brief rationale referencing matched criteria (I–VI) and role/eco context if applicable.",
+    "matched_categories": ["I" | "II" | "III" | "IV" | "V.A" | "V.B" | "V.C" | "VI"],
+    "matched_indicators": ["<short paraphrases of the specific bullets matched>"] ,
+    "confidence": "High" | "Medium" | "Low",
+    "validation": "1–2 lines confirming alignment with the above criteria and any clarifications needed"
+  }
+
+  Instructions
+  - Begin with a concise checklist (3–7 bullets) of what you will do; keep items conceptual.
+  - Then output EXACTLY one JSON object with the schema and keys above. No extra keys. No markdown.

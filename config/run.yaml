@@ -1,0 +1,59 @@
+seed: 2025
+timezone: "Asia/Amman"
+min_sample_size: 15
+
+onet_elements:
+  work_activities_keep:
+    - {id: "4.A.2.b.1", name: "Making Decisions and Solving Problems"}
+    - {id: "4.A.2.b.4", name: "Developing Objectives and Strategies"}
+    - {id: "4.A.2.b.6", name: "Organizing, Planning, and Prioritizing Work"}
+    - {id: "4.A.4.b.1", name: "Coordinating the Work and Activities of Others"}
+    - {id: "4.A.4.a.6", name: "Selling or Influencing Others"}
+    - {id: "4.A.2.a.4", name: "Analyzing Data or Information"}
+    - {id: "4.A.2.b.2", name: "Thinking Creatively"}
+    - {id: "4.A.2.b.3", name: "Updating and Using Relevant Knowledge"}
+    - {id: "4.A.2.b.5", name: "Monitoring and Controlling Resources"}
+    - {id: "4.A.4.a.2", name: "Communicating with Supervisors, Peers, or Subordinates"}
+    - {id: "4.A.4.a.5", name: "Establishing and Maintaining Interpersonal Relationships"}
+    - {id: "4.A.4.a.7", name: "Resolving Conflicts and Negotiating with Others"}
+    - {id: "4.A.4.a.1", name: "Communicating with Persons Outside Organization"}
+    - {id: "4.A.2.a.1", name: "Getting Information"}
+  work_context_keep:
+    - {id: "4.C.3.a.4", name: "Freedom to Make Decisions"}
+    - {id: "4.C.3.b.8", name: "Determine Tasks, Priorities and Goals"}
+    - {id: "4.C.3.b.7", name: "Importance of Repeating Same Tasks", invert: true}
+    - {id: "4.C.1.b.1.g", name: "Coordinate or Lead Others in Accomplishing Work Activities"}
+    - {id: "4.C.3.c.1", name: "Level of Competition"}
+    - {id: "4.C.3.a.2.b", name: "Frequency of Decision Making"}
+    - {id: "4.C.3.a.2.a", name: "Impact of Decisions on Co-workers or Company Results"}
+
+wa_groups:
+  - name: "creative_update_control"
+    elements: ["4.A.2.b.2", "4.A.2.b.3", "4.A.2.b.5"]
+
+paths:
+  raw_dir: ../data/raw
+  interim_dir: ../data/interim
+  processed_dir: ../data/processed
+  raw_workbook: ../data/raw/Future_OF_WORK_ALL_UPDATED_RESULTS_WithMeta.xlsx
+  wa_xlsx: ../data/raw/Work Activities.xlsx
+  wc_xlsx: ../data/raw/Work Context.xlsx
+  jobzones_xlsx: ../data/raw/Job Zones.xlsx
+  occ_xlsx: ../data/raw/Occupation Data.xlsx
+  wa_out: ../data/interim/onet_wa.parquet
+  wc_out: ../data/interim/onet_wc.parquet
+  jobzone_out: ../data/interim/onet_jobzone.parquet
+  occ_out: ../data/interim/onet_occ.parquet
+  anchor_out: ../data/processed/soc_anchor.parquet
+  tasks_interim: ../data/interim/tasks_with_metadata.parquet
+  worker_desires_interim: ../data/interim/domain_worker_desires.parquet
+  worker_metadata_interim: ../data/interim/domain_worker_metadata.parquet
+  expert_rated_interim: ../data/interim/expert_rated_technological_capa.parquet
+  survey_metadata_interim: ../data/interim/survey_metadata.parquet
+  ratings_agg_out: ../data/interim/ratings_agg.parquet
+  features_out: ../data/processed/features.parquet
+
+cue_patterns:
+  strong_process: "(prototype|pilot|mvp|experiment|feasibil|design experiment|new revenue|pricing model)"
+  social: "(customer|user|market|audience|partner|investor|donor|go-?to-?market|launch|fundrais|acquisition)"
+  general: "(plan|strateg|sell|coordinat|decid|explor)"

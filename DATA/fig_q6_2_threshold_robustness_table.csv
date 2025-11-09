@@ -1,0 +1,17 @@
+threshold,imp_th,freq_th,quadrant,n,pct_intrap
+lenient,3.5,3.5,Core,536,10.82089552238806
+lenient,3.5,3.5,Critical,243,25.51440329218107
+lenient,3.5,3.5,Operational,21,33.333333333333336
+lenient,3.5,3.5,Peripheral,50,48.0
+current,4.0,4.0,Core,409,7.579462102689487
+current,4.0,4.0,Critical,133,27.06766917293233
+current,4.0,4.0,Operational,148,22.972972972972972
+current,4.0,4.0,Peripheral,160,31.25
+strict,4.5,4.5,Core,118,5.932203389830509
+strict,4.5,4.5,Critical,28,10.714285714285714
+strict,4.5,4.5,Operational,315,9.523809523809524
+strict,4.5,4.5,Peripheral,389,28.53470437017995
+median,4.13,5.0,Core,291,5.498281786941581
+median,4.13,5.0,Critical,138,21.014492753623188
+median,4.13,5.0,Operational,142,14.788732394366198
+median,4.13,5.0,Peripheral,279,30.46594982078853

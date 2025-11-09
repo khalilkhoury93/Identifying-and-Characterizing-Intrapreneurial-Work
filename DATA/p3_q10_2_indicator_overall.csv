@@ -1,0 +1,467 @@
+indicator,n_tasks,pct_of_intrap,rank,cumulative_pct
+Scan the environment for opportunities and threats,14,9.271523178807946,1,9.271523178807946
+Recognize and perceive opportunities worth pursuing,13,8.609271523178808,2,17.880794701986755
+Anticipate problems and opportunities,5,3.3112582781456954,3,21.192052980132452
+Search for opportunities through market scanning,3,1.9867549668874174,4,23.17880794701987
+Acquire information about competitors,3,1.9867549668874174,5,25.165562913907287
+Experiment to surface operational ideas for innovative improvements,3,1.9867549668874174,6,27.152317880794705
+"Search out new techniques, technologies, and product ideas",3,1.9867549668874174,7,29.139072847682122
+Experiment to surface operational ideas and adjust processes,3,1.9867549668874174,8,31.12582781456954
+Experiment/adjust processes to surface operational improvements,2,1.3245033112582782,9,32.450331125827816
+Acquire information about competitors/market,2,1.3245033112582782,10,33.77483443708609
+Use out-of-the-box thinking,2,1.3245033112582782,11,35.09933774834437
+Adjust processes through competence modification,2,1.3245033112582782,12,36.423841059602644
+"Identify, acquire, and deploy resources to pursue opportunities",2,1.3245033112582782,13,37.74834437086092
+Show innovative and creative behaviors,2,1.3245033112582782,14,39.072847682119196
+Develop comprehensive plans / convert ideas into feasible plans,2,1.3245033112582782,15,40.39735099337747
+Identify long-term opportunities and threats for the company,2,1.3245033112582782,16,41.72185430463575
+Search for opportunities through idea generation and market scanning,2,1.3245033112582782,17,43.046357615894024
+Direct roles,2,1.3245033112582782,18,44.3708609271523
+Design new projects or recombine resources,1,0.6622516556291391,19,45.03311258278144
+Promote and champion ideas to others / advise stakeholders,1,0.6622516556291391,20,45.69536423841058
+Propose and interpret opportunities to create new services or increase competitiveness,1,0.6622516556291391,21,46.357615894039725
+Implement new ideas/put effort into pursuing new operational practices,1,0.6622516556291391,22,47.01986754966887
+Lead implementation by programming equipment based on analysis,1,0.6622516556291391,23,47.68211920529801
+Reduce material/chemical use during production/application,1,0.6622516556291391,24,48.34437086092715
+Enable environmental benefits from end-user consumption (reduced inputs/targeted application),1,0.6622516556291391,25,49.00662251655629
+Search/scan environment for opportunities and threats,1,0.6622516556291391,26,49.66887417218543
+Acquire information about environmental competitors/data,1,0.6622516556291391,27,50.331125827814574
+Generate creative ideas and concepts,1,0.6622516556291391,28,50.993377483443716
+Design new layouts and visual solutions (out-of-the-box/innovative behavior),1,0.6622516556291391,29,51.65562913907286
+Apply aesthetic principles to create novel designs,1,0.6622516556291391,30,52.317880794702
+Take technical risks and use out-of-the-box solutions,1,0.6622516556291391,31,52.98013245033114
+Design new products or recombine resources (convert scientific needs into software),1,0.6622516556291391,32,53.64238410596028
+Develop comprehensive solutions/business-ready applications,1,0.6622516556291391,33,54.304635761589424
+Implement new ideas and take initiative to build/deploy applications,1,0.6622516556291391,34,54.966887417218565
+Show innovative/creative behaviors and use out-of-the-box technical approaches,1,0.6622516556291391,35,55.62913907284771
+Generate creative ideas and novel approaches,1,0.6622516556291391,36,56.29139072847685
+Design new tools/products for technical use,1,0.6622516556291391,37,56.95364238410599
+Implement and develop new analytical solutions,1,0.6622516556291391,38,57.61589403973513
+"Exhibit innovative, out-of-the-box technical problem solving",1,0.6622516556291391,39,58.27814569536427
+"Evaluate findings to recognize opportunities and inform design (I: recognize/perceive opportunities, acquire information)",1,0.6622516556291391,40,58.940397350993415
+Design or develop new equipment/processes (II: design new products or recombine resources; develop plans),1,0.6622516556291391,41,59.602649006622556
+Test and implement equipment/process changes (III: implement new ideas; act entrepreneurially; lead idea development),1,0.6622516556291391,42,60.2649006622517
+Experiment to surface operational ideas for innovative improvements (V.C: experiment and adjust processes),1,0.6622516556291391,43,60.92715231788084
+Identify opportunity for optimal well placement (recognize opportunities worth pursuing),1,0.6622516556291391,44,61.58940397350998
+Recommend supplementary processes (convert ideas into feasible plans / design new processes),1,0.6622516556291391,45,62.25165562913912
+Make implementation-focused recommendations and inform operational decisions (lead exploitation / take initiative),1,0.6622516556291391,46,62.913907284768264
+Put effort into pursuing new business/operational improvements,1,0.6622516556291391,47,63.576158940397406
+Anticipate problems and opportunities / recognize areas of high risk,1,0.6622516556291391,48,64.23841059602654
+Experiment to surface operational ideas for innovative improvements / adjust processes,1,0.6622516556291391,49,64.90066225165567
+Design new processes / develop procedures (plan and organize),1,0.6622516556291391,50,65.56291390728481
+Implement and monitor new or improved practices (put effort into pursuing improvements),1,0.6622516556291391,51,66.22516556291394
+Adjust processes through competence modification / experiment to surface operational ideas,1,0.6622516556291391,52,66.88741721854308
+Design new procedures / convert ideas into feasible plans,1,0.6622516556291391,53,67.54966887417221
+Implement new ideas and put effort into pursuing process changes,1,0.6622516556291391,54,68.21192052980135
+Adjust processes through competence modification / experiment to surface operational improvements,1,0.6622516556291391,55,68.87417218543048
+Generate creative ideas and adapt principles to new uses,1,0.6622516556291391,56,69.53642384105962
+Implement new ideas and apply technology to solve applied problems,1,0.6622516556291391,57,70.19867549668875
+Show innovative behavior and apply novel approaches (risk-taking/creativity),1,0.6622516556291391,58,70.86092715231788
+Anticipate problems and opportunities / assess feasibility issues,1,0.6622516556291391,59,71.52317880794702
+Plan by evaluating and preparing projects (informing resource deployment and project selection),1,0.6622516556291391,60,72.18543046357615
+Identify and analyze problems to find new opportunities/solutions,1,0.6622516556291391,61,72.84768211920529
+Develop and implement technical solutions (lead idea development and execution),1,0.6622516556291391,62,73.50993377483442
+Apply innovative/creative approaches and risk-taking in solution design,1,0.6622516556291391,63,74.17218543046356
+Experiment and adjust processes/solutions to surface improvements,1,0.6622516556291391,64,74.83443708609269
+Generate creative ideas / new product ideas,1,0.6622516556291391,65,75.49668874172183
+Design new products and recombine resources (system design),1,0.6622516556291391,66,76.15894039735096
+Implement new ideas and lead development of new systems,1,0.6622516556291391,67,76.8211920529801
+"Show innovative, out-of-the-box technical solutions and risk-taking",1,0.6622516556291391,68,77.48344370860923
+Generate creative ideas and search for new techniques/technologies,1,0.6622516556291391,69,78.14569536423836
+Design new products or recombine resources; develop plans to implement changes,1,0.6622516556291391,70,78.8079470198675
+Implement new designs and lead technical modifications,1,0.6622516556291391,71,79.47019867549663
+Show innovative behavior and take technical risks to achieve emissions reductions,1,0.6622516556291391,72,80.13245033112577
+Reduce emissions during the production/process or end-use (eco-innovation),1,0.6622516556291391,73,80.7947019867549
+Design new products or recombine resources (develop design criteria/specifications),1,0.6622516556291391,74,81.45695364238404
+"Plan by developing comprehensive plans (testing methods, costs, schedules)",1,0.6622516556291391,75,82.11920529801317
+"Implement and manage new product requirements (quality standards, completion dates)",1,0.6622516556291391,76,82.7814569536423
+Address environmental standards and reduce environmental impact,1,0.6622516556291391,77,83.44370860927144
+Generate creative ideas and new techniques (develop models/methods),1,0.6622516556291391,78,84.10596026490057
+Implement new ideas and lead development/evaluation of designs,1,0.6622516556291391,79,84.76821192052971
+"Show innovative, out-of-the-box technical behavior and take risks in methods",1,0.6622516556291391,80,85.43046357615884
+Design new products or recombine resources → develop logical/physical DB designs,1,0.6622516556291391,81,86.09271523178798
+Plan and organize / convert ideas into feasible plans → specify identifiers to DBMS,1,0.6622516556291391,82,86.75496688741711
+Take charge and direct others / recruit/supervise → direct others in coding descriptions,1,0.6622516556291391,83,87.41721854304625
+Identify long-term opportunities and threats for the company (feasibility/efficiency insights),1,0.6622516556291391,84,88.07947019867538
+Plan by developing a business case/feasibility analysis (cost and material studies inform planning),1,0.6622516556291391,85,88.74172185430452
+Reduce emissions/enable environmental benefits (biofuels eco-innovation),1,0.6622516556291391,86,89.40397350993365
+Develop plans and allocate resources (budgeting),1,0.6622516556291391,87,90.06622516556278
+Identify/acquire/deploy resources to pursue opportunities (managerial budgeting),1,0.6622516556291391,88,90.72847682119192
+Work in green operations / perform tasks in a green occupation (biofuels),1,0.6622516556291391,89,91.39072847682105
+Implement new ideas and production processes,1,0.6622516556291391,90,92.05298013245019
+Manage/direct roles and make resource deployment decisions,1,0.6622516556291391,91,92.71523178807932
+Enable eco-innovation in green energy production processes,1,0.6622516556291391,92,93.37748344370846
+"Develop comprehensive plans and organize resources (business planning, planning/organize)",1,0.6622516556291391,93,94.03973509933759
+"Implement and manage activities through directing and decision-making (manage operations, take charge)",1,0.6622516556291391,94,94.70198675496673
+Middle-level managerial actions: propose/refine/endorse opportunities and deploy resources (manage operations of departments),1,0.6622516556291391,95,95.36423841059586
+Plan and organize / develop plans for future filming,1,0.6622516556291391,96,96.026490066225
+Implement and manage production activities / take charge of work-in-progress,1,0.6622516556291391,97,96.68874172185413
+Direct roles / guide content of broadcasts or presentations,1,0.6622516556291391,98,97.35099337748326
+Generate creative ideas and story concepts,1,0.6622516556291391,99,98.0132450331124
+Implement new narrative content and lead development of scripts,1,0.6622516556291391,100,98.67549668874153
+Show innovative/out-of-the-box thinking and take creative risks,1,0.6622516556291391,101,99.33774834437067
+Develop comprehensive proposals/business plans to convert ideas into feasible opportunities,1,0.6622516556291391,102,99.9999999999998
+Promote and champion ideas to obtain contracts/resources,1,0.6622516556291391,103,100.66225165562894
+Implement and pursue new business opportunities by bidding and securing projects,1,0.6622516556291391,104,101.32450331125807
+Search out new techniques and creative approaches to material,1,0.6622516556291391,105,101.9867549668872
+Generate/direct creative ideas and recognize opportunities in scripts,1,0.6622516556291391,106,102.64900662251634
+Plan and organize how a production should be directed (convert idea into approach),1,0.6622516556291391,107,103.31125827814547
+Search for opportunities through market/technology scanning,1,0.6622516556291391,108,103.97350993377461
+Search out new techniques and technologies,1,0.6622516556291391,109,104.63576158940374
+Identify long-term opportunities and threats for the company (forecasting future financial status),1,0.6622516556291391,110,105.29801324503288
+Search for opportunities through market/financial analysis,1,0.6622516556291391,111,105.96026490066201
+Plan by developing information to inform business decisions,1,0.6622516556291391,112,106.62251655629115
+Convert analytical insights into feasible plans to improve decisions,1,0.6622516556291391,113,107.28476821192028
+Search for opportunities through market scanning and idea generation,1,0.6622516556291391,114,107.94701986754941
+Acquire information about competitors / industry innovations,1,0.6622516556291391,115,108.60927152317855
+Identify effective means to create new product offerings,1,0.6622516556291391,116,109.27152317880768
+Determine financial resources required to implement a program (convert ideas into feasible plans),1,0.6622516556291391,117,109.93377483443682
+Compile and analyze data to plan and acquire resources,1,0.6622516556291391,118,110.59602649006595
+Plan and organize financial requirements for program implementation,1,0.6622516556291391,119,111.25827814569509
+Plan and organize/reporting oversight,1,0.6622516556291391,120,111.92052980132422
+Scan the environment for new loan products and services,1,0.6622516556291391,121,112.58278145695336
+Search for opportunities through market/product knowledge,1,0.6622516556291391,122,113.24503311258249
+Recognize opportunities to better meet customer needs,1,0.6622516556291391,123,113.90728476821162
+Generate and apply creative technical solutions to business problems,1,0.6622516556291391,124,114.56953642384076
+Design new integrated systems and convert ideas into feasible plans,1,0.6622516556291391,125,115.2317880794699
+Implement and manage new information systems to improve operations,1,0.6622516556291391,126,115.89403973509903
+Propose and shepherd opportunities to increase competitiveness via IT solutions,1,0.6622516556291391,127,116.55629139072816
+"Search out new techniques, technologies, and product ideas (use of structured analysis, data modeling, information engineering)",1,0.6622516556291391,128,117.2185430463573
+Plan by developing a system design or technical plan (convert ideas into feasible plans),1,0.6622516556291391,129,117.88079470198643
+Propose and interpret opportunities to create new business or increase competitiveness (middle-level technical planning and specification),1,0.6622516556291391,130,118.54304635761557
+Plan and organize; develop plans for how results will be distributed and used,1,0.6622516556291391,131,119.2052980132447
+Design how system accesses inputs (design new products/recombine resources),1,0.6622516556291391,132,119.86754966887383
+Implement new processes and put effort into pursuing opportunities by defining operational use of results,1,0.6622516556291391,133,120.52980132450297
+Recognize opportunities to repurpose systems,1,0.6622516556291391,134,121.1920529801321
+Implement new ideas and modify systems,1,0.6622516556291391,135,121.85430463576124
+Use innovative/creative solutions to improve workflow,1,0.6622516556291391,136,122.51655629139037
+Develop comprehensive plans/policies,1,0.6622516556291391,137,123.17880794701951
+Plan and organize to meet emergency processing needs,1,0.6622516556291391,138,123.84105960264864
+Acquire and deploy resources through planned procedures,1,0.6622516556291391,139,124.50331125827778
+Acquire information about products/processes,1,0.6622516556291391,140,125.16556291390691
+Plan by developing solutions or proposals based on research,1,0.6622516556291391,141,125.82781456953605
+Search for opportunities through evaluating technologies,1,0.6622516556291391,142,126.49006622516518
+Identify opportunities to improve systems,1,0.6622516556291391,143,127.15231788079431
+Recommend changes to improve computer or information systems,1,0.6622516556291391,144,127.81456953642345
+Provide recommendations and advice (internal advocacy),1,0.6622516556291391,145,128.4768211920526
+Recommend changes to improve systems,1,0.6622516556291391,146,129.13907284768175
+Assign duties / deploy resources to pursue opportunities,1,0.6622516556291391,147,129.8013245033109
+Supervise and review programming personnel,1,0.6622516556291391,148,130.46357615894004
+Coordinate and manage IT/project activities (direct roles),1,0.6622516556291391,149,131.1258278145692
+"Generate and test alternative design ideas (idea generation, experimental search)",1,0.6622516556291391,150,131.78807947019834
+Implement experiments to assess feasibility and operating condition effects (execution/implementation),1,0.6622516556291391,151,132.4503311258275
+Experiment to surface operational ideas and modify processes (first-level managerial experimentation),1,0.6622516556291391,152,133.11258278145664
+Assess sustainability and potential environmental benefits (eco-innovation),1,0.6622516556291391,153,133.7748344370858
+Design new products or recombine resources (develop tooling solutions),1,0.6622516556291391,154,134.43708609271494
+Plan and organize / convert ideas into feasible designs,1,0.6622516556291391,155,135.09933774834408
+Implement new ideas and take initiative to change production processes,1,0.6622516556291391,156,135.76158940397323
+Plan and organize requirements for fabrication/assembly/testing,1,0.6622516556291391,157,136.42384105960238
+Modify requirements (adjust processes through competence modification),1,0.6622516556291391,158,137.08609271523153
+Convert instructions into feasible plans for implementation,1,0.6622516556291391,159,137.74834437086068
+Search for new techniques/technologies (develop specialized programs),1,0.6622516556291391,160,138.41059602648983
+Design new products/tools (create programs for analysis and cleaning),1,0.6622516556291391,161,139.07284768211898
+Implement new ideas/put effort into pursuing new capabilities (build and deploy software),1,0.6622516556291391,162,139.73509933774812
+Show innovative/creative behaviors (develop non-routine solutions and possibly take technical risk),1,0.6622516556291391,163,140.39735099337727
+Generate creative ideas,1,0.6622516556291391,164,141.05960264900642
+Search for opportunities through idea generation and market/audience scanning,1,0.6622516556291391,165,141.72185430463557
+Scan the environment for opportunities and threats / monitor developments,1,0.6622516556291391,166,142.38410596026472
+Recognize and perceive opportunities worth pursuing (need for revisions/new material),1,0.6622516556291391,167,143.04635761589387
+Convert ideas/needs into plans to develop new materials,1,0.6622516556291391,168,143.70860927152302
+Analyze data/information to recognize opportunities,1,0.6622516556291391,169,144.37086092715217
+Design new products or recombine resources (create itinerary packages),1,0.6622516556291391,170,145.0331125827813
+Plan and organize / develop business-like offerings (package planning and promotional incentives),1,0.6622516556291391,171,145.69536423841046
+Promote and champion ideas / sell products or services,1,0.6622516556291391,172,146.3576158940396
+Implement new offerings and arrange logistics (execute and arrange itineraries),1,0.6622516556291391,173,147.01986754966876
+Search for opportunities and describe offerings (market-facing opportunity recognition),1,0.6622516556291391,174,147.6821192052979
+Develop comprehensive business plans / convert ideas into feasible business plans (prepare financial estimates to justify proposals),1,0.6622516556291391,175,148.34437086092706
+Recognize and perceive opportunities worth pursuing / search for opportunities (estimate savings to identify value of new offerings),1,0.6622516556291391,176,149.0066225165562
+Promote and champion ideas to others (internal/external issue selling),1,0.6622516556291391,177,149.66887417218535
+Design new products or recombine resources (repackage specifications into applications),1,0.6622516556291391,178,150.3311258278145
+Generate creative ways to explain product applications and identify customer opportunities,1,0.6622516556291391,179,150.99337748344365
+Explain energy/ emissions/ environmental benefits of products,1,0.6622516556291391,180,151.6556291390728
+Enable environmental benefits from end-user consumption,1,0.6622516556291391,181,152.31788079470195
+Task influenced by greening of the economy,1,0.6622516556291391,182,152.9801324503311
+Generate creative ideas (adapt script content),1,0.6622516556291391,183,153.64238410596025
+Implement new ideas (apply revised scripts),1,0.6622516556291391,184,154.3046357615894
+Identify opportunities/anticipate problems,1,0.6622516556291391,185,154.96688741721854
+Convert ideas into improved procedures / promote better methods,1,0.6622516556291391,186,155.6291390728477
+Experiment/adjust processes and surface operational improvements,1,0.6622516556291391,187,156.29139072847684
+"Plan and organize (develop directions, locations, and projections)",1,0.6622516556291391,188,156.953642384106
+"Acquire and deploy resources (identify tools, materials, equipment, and worker numbers)",1,0.6622516556291391,189,157.61589403973514
+Prepare cost projections (planning/preparation managerial action),1,0.6622516556291391,190,158.2781456953643
+Experiment/adjust processes at operational level (first-level managerial planning and preparation),1,0.6622516556291391,191,158.94039735099344
+Search for new techniques and identify opportunities to improve methods,1,0.6622516556291391,192,159.60264900662258
+Experiment/surface operational ideas and adjust processes through competence modification,1,0.6622516556291391,193,160.26490066225173
+Plan and organize (develop schedules and procedures),1,0.6622516556291391,194,160.92715231788088
+Implement new processes and take charge of daily operations,1,0.6622516556291391,195,161.58940397351003
+First-level managerial: adjust processes and supervise staff,1,0.6622516556291391,196,162.25165562913918
+Plan and organize / develop recommendations for resource procurement,1,0.6622516556291391,197,162.91390728476833
+Promote and champion recommendations (internal advocacy) for fund/investment decisions,1,0.6622516556291391,198,163.57615894039748
+Direct roles and direct financial operations,1,0.6622516556291391,199,164.23841059602663
+Plan and organize financial plans and budgets,1,0.6622516556291391,200,164.90066225165577
+Acquire/deploy resources and manage implementation,1,0.6622516556291391,201,165.56291390728492
+Search for opportunities through analysis and market/internal scanning,1,0.6622516556291391,202,166.22516556291407
+Identify areas for improvement to inform planning and resource allocation,1,0.6622516556291391,203,166.88741721854322
+Plan and organize resource needs (develop staffing/equipment plans),1,0.6622516556291391,204,167.54966887417237
+"Identify, acquire, and deploy resources to pursue operational opportunities",1,0.6622516556291391,205,168.21192052980152
+Propose and interpret operational requirements to improve competitiveness,1,0.6622516556291391,206,168.87417218543067
+Implement new logistics/route decisions to pursue efficiencies,1,0.6622516556291391,207,169.53642384105981
+Take charge and put effort into pursuing new operational solutions,1,0.6622516556291391,208,170.19867549668896
+Experiment/adjust processes for operational improvements,1,0.6622516556291391,209,170.8609271523181
+Reduce material/energy use and emissions via consolidation,1,0.6622516556291391,210,171.52317880794726
+Plan and organize / develop procedures,1,0.6622516556291391,211,172.1854304635764
+Design new processes to coordinate functions,1,0.6622516556291391,212,172.84768211920556
+Link groups and build internal coordination,1,0.6622516556291391,213,173.5099337748347
+Acquire and deploy resources to support procedures,1,0.6622516556291391,214,174.17218543046386
+Identify opportunities to increase inventory turns and reduce waste,1,0.6622516556291391,215,174.834437086093
+Search for ways to optimize customer service through inventory analysis,1,0.6622516556291391,216,175.49668874172215
+Design/prepare changes to inventory practices (planning and execution),1,0.6622516556291391,217,176.1589403973513
+Experiment/adjust operational processes for improvement,1,0.6622516556291391,218,176.82119205298045
+Identify and determine causes of problems (recognize opportunities/threats; anticipate problems),1,0.6622516556291391,219,177.4834437086096
+"Develop recommendations to improve policies (plan, design changes, convert analysis into action)",1,0.6622516556291391,220,178.14569536423875
+Propose and interpret improvements as a manager (shepherd and endorse organizational changes),1,0.6622516556291391,221,178.8079470198679
+Design new products or recombine resources -> develop computerized systems,1,0.6622516556291391,222,179.47019867549704
+Plan and organize / convert ideas into feasible plans -> system development,1,0.6622516556291391,223,180.1324503311262
+Implement new ideas / lead exploitation -> implement and maintain systems,1,0.6622516556291391,224,180.79470198675534
+Experiment to surface operational ideas for innovative improvements -> adjust processes through system maintenance,1,0.6622516556291391,225,181.4569536423845
+Acquire information relevant to strategic decisions,1,0.6622516556291391,226,182.11920529801364
+Plan and organize using analysis to aid planning,1,0.6622516556291391,227,182.7814569536428
+Acquire and deploy resources or inform cash and risk management decisions,1,0.6622516556291391,228,183.44370860927194
+Scan/monitor facility activities to identify opportunities to improve service utilization,1,0.6622516556291391,229,184.10596026490109
+Recognize and perceive opportunities worth pursuing / anticipate problems and opportunities,1,0.6622516556291391,230,184.76821192053023
+Focus on scanning the environment for opportunities and threats (senior-level managerial action),1,0.6622516556291391,231,185.43046357615938
+Design new processes / develop strategic purchasing programs,1,0.6622516556291391,232,186.09271523178853
+Plan and organize / convert analysis into feasible programs,1,0.6622516556291391,233,186.75496688741768
+Implement new ideas and take initiative to improve access,1,0.6622516556291391,234,187.41721854304683
+Identify opportunities and improvements,1,0.6622516556291391,235,188.07947019867598
+Generate and propose ideas to improve processes,1,0.6622516556291391,236,188.74172185430513
+Plan/organize and promote changes; adjust processes through competence modification,1,0.6622516556291391,237,189.40397350993427
+Recognize and perceive opportunities worth pursuing (identify improvements from data),1,0.6622516556291391,238,190.06622516556342
+Convert ideas into feasible plans or alternative methods,1,0.6622516556291391,239,190.72847682119257
+Find solutions and take initiative to implement new approaches,1,0.6622516556291391,240,191.39072847682172
+Develop comprehensive plans/recommendations for implementation,1,0.6622516556291391,241,192.05298013245087
+Promote/champion organizational changes and prepare implementation steps,1,0.6622516556291391,242,192.71523178808002
+Lead/guide execution of new systems or procedures; interpret and shepherd opportunities,1,0.6622516556291391,243,193.37748344370917
+"Scan environment and identify problems/opportunities (organizational change, info flow)",1,0.6622516556291391,244,194.03973509933832
+Plan and organize studies; develop procedures and analyses,1,0.6622516556291391,245,194.70198675496746
+Propose/interpret opportunities and refine organizational solutions,1,0.6622516556291391,246,195.3642384105966
+Generate creative ideas and identify opportunities to increase contributions,1,0.6622516556291391,247,196.02649006622576
+Develop and convert ideas into strategic plans to pursue donations,1,0.6622516556291391,248,196.6887417218549
+Lead and implement fundraising initiatives and take initiative to pursue opportunities,1,0.6622516556291391,249,197.35099337748406
+Develop comprehensive business/ campaign plans,1,0.6622516556291391,250,198.0132450331132
+Promote and champion ideas internally (advocacy for campaigns),1,0.6622516556291391,251,198.67549668874236
+Acquire and deploy resources for campaigns,1,0.6622516556291391,252,199.3377483443715
+Implement new ideas and lead campaign execution,1,0.6622516556291391,253,200.00000000000065
+Take initiative and manage fundraising activities,1,0.6622516556291391,254,200.6622516556298
+Acquire information about potential donors/competitors,1,0.6622516556291391,255,201.32450331125895
+Promote and champion ideas to others (issue selling),1,0.6622516556291391,256,201.9867549668881
+Obtain awareness/support to acquire resources (funding advocacy),1,0.6622516556291391,257,202.64900662251725
+Voice entrepreneurial ideas and use creative persuasive messaging,1,0.6622516556291391,258,203.3112582781464
+Search for opportunities and evaluate delivery modes (identify opportunities worth pursuing),1,0.6622516556291391,259,203.97350993377555
+Plan/organize and convert ideas into feasible approaches to optimize effectiveness and costs,1,0.6622516556291391,260,204.6357615894047
+Reduce environmental impacts of training delivery (eco-innovation),1,0.6622516556291391,261,205.29801324503384
+Develop comprehensive business/plans (design and plan programs),1,0.6622516556291391,262,205.960264900663
+Plan and organize,1,0.6622516556291391,263,206.62251655629214
+Implement new ideas and lead program delivery,1,0.6622516556291391,264,207.2847682119213
+Take charge and exhibit initiative by directing programs,1,0.6622516556291391,265,207.94701986755044
+Experiment/adjust processes for operational improvements (training design),1,0.6622516556291391,266,208.6092715231796
+Implement new ideas / put effort into pursuing new opportunities (create alternative methods),1,0.6622516556291391,267,209.27152317880874
+Maintain knowledge of current developments,1,0.6622516556291391,268,209.93377483443788
+Show innovative behaviors / use out-of-the-box thinking when current methods fail,1,0.6622516556291391,269,210.59602649006703
+Design new programs and convert ideas into feasible plans (Develop comprehensive business/planning actions),1,0.6622516556291391,270,211.25827814569618
+Plan and organize and obtain/deploy resources for internal initiatives,1,0.6622516556291391,271,211.92052980132533
+Propose/refine and shepherd opportunities to create internal capability (middle-level managerial action),1,0.6622516556291391,272,212.58278145695448
+Plan by developing a strategy/business plan or promote and champion ideas to others (II: planning and advocacy),1,0.6622516556291391,273,213.24503311258363
+Implement new ideas and put effort into pursuing new business opportunities (III: execution and implementation),1,0.6622516556291391,274,213.90728476821278
+Generate creative ideas for content,1,0.6622516556291391,275,214.56953642384192
+Search for opportunities through market/audience scanning,1,0.6622516556291391,276,215.23178807947107
+Convert ideas into feasible strategic plans,1,0.6622516556291391,277,215.89403973510022
+Plan and organize content initiatives,1,0.6622516556291391,278,216.55629139072937
+Search for opportunities and scan environment,1,0.6622516556291391,279,217.21854304635852
+Acquire and integrate information to recognize opportunities,1,0.6622516556291391,280,217.88079470198767
+Generate insights to identify effective means to satisfy user needs,1,0.6622516556291391,281,218.54304635761682
+Implement new ideas and put effort into pursuing business opportunities (run optimizations and A/B tests),1,0.6622516556291391,282,219.20529801324597
+Generate and identify opportunities through testing and conversion analysis (identify improvements and opportunities),1,0.6622516556291391,283,219.8675496688751
+"Experiment to surface operational ideas for innovative improvements (UX experiments, process adjustments)",1,0.6622516556291391,284,220.52980132450426
+Search for opportunities through experimentation and analysis,1,0.6622516556291391,285,221.1920529801334
+Implement new ideas and run A/B or multivariate tests,1,0.6622516556291391,286,221.85430463576256
+"Search out new techniques, technologies, and product ideas (market scanning)",1,0.6622516556291391,287,222.5165562913917
+Generate creative campaign ideas and identify multi-channel opportunities,1,0.6622516556291391,288,223.17880794702086
+Search for and present opportunities from market/channel scanning,1,0.6622516556291391,289,223.84105960265
+Promote and champion proposed campaigns to executives (internal issue selling),1,0.6622516556291391,290,224.50331125827915
+Convert ideas into feasible marketing plans or campaign proposals,1,0.6622516556291391,291,225.1655629139083
+Develop sustainability initiatives that enable environmental benefits or reduce resource use,1,0.6622516556291391,292,225.82781456953745
+Plan and evaluate proposals for feasibility and cost-effectiveness (develop/convert ideas into actionable plans),1,0.6622516556291391,293,226.4900662251666
+Search for opportunities and identify effective means to create new sustainable practices,1,0.6622516556291391,294,227.15231788079575
+Show innovative solutions and acceptance-risk assessment (out-of-the-box thinking and risk-taking),1,0.6622516556291391,295,227.8145695364249
+Design or revise organizational guidelines / convert ideas into feasible plans,1,0.6622516556291391,296,228.47682119205405
+Promote and champion improved sustainability proposals (internal advocacy),1,0.6622516556291391,297,229.1390728476832
+Reduce material/energy use or other environmental impacts via policy changes,1,0.6622516556291391,298,229.80132450331234
+Plan and organize; acquire and deploy resources,1,0.6622516556291391,299,230.4635761589415
+Tasks related to eco-innovation and environmental benefits,1,0.6622516556291391,300,231.12582781457064
+Scan the environment for opportunities and threats / acquire information,1,0.6622516556291391,301,231.7880794701998
+Recognize and perceive opportunities worth pursuing by informing decisions,1,0.6622516556291391,302,232.45033112582894
+"Reduce material/energy use or enable environmental benefits (green building, waste stream management)",1,0.6622516556291391,303,233.1125827814581
+Acquire information about competitors / market and technical issues,1,0.6622516556291391,304,233.77483443708724
+Focus on scanning the environment for opportunities and threats (senior-level),1,0.6622516556291391,305,234.43708609271638
+"Tasks related to eco-innovation (sustainability regulatory, technical, market issues)",1,0.6622516556291391,306,235.09933774834553
+Recognize and perceive opportunities worth pursuing (identify client financial opportunities),1,0.6622516556291391,307,235.76158940397468
+Convert ideas/analysis into feasible plans (determine strategies to meet objectives),1,0.6622516556291391,308,236.42384105960383
+Search for opportunities through analysis and market/financial scanning,1,0.6622516556291391,309,237.08609271523298
+Design new products or recombine resources (create object-oriented models from practice),1,0.6622516556291391,310,237.74834437086213
+Convert ideas into feasible and comprehensive plans (translate practice into system requirements),1,0.6622516556291391,311,238.41059602649128
+Build internal coalitions and persuade management / Link groups (bridge nurses and engineers),1,0.6622516556291391,312,239.07284768212043
+Lead idea development for new business activities / Implement new ideas (support system development and deployment),1,0.6622516556291391,313,239.73509933774957
+Design new products or recombine resources (II),1,0.6622516556291391,314,240.39735099337872
+Implement new ideas and health IT solutions (III),1,0.6622516556291391,315,241.05960264900787
+Search for opportunities and apply informatics to solve problems (I),1,0.6622516556291391,316,241.72185430463702
+Generate creative ideas and design new applications/tools,1,0.6622516556291391,317,242.38410596026617
+Develop and convert ideas into feasible plans and structures,1,0.6622516556291391,318,243.04635761589532
+Implement and evaluate new solutions; lead execution,1,0.6622516556291391,319,243.70860927152447
+Show innovative behavior and take risks in designing new approaches,1,0.6622516556291391,320,244.37086092715361
+Generate creative solutions and recognize opportunities,1,0.6622516556291391,321,245.03311258278276
+Design new products/data structures and convert ideas into feasible solutions,1,0.6622516556291391,322,245.6953642384119
+Implement and evaluate new systems; lead deployment and testing,1,0.6622516556291391,323,246.35761589404106
+Exhibit innovative/experimental behavior and take development risks,1,0.6622516556291391,324,247.0198675496702
+Experiment and adjust processes to surface operational improvements,1,0.6622516556291391,325,247.68211920529936
+Scan environment for new techniques and technologies,1,0.6622516556291391,326,248.3443708609285
+Recognize opportunities worth pursuing (applicability to nursing domains),1,0.6622516556291391,327,249.00662251655766
+Acquire information to evaluate technologies,1,0.6622516556291391,328,249.6688741721868
+Convert findings into recommendations for practice/education/administration/research,1,0.6622516556291391,329,250.33112582781595
+Plan by developing strategies/policies/procedures,1,0.6622516556291391,330,250.9933774834451
+Design and organize system implementation guidelines,1,0.6622516556291391,331,251.65562913907425
+Promote/obtain internal sponsorship and coordinate stakeholders,1,0.6622516556291391,332,252.3178807947034
+Senior-level direction and identification of means to create/reconfigure services,1,0.6622516556291391,333,252.98013245033255
+Middle-manager interpretation and deployment of opportunities/resources,1,0.6622516556291391,334,253.6423841059617
+Design new products or recombine resources → design standards/methods,1,0.6622516556291391,335,254.30463576159084
+Plan and organize → developing procedures and criteria,1,0.6622516556291391,336,254.96688741722
+Experiment to surface operational ideas for innovative improvements → defining/adjusting QA processes,1,0.6622516556291391,337,255.62913907284914
+Adjust processes through competence modification → change testing/release-readiness practices,1,0.6622516556291391,338,256.2913907284783
+Implement new ideas / put effort into pursuing new solutions (creating automated responses),1,0.6622516556291391,339,256.9536423841074
+Experiment and adjust processes to surface operational improvements (automating email workflows),1,0.6622516556291391,340,257.61589403973653
+Promote and champion ideas to others (recommend changes),1,0.6622516556291391,341,258.27814569536565
+Develop and deploy improvements (implement new solutions),1,0.6622516556291391,342,258.9403973509948
+Experiment/adjust processes and conform processes through competence deployment,1,0.6622516556291391,343,259.6026490066239
+Plan and organize; develop procedures/business plans,1,0.6622516556291391,344,260.264900662253
+Experiment/adjust processes and surface operational ideas,1,0.6622516556291391,345,260.92715231788213
+Recognize and perceive opportunities to improve product success,1,0.6622516556291391,346,261.58940397351125
+Design new products or recombine resources (game features) and plan for commercial success,1,0.6622516556291391,347,262.2516556291404
+Implement new ideas and lead development/adjustments to the product,1,0.6622516556291391,348,262.9139072847695
+Show innovative/creative behaviors and take risks to change gameplay for better outcomes,1,0.6622516556291391,349,263.5761589403986
+Generate creative ideas for gameplay,1,0.6622516556291391,350,264.23841059602773
+Use out-of-the-box thinking/innovative behaviors,1,0.6622516556291391,351,264.90066225165685
+Recognize opportunities for new game features,1,0.6622516556291391,352,265.562913907286
+Generate creative ideas for storylines and characters,1,0.6622516556291391,353,266.2251655629151
+Design new product features and game mechanics,1,0.6622516556291391,354,266.8874172185442
+"Use innovative, out-of-the-box creative behavior in feature conception",1,0.6622516556291391,355,267.54966887417334
+Search for opportunities and ideas via feedback and team input,1,0.6622516556291391,356,268.21192052980246
+Convert and refine ideas into feasible designs and plans through stakeholder input,1,0.6622516556291391,357,268.8741721854316
+Implement and lead development by integrating feedback into the product,1,0.6622516556291391,358,269.5364238410607
+Generate creative ideas and prototypes,1,0.6622516556291391,359,270.1986754966898
+Convert ideas into presentable prototypes and advocate to stakeholders,1,0.6622516556291391,360,270.86092715231894
+Implement new ideas and lead development of gameplay concepts,1,0.6622516556291391,361,271.52317880794806
+Show innovative/creative behaviors and take design risks,1,0.6622516556291391,362,272.1854304635772
+Generate creative ideas / design concepts,1,0.6622516556291391,363,272.8476821192063
+Design new products or recombine resources into prototypes,1,0.6622516556291391,364,273.5099337748354
+Show innovative and creative behaviors (out-of-the-box mock-up design),1,0.6622516556291391,365,274.17218543046454
+Generate creative ideas from external media,1,0.6622516556291391,366,274.83443708609366
+Search for opportunities through market/land-use/traffic scanning,1,0.6622516556291391,367,275.4966887417228
+Design new products or recombine resources (translate needs into system components),1,0.6622516556291391,368,276.1589403973519
+"Plan and organize (identify required data, hardware, software)",1,0.6622516556291391,369,276.821192052981
+"Identify, acquire, and deploy resources to pursue opportunities (determine resource requirements)",1,0.6622516556291391,370,277.48344370861014
+Search for opportunities through analysis and recognizing issues worth pursuing,1,0.6622516556291391,371,278.14569536423926
+Plan and organize by defining objectives and scope,1,0.6622516556291391,372,278.8079470198684
+Develop/convert ideas into feasible plans and recommend organizational changes,1,0.6622516556291391,373,279.4701986754975
+Senior-level: identify effective means to create or reconfigure business through systems,1,0.6622516556291391,374,280.1324503311266
+Scan the environment for new techniques and technologies,1,0.6622516556291391,375,280.79470198675574
+Recognize and perceive opportunities or threats worth pursuing,1,0.6622516556291391,376,281.45695364238486
+Identify effective means to create or reconfigure technical capabilities (senior-level scanning),1,0.6622516556291391,377,282.119205298014
+Direct roles and define spans of authority,1,0.6622516556291391,378,282.7814569536431
+Manage and direct personnel to execute project activities,1,0.6622516556291391,379,283.4437086092722
+Generate creative ideas and search for new techniques or technologies,1,0.6622516556291391,380,284.10596026490134
+Design new products or recombine resources (convert ideas into usable models),1,0.6622516556291391,381,284.76821192053046
+Implement new ideas and put effort into pursuing new analytical capabilities,1,0.6622516556291391,382,285.4304635761596
+Show innovative and creative behaviors and take risks in novel model design,1,0.6622516556291391,383,286.0927152317887
+Generate creative ideas / alternative scenarios,1,0.6622516556291391,384,286.7549668874178
+Anticipate problems and opportunities by exploring consequences,1,0.6622516556291391,385,287.41721854304694
+Design new approaches and prepare groundwork for plans,1,0.6622516556291391,386,288.07947019867606
+Generate creative ideas and new techniques,1,0.6622516556291391,387,288.7417218543052
+Search for and apply methods from science/engineering/business applications,1,0.6622516556291391,388,289.4039735099343
+Implement new solutions and pursue novel problem-solving approaches,1,0.6622516556291391,389,290.0662251655634
+Show innovative and creative behaviors and take methodological risks,1,0.6622516556291391,390,290.72847682119254
+Design new experiments and ask the right questions,1,0.6622516556291391,391,291.39072847682166
+Search out and apply valid scientific techniques,1,0.6622516556291391,392,292.0529801324508
+Use baseline/historical data to structure analyses (anticipate problems and refine approach),1,0.6622516556291391,393,292.7152317880799
+Acquire information about competitors/customers,1,0.6622516556291391,394,293.377483443709
+Plan and organize technical requirements (develop specifications),1,0.6622516556291391,395,294.03973509933815
+Promote and communicate requirements to IT (internal issue selling / build linkages),1,0.6622516556291391,396,294.70198675496727
+Link groups and shepherd opportunity from concept to implementation,1,0.6622516556291391,397,295.3642384105964
+Generate creative design ideas and technical integration,1,0.6622516556291391,398,296.0264900662255
+Design/recombine resources into new unified designs,1,0.6622516556291391,399,296.6887417218546
+Implement new design solutions and lead solution development,1,0.6622516556291391,400,297.35099337748375
+Use innovative/out-of-the-box technical approaches,1,0.6622516556291391,401,298.01324503311287
+Investigate environmental impact / enable environmental benefits,1,0.6622516556291391,402,298.675496688742
+Develop comprehensive plans / convert ideas into feasible plans (design transportation or hydraulic systems),1,0.6622516556291391,403,299.3377483443711
+Design new products or recombine resources (designing systems/structures),1,0.6622516556291391,404,300.0000000000002
+Implement new ideas / put effort into pursuing new business opportunities (leading technical implementation of designs),1,0.6622516556291391,405,300.66225165562935
+Reduce energy use during the production/process or operation,1,0.6622516556291391,406,301.32450331125847
+Enable environmental benefits through design (green features),1,0.6622516556291391,407,301.9867549668876
+Search out new techniques and technologies for efficiency,1,0.6622516556291391,408,302.6490066225167
+Show innovative and creative behaviors in design,1,0.6622516556291391,409,303.31125827814583
+Anticipate problems and opportunities related to sustainability,1,0.6622516556291391,410,303.97350993377495
+Search for opportunities and identify energy-saving measures,1,0.6622516556291391,411,304.63576158940407
+Convert findings into recommended strategies and advise others,1,0.6622516556291391,412,305.2980132450332
+Reduce energy use during the production/operation process (eco-innovation),1,0.6622516556291391,413,305.9602649006623
+Promote and champion ideas to others (internal issue selling),1,0.6622516556291391,414,306.62251655629143
+Build internal coalitions and persuade management (implied by promotion/marketing),1,0.6622516556291391,415,307.28476821192055
+Enable environmental benefits from end-user consumption (promote renewables),1,0.6622516556291391,416,307.94701986754967
+Address tasks influenced by the greening of the economy,1,0.6622516556291391,417,308.6092715231788
+Implement new ideas / put effort into pursuing new opportunities (write/install routines),1,0.6622516556291391,418,309.2715231788079
+Find solutions / lead idea development for operational improvements,1,0.6622516556291391,419,309.93377483443703
+Reduce energy use during the production/operation process,1,0.6622516556291391,420,310.59602649006615
+Enable environmental benefits from end-user consumption through energy management,1,0.6622516556291391,421,311.2582781456953
+Plan and organize / develop presentation method,1,0.6622516556291391,422,311.9205298013244
+Lead implementation and coordinate across disciplines,1,0.6622516556291391,423,312.5827814569535
+Link groups and shepherd interdisciplinary design work,1,0.6622516556291391,424,313.24503311258263
+Search out new techniques or technologies,1,0.6622516556291391,425,313.90728476821175
+Identify effective means to create or reconfigure work/research,1,0.6622516556291391,426,314.5695364238409
+Acquire information about population/region (getting information),1,0.6622516556291391,427,315.23178807947
+Search for opportunities through market/environmental scanning,1,0.6622516556291391,428,315.8940397350991
+Design new products or recombine resources / develop new systems,1,0.6622516556291391,429,316.55629139072823
+Implement new ideas and lead development of systems,1,0.6622516556291391,430,317.21854304635735
+Show innovative and creative behaviors / take technical risks,1,0.6622516556291391,431,317.8807947019865
+Identify opportunities/threats for the organization (transportation needs and long-term issues),1,0.6622516556291391,432,318.5430463576156
+"Develop and convert ideas into plans or recommendations (planning, designing proposals)",1,0.6622516556291391,433,319.2052980132447
+Propose/endorse and shepherd opportunities to increase competitiveness or serve public goals (internal advocacy),1,0.6622516556291391,434,319.86754966887383
+Recognize and perceive opportunities worth pursuing (identify future needs from projections),1,0.6622516556291391,435,320.52980132450296
+Analyze and interpret news to recognize opportunities/themes,1,0.6622516556291391,436,321.1920529801321
+Show innovative and creative behaviors in content creation,1,0.6622516556291391,437,321.8543046357612
+Generate creative ideas for promoting products/services,1,0.6622516556291391,438,322.5165562913903
+Search for opportunities and recognize organizational needs,1,0.6622516556291391,439,323.17880794701944
+Plan and develop promotional strategies (business/communication plans),1,0.6622516556291391,440,323.84105960264856
+Promote and champion ideas to influence public opinion,1,0.6622516556291391,441,324.5033112582777
+"Show innovative, creative behaviors in strategy design",1,0.6622516556291391,442,325.1655629139068
+Scan the environment for opportunities and threats (review advertising trends),1,0.6622516556291391,443,325.8278145695359
+Acquire information about competitors and consumer preferences (consumer surveys),1,0.6622516556291391,444,326.49006622516504
+Design new products or recombine resources / plan promotional approaches (determine best way to promote),1,0.6622516556291391,445,327.15231788079416
+Convert ideas into feasible plans (select promotional strategy),1,0.6622516556291391,446,327.8145695364233
+Search for opportunities through market scanning and information acquisition,1,0.6622516556291391,447,328.4768211920524
+Recognize and perceive opportunities worth pursuing (which features to promote),1,0.6622516556291391,448,329.1390728476815
+Acquire information about competitors/market via research and interviews,1,0.6622516556291391,449,329.80132450331064
+Acquire information relevant to new designs and tools,1,0.6622516556291391,450,330.46357615893976
+Generate creative ideas for columns/commentary,1,0.6622516556291391,451,331.1258278145689
+Design and plan strategic computing and information resources,1,0.6622516556291391,452,331.788079470198
+"Implement systems for data security, control, and disaster recovery",1,0.6622516556291391,453,332.4503311258271
+Direct and identify effective means to create or reconfigure IT resources,1,0.6622516556291391,454,333.11258278145624
+Acquire/deploy resources and shepherd IT initiatives,1,0.6622516556291391,455,333.77483443708536
+Plan by developing proposals or project plans,1,0.6622516556291391,456,334.4370860927145
+Recognize/ratify roles,1,0.6622516556291391,457,335.0993377483436
+Manage and supervise employees,1,0.6622516556291391,458,335.7615894039727
+Assess project feasibility and requirements (plan/organize),1,0.6622516556291391,459,336.42384105960184
+Convert ideas/proposals into feasible plans,1,0.6622516556291391,460,337.08609271523096
+Interpret and shepherd entrepreneurial opportunities,1,0.6622516556291391,461,337.7483443708601
+Identify resources and requirements to pursue opportunities,1,0.6622516556291391,462,338.4105960264892
+Implement new ideas / put effort into pursuing new applications,1,0.6622516556291391,463,339.0728476821183
+Lead development and take initiative in building tools,1,0.6622516556291391,464,339.73509933774744
+Show innovative and creative behaviors in software design,1,0.6622516556291391,465,340.39735099337656
+Convert insights into promotion strategy (planning/preparation),1,0.6622516556291391,466,341.0596026490057
